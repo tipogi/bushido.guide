@@ -1,69 +1,24 @@
 @use "sass:math";
 
-h3 {
-  color: #e2d5bd;
-}
-h3.dot {
-  color: #e6932d;
-}
-.cover-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  background-image: -webkit-linear-gradient(-30deg, #272b33 50%, #1a1f23 50%);
-  flex-direction: column;
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-}
-.content {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.content button {
-  background: #e6932d;
-  height: 60px;
-  width: 150px;
-  border: 0;
-  border-radius: 5px;
-  color: white;
-}
-
 $color_primary: #e6942c;
 $color_secondary: #edc898;
-$color_background: #000;
+$color_background: #ffe3c4;
 
 $point_count: 7;
 $point_radius: 16px;
-
 $circle_radius: 160px;
-
 $start_anim_delta: 5;
 
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: none;
-	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
-}
-
-html,
-body {
-	height: 100vh;
-	width: 100vw;
-	background-color: $color_background;
-	background: linear-gradient(#1f1f21, $color_background);
+#virtutes-view {
+ background: #272b33; 
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .main {
 	display: flex;
-	height: 100vh;
-	width: 100vw;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
