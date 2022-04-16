@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import Explorer from "./pages/Explorer";
 
 import './pages/styles/app.scss';
+import Header from "./layouts/header";
 
 const App: React.FC = () => {
   return (
     <div id="bushido-guide-app">
       <BrowserRouter>
+        <Header/>
         <Routes>
           <Route path={HOME_ROUTE} element={<Home/>}></Route>
           <Route path={EXPLORER_ROUTE} element={<Explorer/>}></Route>
