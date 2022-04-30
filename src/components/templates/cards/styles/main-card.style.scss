@@ -1,0 +1,28 @@
+.main-card {
+  width: 250px;
+  height: 150px;
+  border-radius: 30px;
+  border-radius: 30px;
+  background: #272c32;
+  //box-shadow: 15px 15px 30px #171a1f, -15px -15px 30px #212121;
+  box-shadow: 20px 20px 60px #000000, -20px -20px 60px #19293d;
+  &.number-1 {
+    background-image: url(/img/cards/main-a.svg);
+  }
+  &.number-2 {
+    background-image: url(/img/cards/main-b.svg);
+  }
+  &.number-3 {
+    background-image: url(/img/cards/main-c.svg);
+  }
+  .svg-icon {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    svg{
+      width: 30%;
+      color:#272c32;
+    }
+  }
+}

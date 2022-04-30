@@ -1,10 +1,9 @@
 #explorer-container {
-  background: #272b33; 
-  .geo-shape-3 {
-    background-image: url(/public/img/geo-shape/geo-shape-6.svg);//, linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%);;
-    width: 205px;
-    height: 288px;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  background: #272b33;
+  #cards-container {
+    width: 100%;
+    margin: 200px;
+    display: flex;
+    justify-content: space-evenly;
   }
 }
