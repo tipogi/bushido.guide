@@ -1,0 +1,37 @@
+&:hover {
+  cursor: pointer;
+  .icon {
+    &.custom-svg svg {
+      animation-name: custom-animation;
+      animation-duration: .5s;
+      width: 50%;
+    }
+    &.react-svg svg {
+      animation-name: react-animation;
+      animation-duration: .5s;
+      font-size: 5em;
+    }
+    color: #ffe0b7;
+  }
+}
+
+@keyframes custom-animation {
+  from {
+    color:#272c32;
+    width: 40%;
+  }
+  to { 
+    width: 50%;
+    color: #ffe0b7;
+  }
+}
+@keyframes react-animation {
+  from { 
+    color:#272c32;
+    font-size: 4em;
+  }
+  to { 
+    font-size: 5em;
+    color: #ffe0b7;
+  }
+}

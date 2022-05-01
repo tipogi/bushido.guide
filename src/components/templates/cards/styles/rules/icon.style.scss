@@ -1,0 +1,20 @@
+.icon {
+  color:#272c32;
+  &.react-icons {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5em;
+  }
+  &.custom-svg {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 35%;
+    }
+  }
+}
