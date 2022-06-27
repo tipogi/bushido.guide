@@ -1,4 +1,8 @@
-// This type of folder is has more folder inside
-export const ABSOLUTE = 'absolute';
-// It is the last folder, before the leaf card
-export const RELATIVE = 'relative';
+export enum FolderType {
+  // This type of folder is the ROOT of the tree
+  ROOT = 'ROOT',
+  // This type of folder is has more folders inside
+  BRANCH = 'BRANCH',
+  // It is the last folder, before the leaf card
+  LEAF = 'LEAF'
+}

@@ -1,0 +1,39 @@
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: 100px;
+  border-radius: 15px;
+  margin: 10px;
+  box-shadow: 4px 4px 8px #000000, -1px 1px 5px #484848;
+  .topic-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // We set that number to adapt the top margin of icon
+    height: 40px;
+    color: #46484B;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .topic-description {
+    display: flex;
+    justify-content: center;
+    font-size: .6em;
+    height: 22px;
+    overflow: hidden;
+    margin: 0 10px;
+    margin-top: 2px;
+    text-align: center;
+    span {
+      line-height: 10px;
+      color: #ffd198;
+    }
+  }
+  // Imports backgrounds
+  @import './rules/background.style';
+  @import './rules/icon.style';
+  //@import './rules/shadow.style';
+  //@import './rules/pseudo-classes.style';
+}

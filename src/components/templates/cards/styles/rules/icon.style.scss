@@ -1,18 +1,21 @@
 .icon {
-  color:#272c32;
+  color: #45484b;
   &.react-icons {
-    height: inherit;
-    width: inherit;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3.5em;
+    justify-content: left;
+    height: 25px;
+    width: inherit;
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 1.4em;
   }
   &.custom-svg {
-    height: inherit;
-    width: inherit;
+    height: 25px;
+    width: 5em;
+    margin-left: 5px;
+    margin-top: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     svg {
       width: 35%;
     }

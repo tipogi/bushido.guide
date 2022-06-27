@@ -1,8 +1,8 @@
 // SVG
 export const SVG = 'svg';
-export const BITCOIN = 'Bitcoin';
-export const PRIVACY = 'Privacy';
-export const WALLET = 'Wallet';
+export const BITCOIN = 'bitcoin';
+export const PRIVACY = 'privacy';
+export const WALLET = 'wallet';
 export const SIDECHAIN = 'sidechain';
 export const NODE = 'node';
 export const BLOCK = 'block';
@@ -11,9 +11,10 @@ export const MINE = 'mine';
 export const SATOSHI = 'satoshi';
 export const HARDWARE = 'hardware';
 export const COLD_STORAGE = 'coldStorage'
-export const NOT_FOUND = 'NotFound';
+export const NOT_FOUND = 'notFound';
 
 // ICON
+export const REACT_ICON = 'icon';
 export const GITHUB = 'github';
 export const ANALYSIS = 'analysis';
 export const GUIDE = 'guide';

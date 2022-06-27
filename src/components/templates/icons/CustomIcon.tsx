@@ -1,6 +1,6 @@
 import { ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES, STORE, SUBSTACK, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS } from "../../../constants";
 // Font Awesome
-import { FaGithub, FaBook, FaMicrophoneAlt, FaRegNewspaper, FaStore, FaCloud, FaToolbox, FaServer } from 'react-icons/fa';
+import { FaGithub, FaBook, FaMicrophoneAlt, FaRegNewspaper, FaStore, FaCloud, FaToolbox, FaSignature } from 'react-icons/fa';
 // HeroIcons
 import { HiCubeTransparent, HiCode } from "react-icons/hi";
 //Material Icon
@@ -8,11 +8,11 @@ import { MdOndemandVideo, MdArticle, MdMarkEmailUnread, MdAnimation, MdSimCard }
 // Flat Icons
 import { FiLayers, FiHardDrive } from 'react-icons/fi';
 // Remix Icon
-import { RiCodeBoxLine, RiLockPasswordFill } from 'react-icons/ri';
+import { RiCodeBoxLine } from 'react-icons/ri';
 // Simple Icons
 import { SiSubstack } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineColumnWidth } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineColumnWidth, AiOutlineCloudServer } from "react-icons/ai";
 // IonIcons
 import { IoBarChart, IoAnalyticsSharp } from "react-icons/io5";
 // Bootstrap
@@ -25,7 +25,6 @@ interface CustomIconProps {
 
 const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
   const renderIcon = (): JSX.Element => {
-    console.log(name);
     switch (name) {
       case GITHUB:
         return <FaGithub/>;
@@ -68,18 +67,19 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case PEOPLE:
         return <BsPersonBoundingBox/>;
       case CRYPTOGRAPHY:
-        return <RiLockPasswordFill/>;
+        return <FaSignature/>;
       case OS:
         return <FiHardDrive/>;
       case SMS:
         return <MdSimCard/>;
       case VPS:
-        return <FaServer/>;
+        return <AiOutlineCloudServer/>;
       default:
         return <HiCode/>;
     }
   }
   const Icon = renderIcon();
+
   return (
     <div className='react-icons icon' id={`${name.toLowerCase()}`}>
       { Icon }
