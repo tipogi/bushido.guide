@@ -1,4 +1,4 @@
-import { Branch } from "../components/pages/Explorer";
+import { Branch } from "../components/pages/explorer/Explorer copy";
 
 export const topic: Branch[] = [
   {

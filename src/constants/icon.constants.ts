@@ -40,3 +40,7 @@ export const CRYPTOGRAPHY = 'cryptography';
 export const OS = 'os';
 export const SMS = 'sms';
 export const VPS = 'vps';
+
+// LANGUAGES
+export const ENG = 'eng';
+export const ESP = 'esp'

@@ -8,4 +8,72 @@
     align-content: flex-start;
     flex-wrap: wrap;
   }
+  #list-container {
+    width: 100%;
+    margin: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    .domain-card {
+      display: flex;
+      flex-direction: row;
+      padding: 10px 0;
+      cursor: pointer;
+      .img-container {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .domain-img {
+          height: 25px;
+          filter: grayscale(85%);
+        }
+      }
+      .text-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        .domain-name {
+          color: #e6942c;
+          font-weight: 700;
+          margin-bottom: 5px;
+        }
+        .domain-description {
+          color:#ffe3c4;
+          font-weight: 100;
+          font-size: 14px;
+        }
+      }
+      .view-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 8%;
+        color: #514d49;
+      }
+      .language-container {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 5%;
+        img {
+          height: 1em;
+          filter: grayscale(1);
+        }
+      }
+      &:hover {
+        background: #2a2e37;
+        border-radius: 10px;
+        border: 1px solid #4f535d;
+        .img-container img{
+          filter: grayscale(0);
+          height: 35px;
+        }
+        .view-container svg {
+          color: #e6942c;
+        }
+      }
+    }
+  }
 }
