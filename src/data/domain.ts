@@ -1,85 +1,5 @@
 export const domain = [
   {
-    url: "https://ctfacademy.github.io/index.htm",
-    icon: "https://ctfacademy.github.io/src/Logo.svg",
-    lang: "eng",
-    tags: [
-      "security",
-      "crytography"
-    ],
-    name: "CTFA",
-    description: "Cyber Training Force Academy is an elite training platform for tomorrow’s cyber-defenders",
-    path: [
-      "privacy",
-      "cryptography"
-    ],
-    hash: "e148ec9a98456f520b13717a2e739f61d5fb1800"
-  },
-  {
-    url: "https://hashcat.net/hashcat/",
-    icon: "https://hashcat.net/s/i/hashcat-icon.png",
-    lang: "eng",
-    tags: [
-      "security",
-      "crytography"
-    ],
-    name: "Hashcat",
-    description: "Advanced Password Recovery",
-    path: [
-      "privacy",
-      "cryptography"
-    ],
-    hash: "67c91359704cdfce3120cb44705824dc90fc3ff1"
-  },
-  {
-    url: "https://sec.eff.org/",
-    icon: "https://sec.eff.org/assets/sec-logo-b995e36e8ed11a0a5115719a246f8cb0631efa6fad87e213951c79d2b672720c.png",
-    lang: "eng",
-    tags: [
-      "security",
-      "crytography"
-    ],
-    name: "Security Education Companion",
-    description: "A free resource for digital security educators",
-    path: [
-      "privacy",
-      "cryptography"
-    ],
-    hash: "87b40f2f1d843460edbca866948fbfcc9446a7f7"
-  },
-  {
-    url: "https://asecuritysite.com/",
-    icon: "https://asecuritysite.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "security",
-      "crytography"
-    ],
-    name: "A Security Site",
-    description: "This site was created as there is a real lack of engaging content within the theoretical and practical applications of cryptography on the Internet, especially in covering complex principles in an easy-to-access way",
-    path: [
-      "privacy",
-      "cryptography"
-    ],
-    hash: "6c073100b55e9c4673dbd065c7b917d30b68b69a"
-  },
-  {
-    url: "https://www.geeksforgeeks.org/cryptography-introduction/?ref=lbp",
-    icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png",
-    lang: "eng",
-    tags: [
-      "security",
-      "crytography"
-    ],
-    name: "Geeks for Geeks",
-    description: "A computer science portal for geeks",
-    path: [
-      "privacy",
-      "cryptography"
-    ],
-    hash: "da3550a277fd61a6f19e83ebbf3b027672be6614"
-  },
-  {
     url: "https://degoogle.jmoore.dev/",
     icon: "https://repository-images.githubusercontent.com/191201679/10394d00-968c-11ea-8879-4f06b3e59af5",
     lang: "eng",
@@ -209,316 +129,6 @@ export const domain = [
     hash: "fcef5da26f86c56da3c5963fad798dc032d5cfbf"
   },
   {
-    url: "https://criptext.com/",
-    icon: "https://cdn.criptext.com/Criptext-Email-Website/images/criptext.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Criptext",
-    description: "Quite possibly the most private email service - ever. We keep your privacy, not your emails",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "d95b33b0c1902780fb9a3917fdeb8a4f19b7bc3f"
-  },
-  {
-    url: "https://mailvelope.com/en",
-    icon: "https://mailvelope.com/img/Mailvelope/logo_signet_32.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Mailvelpe",
-    description: "Communicating securely with Mailvelope",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "99075f4f7301da90962ae1dae6639267a994b44d"
-  },
-  {
-    url: "https://anonaddy.com/",
-    icon: "https://anonaddy.com/favicon-32x32.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Anonaddy",
-    description: "Anonymous Email Forwarding. Create Unlimited Email Aliases For Free",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "648a6cb1589e845a915f8e45c068aea42046fc5e"
-  },
-  {
-    url: "https://altmails.com/",
-    icon: "https://altmails.com/image/fv.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Altmails",
-    description: "Protect your email address from being sold or spammed. It allows you to create temporary email addresses that automatically forward all emails to your personal email account",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "1d816a0e0ccd8b2a5dfef4081d9ab7ad526f2c4b"
-  },
-  {
-    url: "https://countermail.com/",
-    icon: "https://countermail.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "CouinterMail",
-    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "11400091a22d1e776521704ad14df7daa615018e"
-  },
-  {
-    url: "https://simplelogin.io/",
-    icon: "https://simplelogin.io/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "SimpleLogin",
-    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "422c1beae0ee087994406ffa580dc2acd38cce68"
-  },
-  {
-    url: "https://disroot.org/en/services/email",
-    icon: "https://disroot.org/user/themes/disroot/images/favicon.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Disroot",
-    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "58feebff06b965b40ded828d5a0ec70418d6783e"
-  },
-  {
-    url: "https://www.msgsafe.io/",
-    icon: "https://www.msgsafe.io/eb98b4bfba91aacb5dde.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Msgsafe",
-    description: "Private, end-to-end encrypted, online communication. For everyone",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "9a1943608e14fcfabb355c2c4e1b3db3687b960f"
-  },
-  {
-    url: "https://mailbox.org/en/",
-    icon: "https://mailbox.org/files/layout/logo.svg",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Mailbox",
-    description: "mailbox.org is operated by the family business Heinlein Support GmbH from Berlin, Germany, whose origins go back to the year 1992",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "3541b1d1bbc22d26c976f9058bf2da658fc24d01"
-  },
-  {
-    url: "https://e4ward.com/",
-    icon: "https://e4ward.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "E4ward",
-    description: "Eliminate spam in 3 easy steps",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "5cf92ca6071ed4360d85f444052136ba07737e08"
-  },
-  {
-    url: "https://dnmx.org/",
-    icon: "https://dnmx.org/assets/img/dnmxlogo.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Dnmx",
-    description: "Dark Net Email Exchange is a dark net email provider that allows anyone to create an email account anonymously and receive/send emails to the clear net",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "6b75589d4e3249a6d730ad2bcaf81d9eb9349862"
-  },
-  {
-    url: "https://tutanota.com/",
-    icon: "https://tutanota.com/resources/favicon/logo-favicon-192.png",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Tutanota",
-    description: "Secure email for everybody. It is the world's most secure email service, easy to use and private by design. Sign up for encrypted email now",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "28e0de1527c8e973381d7c883408e4c4cc475dcf"
-  },
-  {
-    url: "https://protonmail.com/",
-    icon: "https://proton.me/favicons/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Protonmail",
-    description: "Secure Email Based in Switzerland",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "3c885e6820b02e62a88e9a3b373509faecb2f5c3"
-  },
-  {
-    url: "https://www.guerrillamail.com/",
-    icon: "https://www.guerrillamail.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Guerrilla Mail",
-    description: "Avoid spam and stay safe - use a disposable email address!",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "1fed256715a58a1de33e386a1ae925d65fab40e0"
-  },
-  {
-    url: "https://lavabit.com/",
-    icon: "https://lavabit.com/favicons/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email"
-    ],
-    name: "Lavabit",
-    description: "Secure email for the world. Because everyone has the right to communicate privately",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "032847712d91699630f4d7c29dfe19764f5417ae"
-  },
-  {
-    url: "https://skiff.com/",
-    icon: "https://skiff.com/favicon/favicon.ico",
-    lang: "eng",
-    tags: [
-      "email",
-      "privacy"
-    ],
-    name: "Skiff",
-    description: "Take your thoughts and ideas to the next level with a private, end-to-end encrypted workspace",
-    path: [
-      "privacy",
-      "email"
-    ],
-    hash: "d80cb5880256c54300be1b9f50370117a9e38cfa"
-  },
-  {
-    url: "https://github.com/sunknudsen/privacy-guides",
-    icon: "https://avatars.githubusercontent.com/u/2117655",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "privacy"
-    ],
-    name: "Privacy Guides",
-    description: "Most privacy guides episodes published on YouTube do not need reference material, but when they do, it lands here",
-    path: [
-      "privacy",
-      "github"
-    ],
-    hash: "1beedfc489932165fc8f85cf6b09b70c07b77a19"
-  },
-  {
-    url: "https://github.com/sethforprivacy/self-hosted-services",
-    icon: "https://avatars.githubusercontent.com/u/40500387?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "privacy"
-    ],
-    name: "Self Hosted Services",
-    description: "A core set of privacy-preserving services that can be easily self-hosted via Docker Compose",
-    path: [
-      "privacy",
-      "github"
-    ],
-    hash: "7f602e784ac462106e7d436967557190abed3fa8"
-  },
-  {
-    url: "https://gitlab.com/thenewoil",
-    icon: "https://gitlab.com/uploads/-/system/group/avatar/12232948/thenewoillogo.png",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "privacy"
-    ],
-    name: "The new oil",
-    description: "A project dedicated to teaching beginners and non-tech-savvy people about digital privacy and cybersecurity",
-    path: [
-      "privacy",
-      "github"
-    ],
-    hash: "02e01ef699b3165e5ec1a90e7fd4f9ec91101344"
-  },
-  {
-    url: "https://github.com/Lissy93/personal-security-checklist",
-    icon: "https://avatars.githubusercontent.com/u/1862727?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "privacy",
-      "security"
-    ],
-    name: "Personal Security Checklist",
-    description: "A curated checklist of 300+ tips for protecting digital security and privacy in 2022",
-    path: [
-      "privacy",
-      "github"
-    ],
-    hash: "04038532f6df493a278f0a276ae31a7633b4ed7d"
-  },
-  {
     url: "https://sms-activate.org/en/",
     icon: "https://smsactivate.s3.eu-central-1.amazonaws.com/assets/img/activate_favicon32.png",
     lang: "eng",
@@ -631,246 +241,84 @@ export const domain = [
     hash: "2ad1c1c5be6cd42dd92cb223bec7659434fe061a"
   },
   {
-    url: "https://estudiobitcoin.com/",
-    icon: "/public/img/favicon/estudio-bitcoin.png",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "Estudio Bitcoin",
-    description: "Es un espacio en español con todos los recursos necesarios para empezar y profundizar en Bitcoin",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "24e2a40a0aea9f533c936b0f32ace5f7637cef4e"
-  },
-  {
-    url: "https://www.keepitsimplebitcoin.com/",
-    icon: "https://www.keepitsimplebitcoin.com/wp-content/uploads/2020/05/KIS_logo_wht_on_transp_back.svg",
+    url: "https://ctfacademy.github.io/index.htm",
+    icon: "https://ctfacademy.github.io/src/Logo.svg",
     lang: "eng",
     tags: [
-      ""
+      "security",
+      "crytography"
     ],
-    name: "KeepItSimplyBitcoin",
-    description: "Learn how to interact with bitcoin through videos",
+    name: "CTFA",
+    description: "Cyber Training Force Academy is an elite training platform for tomorrow’s cyber-defenders",
     path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "e41eb0d3840a4356e9faef75488f049fda09a8d1"
-  },
-  {
-    url: "https://blockmit.com/",
-    icon: "https://blockmit.com/wp-content/uploads/2020/04/block1.png",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "Blockmit",
-    description: "Creador de uno de los sistemas mas populares para la autocustodia de tus llaves privadas",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "464b3b839218e47b7c4ab3e71743014100ed2669"
-  },
-  {
-    url: "https://www.econoalchemist.com/",
-    icon: "name",
-    lang: "eng",
-    tags: [
       "privacy",
-      "custody",
-      "mining"
+      "cryptography"
     ],
-    name: "econoalchemist",
-    description: "Bitcoin, Self Custody, & Censorship Resistance",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "c50e4ca16405f91d1fe4123e19df87a17c1ad137"
+    hash: "e148ec9a98456f520b13717a2e739f61d5fb1800"
   },
   {
-    url: "https://www.lopp.net/",
-    icon: "https://www.gravatar.com/avatar/0ed4d58d7e7f013cd93270f3c496f484?s=250&d=mm&r=x",
+    url: "https://hashcat.net/hashcat/",
+    icon: "https://hashcat.net/s/i/hashcat-icon.png",
     lang: "eng",
     tags: [
+      "security",
+      "crytography"
+    ],
+    name: "Hashcat",
+    description: "Advanced Password Recovery",
+    path: [
       "privacy",
-      "custody",
-      "mining"
+      "cryptography"
     ],
-    name: "Jameson Lopp",
-    description: "His mission is to use his skills as a technologist to build tools that empower individuals",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "a1b004e78d5c83955425086f81749a60542dff96"
+    hash: "67c91359704cdfce3120cb44705824dc90fc3ff1"
   },
   {
-    url: "https://k3tan.com/",
-    icon: "https://k3tan.com/bl-themes/darktheme//img/favicon.png",
+    url: "https://sec.eff.org/",
+    icon: "https://sec.eff.org/assets/sec-logo-b995e36e8ed11a0a5115719a246f8cb0631efa6fad87e213951c79d2b672720c.png",
     lang: "eng",
     tags: [
-      "nodes",
-      "custody"
+      "security",
+      "crytography"
     ],
-    name: "K3tan",
-    description: "Bitcoin | FOSS",
+    name: "Security Education Companion",
+    description: "A free resource for digital security educators",
     path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "c2b1a31ccc5af2af4ba317b12108fb8b200ca9ae"
-  },
-  {
-    url: "https://diverter.hostyourown.tools/",
-    icon: "https://diverter.hostyourown.tools/content/images/size/w150/2021/07/1611626619256.jpg",
-    lang: "eng",
-    tags: [
-      "nodes",
-      "custody"
-    ],
-    name: "Diverter",
-    description: "Focused on bitcoin, privacy, and censorship resistance. Use the tools.",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "596c64fc0f09710a1992299c6678b131908aba2e"
-  },
-  {
-    url: "https://thebatzuk.wordpress.com/",
-    icon: "none",
-    lang: "esp",
-    tags: [],
-    name: "The Batzuk",
-    description: "Mechatronics engineer, cnc programmer, punk and bitcoiner",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "3712f63b37a3fd480839525ca3f67f0441d447e4"
-  },
-  {
-    url: "https://bitcoiner.guide/",
-    icon: "https://bitcoiner.guide/favicon.ico",
-    lang: "eng",
-    tags: [
       "privacy",
-      "tools",
-      ""
+      "cryptography"
     ],
-    name: "Bitcoiner Guide",
-    description: "A collection of its contributions that it can point people towards when starting out. If you find it valuable, please share it with your peers.",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "6f1393158d883e42904e4ea1867736c6f3626dc1"
+    hash: "87b40f2f1d843460edbca866948fbfcc9446a7f7"
   },
   {
-    url: "https://bitcoin.cipix.eu/",
-    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5993420-c6c3-4610-9186-a6d102e51577_250x250.png",
+    url: "https://asecuritysite.com/",
+    icon: "https://asecuritysite.com/favicon.ico",
     lang: "eng",
     tags: [
+      "security",
+      "crytography"
+    ],
+    name: "A Security Site",
+    description: "This site was created as there is a real lack of engaging content within the theoretical and practical applications of cryptography on the Internet, especially in covering complex principles in an easy-to-access way",
+    path: [
       "privacy",
-      "tools",
-      "guide"
+      "cryptography"
     ],
-    name: "Bitcoin - Soberania Financiera",
-    description: "En primer lugar, lo siento por el diseño web de mierda, pero el objetivo de esta web no es ser elegante, y es mejor que lo veas en los navegadores de escritorio, en los móviles se ve realmente horrible, lo sé",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "2742b48dfd508b09b82dd5310b1d6f47240ded91"
+    hash: "6c073100b55e9c4673dbd065c7b917d30b68b69a"
   },
   {
-    url: "https://dinerosinreglas.com/",
-    icon: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://dinerosinreglas.com/wp-content/uploads/2021/03/DecentraIcon200x200.png",
-    lang: "esp",
+    url: "https://www.geeksforgeeks.org/cryptography-introduction/?ref=lbp",
+    icon: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_favicon.png",
+    lang: "eng",
     tags: [
+      "security",
+      "crytography"
+    ],
+    name: "Geeks for Geeks",
+    description: "A computer science portal for geeks",
+    path: [
       "privacy",
-      "tools",
-      "guide",
-      "on-chain"
+      "cryptography"
     ],
-    name: "Dinero sin reglas",
-    description: "Es un apasionado de la tecnología y del cómo esto nos puede ayudar a ser mejores. Desde que conocio Bitcoin le ha vuelto un fan de sus conceptos, su filosofía y de toda la tecnología que emerge a su alrededor.",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "44ba627bf403ce5943d3a4990f1b6ef35ae51229"
-  },
-  {
-    url: "https://darthcoin.substack.com/archive",
-    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5993420-c6c3-4610-9186-a6d102e51577_250x250.png",
-    lang: "eng",
-    tags: [
-      "cli-wallet",
-      "on-chain"
-    ],
-    name: "Darth Coin",
-    description: "Just an old bitcoiner (toxic) maximalist, that from 2012 (when started with Bitcoin) was an unknown identity in Bitcoinlandia. But starting with 2019 decided to go out and start helping newbies and onboard more nocoiners into Bitcoin (so far 400+ new bitcoiners created in the last 2 years).",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "a7471b1d0004481c8952c406be004653311c8917"
-  },
-  {
-    url: "https://learnmeabitcoin.com/",
-    icon: "https://learnmeabitcoin.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "bitcoin",
-      "on-chain",
-      "learn"
-    ],
-    name: "Learn Me Bitcoin",
-    description: "I have no official qualification in Bitcoin. I've just read a lot of code, written a lot of code, and asked a lot of questions. Everything I know about bitcoin comes from practice. Also, I am cool",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "384bc2f3dd926d7f0fe584aad58c1b8d90a40ce1"
-  },
-  {
-    url: "https://preguntasbitcoin.com/",
-    icon: "https://preguntasbitcoin.com/preguntas_bitcoin/img/pb_stamp.png",
-    lang: "esp",
-    tags: [
-      "bitcoin",
-      "questions",
-      "q&a"
-    ],
-    name: "Preguntas Bitcoin",
-    description: "Envíanos tu pregunta rellenando el formulario y en las próximas 24 horas tendrás respuesta de un miembro de la comunidad hispana de Bitcoin",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "7c5ef299dd8bb39ea2281e596beafee693bd92e1"
-  },
-  {
-    url: "https://river.com/learn/",
-    icon: "https://blog.river.com/favicon.ico",
-    lang: "esp",
-    tags: [
-      "bitcoin",
-      "learn"
-    ],
-    name: "River",
-    description: "Bitcoin Learning Center",
-    path: [
-      "bitcoin",
-      "guides"
-    ],
-    hash: "a43310d3f4608171217b565620c69cafc9d2ab27"
+    hash: "da3550a277fd61a6f19e83ebbf3b027672be6614"
   },
   {
     url: "https://calyxinstitute.org/",
@@ -1072,6 +520,460 @@ export const domain = [
       "os"
     ],
     hash: "4ca5ba27ca9ceefea063833be7776085ecd4c7bb"
+  },
+  {
+    url: "https://1984.hosting/",
+    icon: "https://1984.hosting/static/images/1984-logo.svg",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "1984",
+    description: "Virtual Private Server with 1984 is highly reliable and very stable. Our VPSs run on enterprise-level hardware in highly secure Icelandic data centers",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "56b219447faab47c6de69688f3b14900389e5ef3"
+  },
+  {
+    url: "https://njal.la/",
+    icon: "https://njal.la/favicon.ico",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "njalla",
+    description: "Considered the worlds most notorious Privacy as a Service provider for domains, VPS' and VPNs",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "ecd4ab02e83b3d3361b9e55f81e6ee34f8275b97"
+  },
+  {
+    url: "https://bahnhof.cloud/",
+    icon: "https://bahnhof.cloud/wp-content/uploads/2021/11/01_BL_OR_Bahnhof_RGB-1.svg",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "Bahnhof",
+    description: "Your own secure, fast and scalable cloud in Sweden",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "0a52f6235eb796f336295a270af0af372d88f452"
+  },
+  {
+    url: "https://www.orangewebsite.com/offshore-hosting.php/",
+    icon: "https://www.orangewebsite.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "OrangeWebsite",
+    description: "Here you can see the offshore web hosting plans that we offer to our customers. Our web hosting servers are protected by the latest security solutions available",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "024d3af59d40a6ce8a760f4fb462b1a661e17035"
+  },
+  {
+    url: "https://www.shinjiru.com/",
+    icon: "https://www.shinjiru.com/wp-content/themes/sjcom_child/assets/img/logo.png",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "Shinjiru",
+    description: "Strongest Protection Web Hosting. Powered with DDoS Protection & Auto Migration System",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "a6b74d95fb2af9090b847aa4f35f12e6ade07991"
+  },
+  {
+    url: "https://yunohost.org/#/",
+    icon: "https://yunohost.org/_assets/logo.png",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "Yunohost",
+    description: "How I met your server? you can easily manage a server for your friends, association or enterprise",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "eb803247208f5654170d9d403891f28b5dd498a7"
+  },
+  {
+    url: "https://nextcloud.com/",
+    icon: "https://nextcloud.com/wp-content/uploads/2022/03/favicon.png",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "NextCloud",
+    description: "The self-hosted productivity platform that keeps you in control",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "54631c677a3dc93d14f7df8617da75058858170c"
+  },
+  {
+    url: "https://freedombox.org/",
+    icon: "https://freedombox.org/images/freedombox-logo-32px.png",
+    lang: "eng",
+    tags: [
+      "vps",
+      "privacy"
+    ],
+    name: "Freedombox",
+    description: "Run your digital services from your home. It is a private server for non-experts",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "cf13cf9b3fbb37faad6da49c37eee93ac9db9384"
+  },
+  {
+    url: "https://contabo.com/en/",
+    icon: "https://contabo.com/favicon.png",
+    lang: "eng",
+    tags: [
+      "vps"
+    ],
+    name: "Contabo",
+    description: "Cloud Instances and Dedicated Servers for All. Get more computing power for less.",
+    path: [
+      "privacy",
+      "vps"
+    ],
+    hash: "4b62b97aa660afcbe57dfded0f97778319e8cdd7"
+  },
+  {
+    url: "https://github.com/sunknudsen/privacy-guides",
+    icon: "https://avatars.githubusercontent.com/u/2117655",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "privacy"
+    ],
+    name: "Privacy Guides",
+    description: "Most privacy guides episodes published on YouTube do not need reference material, but when they do, it lands here",
+    path: [
+      "privacy",
+      "github"
+    ],
+    hash: "1beedfc489932165fc8f85cf6b09b70c07b77a19"
+  },
+  {
+    url: "https://github.com/sethforprivacy/self-hosted-services",
+    icon: "https://avatars.githubusercontent.com/u/40500387?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "privacy"
+    ],
+    name: "Self Hosted Services",
+    description: "A core set of privacy-preserving services that can be easily self-hosted via Docker Compose",
+    path: [
+      "privacy",
+      "github"
+    ],
+    hash: "7f602e784ac462106e7d436967557190abed3fa8"
+  },
+  {
+    url: "https://gitlab.com/thenewoil",
+    icon: "https://gitlab.com/uploads/-/system/group/avatar/12232948/thenewoillogo.png",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "privacy"
+    ],
+    name: "The new oil",
+    description: "A project dedicated to teaching beginners and non-tech-savvy people about digital privacy and cybersecurity",
+    path: [
+      "privacy",
+      "github"
+    ],
+    hash: "02e01ef699b3165e5ec1a90e7fd4f9ec91101344"
+  },
+  {
+    url: "https://github.com/Lissy93/personal-security-checklist",
+    icon: "https://avatars.githubusercontent.com/u/1862727?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "privacy",
+      "security"
+    ],
+    name: "Personal Security Checklist",
+    description: "A curated checklist of 300+ tips for protecting digital security and privacy in 2022",
+    path: [
+      "privacy",
+      "github"
+    ],
+    hash: "04038532f6df493a278f0a276ae31a7633b4ed7d"
+  },
+  {
+    url: "https://estudiobitcoin.com/",
+    icon: "/public/img/favicon/estudio-bitcoin.png",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "Estudio Bitcoin",
+    description: "Es un espacio en español con todos los recursos necesarios para empezar y profundizar en Bitcoin",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "24e2a40a0aea9f533c936b0f32ace5f7637cef4e"
+  },
+  {
+    url: "https://www.keepitsimplebitcoin.com/",
+    icon: "https://www.keepitsimplebitcoin.com/wp-content/uploads/2020/05/KIS_logo_wht_on_transp_back.svg",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "KeepItSimplyBitcoin",
+    description: "Learn how to interact with bitcoin through videos",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "e41eb0d3840a4356e9faef75488f049fda09a8d1"
+  },
+  {
+    url: "https://blockmit.com/",
+    icon: "https://blockmit.com/wp-content/uploads/2020/04/block1.png",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "Blockmit",
+    description: "Creador de uno de los sistemas mas populares para la autocustodia de tus llaves privadas",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "464b3b839218e47b7c4ab3e71743014100ed2669"
+  },
+  {
+    url: "https://www.econoalchemist.com/",
+    icon: "https://images-wixmp-7ef3383b5fd80a9f5a5cc686.wixmp.com/5f5f18ac-c971-4321-b80e-79177199dddb/1603678440900-IMG_3029.jpeg/v1/fill/w_320,h_320/file.jpg",
+    lang: "eng",
+    tags: [
+      "privacy",
+      "custody",
+      "mining"
+    ],
+    name: "econoalchemist",
+    description: "Bitcoin, Self Custody, & Censorship Resistance",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "c50e4ca16405f91d1fe4123e19df87a17c1ad137"
+  },
+  {
+    url: "https://www.lopp.net/",
+    icon: "https://www.gravatar.com/avatar/0ed4d58d7e7f013cd93270f3c496f484?s=250&d=mm&r=x",
+    lang: "eng",
+    tags: [
+      "privacy",
+      "custody",
+      "mining"
+    ],
+    name: "Jameson Lopp",
+    description: "His mission is to use his skills as a technologist to build tools that empower individuals",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "a1b004e78d5c83955425086f81749a60542dff96"
+  },
+  {
+    url: "https://k3tan.com/",
+    icon: "https://k3tan.com/bl-themes/darktheme//img/favicon.png",
+    lang: "eng",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "K3tan",
+    description: "Bitcoin | FOSS",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "c2b1a31ccc5af2af4ba317b12108fb8b200ca9ae"
+  },
+  {
+    url: "https://diverter.hostyourown.tools/",
+    icon: "https://diverter.hostyourown.tools/content/images/size/w150/2021/07/1611626619256.jpg",
+    lang: "eng",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "Diverter",
+    description: "Focused on bitcoin, privacy, and censorship resistance. Use the tools.",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "596c64fc0f09710a1992299c6678b131908aba2e"
+  },
+  {
+    url: "https://thebatzuk.wordpress.com/",
+    icon: "none",
+    lang: "esp",
+    tags: [],
+    name: "The Batzuk",
+    description: "Mechatronics engineer, cnc programmer, punk and bitcoiner",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "3712f63b37a3fd480839525ca3f67f0441d447e4"
+  },
+  {
+    url: "https://bitcoiner.guide/",
+    icon: "https://bitcoiner.guide/favicon.ico",
+    lang: "eng",
+    tags: [
+      "privacy",
+      "tools",
+      ""
+    ],
+    name: "Bitcoiner Guide",
+    description: "A collection of its contributions that it can point people towards when starting out. If you find it valuable, please share it with your peers.",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "6f1393158d883e42904e4ea1867736c6f3626dc1"
+  },
+  {
+    url: "https://bitcoin.cipix.eu/",
+    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5993420-c6c3-4610-9186-a6d102e51577_250x250.png",
+    lang: "eng",
+    tags: [
+      "privacy",
+      "tools",
+      "guide"
+    ],
+    name: "Bitcoin - Soberania Financiera",
+    description: "En primer lugar, lo siento por el diseño web de mierda, pero el objetivo de esta web no es ser elegante, y es mejor que lo veas en los navegadores de escritorio, en los móviles se ve realmente horrible, lo sé",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "2742b48dfd508b09b82dd5310b1d6f47240ded91"
+  },
+  {
+    url: "https://dinerosinreglas.com/",
+    icon: "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img/https://dinerosinreglas.com/wp-content/uploads/2021/03/DecentraIcon200x200.png",
+    lang: "esp",
+    tags: [
+      "privacy",
+      "tools",
+      "guide",
+      "on-chain"
+    ],
+    name: "Dinero sin reglas",
+    description: "Es un apasionado de la tecnología y del cómo esto nos puede ayudar a ser mejores. Desde que conocio Bitcoin le ha vuelto un fan de sus conceptos, su filosofía y de toda la tecnología que emerge a su alrededor.",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "44ba627bf403ce5943d3a4990f1b6ef35ae51229"
+  },
+  {
+    url: "https://darthcoin.substack.com/archive",
+    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fc5993420-c6c3-4610-9186-a6d102e51577_250x250.png",
+    lang: "eng",
+    tags: [
+      "cli-wallet",
+      "on-chain"
+    ],
+    name: "Darth Coin",
+    description: "Just an old bitcoiner (toxic) maximalist, that from 2012 (when started with Bitcoin) was an unknown identity in Bitcoinlandia. But starting with 2019 decided to go out and start helping newbies and onboard more nocoiners into Bitcoin (so far 400+ new bitcoiners created in the last 2 years).",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "a7471b1d0004481c8952c406be004653311c8917"
+  },
+  {
+    url: "https://learnmeabitcoin.com/",
+    icon: "https://learnmeabitcoin.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "on-chain",
+      "learn"
+    ],
+    name: "Learn Me Bitcoin",
+    description: "I have no official qualification in Bitcoin. I've just read a lot of code, written a lot of code, and asked a lot of questions. Everything I know about bitcoin comes from practice. Also, I am cool",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "384bc2f3dd926d7f0fe584aad58c1b8d90a40ce1"
+  },
+  {
+    url: "https://preguntasbitcoin.com/",
+    icon: "https://preguntasbitcoin.com/preguntas_bitcoin/img/pb_stamp.png",
+    lang: "esp",
+    tags: [
+      "bitcoin",
+      "questions",
+      "q&a"
+    ],
+    name: "Preguntas Bitcoin",
+    description: "Envíanos tu pregunta rellenando el formulario y en las próximas 24 horas tendrás respuesta de un miembro de la comunidad hispana de Bitcoin",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "7c5ef299dd8bb39ea2281e596beafee693bd92e1"
+  },
+  {
+    url: "https://river.com/learn/",
+    icon: "https://blog.river.com/favicon.ico",
+    lang: "esp",
+    tags: [
+      "bitcoin",
+      "learn"
+    ],
+    name: "River",
+    description: "Bitcoin Learning Center",
+    path: [
+      "bitcoin",
+      "guides"
+    ],
+    hash: "a43310d3f4608171217b565620c69cafc9d2ab27"
   },
   {
     url: "https://bitcoindevkit.org/",
@@ -1300,147 +1202,722 @@ export const domain = [
     hash: "5630f93cadebbebd16afc1db652b6144177c6e26"
   },
   {
-    url: "https://1984.hosting/",
-    icon: "https://1984.hosting/static/images/1984-logo.svg",
+    url: "https://6102bitcoin.com/",
+    icon: "https://s3.amazonaws.com/keybase_processed_uploads/6de09c581392ec82bbcb44ffd0655905_360_360.jpg",
     lang: "eng",
     tags: [
-      "vps",
       "privacy"
     ],
-    name: "1984",
-    description: "Virtual Private Server with 1984 is highly reliable and very stable. Our VPSs run on enterprise-level hardware in highly secure Icelandic data centers",
+    name: "6102bitcoin",
+    description: "A pseudonymous bitcoin user and educator doing what I can to accelerate bitcoin understanding",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "articles"
     ],
-    hash: "56b219447faab47c6de69688f3b14900389e5ef3"
+    hash: "13d8912a4751bdef7257d23c1d2aa5d092fcfa84"
   },
   {
-    url: "https://njal.la/",
-    icon: "https://njal.la/favicon.ico",
+    url: "https://dergigi.com/bitcoin/",
+    icon: "https://dergigi.com/assets/images/avatar.jpg",
     lang: "eng",
     tags: [
-      "vps",
+      ""
+    ],
+    name: "Dergigi",
+    description: "I am a bitcoiner and software engineer, writing words and code for Bitcoin",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "0b92bfe2e6e0fcfadf51ef777de136d4236e24d4"
+  },
+  {
+    url: "https://brandonquittem.com/",
+    icon: "https://pbs.twimg.com/profile_images/1502403738861940736/9J5VuTye_400x400.jpg",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Brandon Quitten",
+    description: "My superpower is taking complex information and turning it into simple, actionable, intelligence.",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "e9b31612b33dbfce181dac5bb470e0dd2bec0b05"
+  },
+  {
+    url: "https://linktr.ee/Svetski",
+    icon: "https://d1fdloi71mui9q.cloudfront.net/NWqdNGadQaJfYkVZ9thI_D2Wcm7E6VunWUHvq",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Aleks Svetski",
+    description: "Author, Speaker, Entrepreneur. Bitcoin, Philosophy, Frame, Psychology, History",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "210d99b620efdfc28e6fc987bdd5bcf57461ad2d"
+  },
+  {
+    url: "https://sovereignstack.tools/",
+    icon: "https://soverainstack.files.wordpress.com/2021/09/cropped-logo1.jpg",
+    lang: "eng",
+    tags: [
+      "books",
+      "articles"
+    ],
+    name: "Sovereign Stack",
+    description: "Take Back What's Yours",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "eb605a786a71752e124f3a9a944523c33c5bce92"
+  },
+  {
+    url: "https://bitcoinwords.github.io/",
+    icon: "https://bitcoinwords.github.io/assets/words-logos/wordsblackoutline-88.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Bitcoin Words",
+    description: "WORDS is one of the founding journals of Bitcoin thought. The mission of the project is to spread and preserve the writings about Bitcoin for future generations.",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "799ef764ae79a81fb311b1b4eb7fec36e58ceee1"
+  },
+  {
+    url: "https://unchained.com/blog/",
+    icon: "https://mynodebtc.com/images/app_icons/caravan.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Unchained Capital",
+    description: "Unchained Capital is a bitcoin native financial services company. We offer collaborative custody multisignature vaults and collateralized loans designed for long-term bitcoin holders.",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "4b647d0c19743afec41dd0665acf1ff1bd8138f1"
+  },
+  {
+    url: "https://insights.glassnode.com/",
+    icon: "https://insights.glassnode.com/content/images/size/w256h256/2019/06/500px-square.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Glassnode Insights",
+    description: "On-Chain Data and Intelligence Platform",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "266baed0f077b41dac5eb4ef1804212ef3b2c26e"
+  },
+  {
+    url: "https://blog.keys.casa/",
+    icon: "https://keys.casa/images/casaclogo.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "CasaBlog",
+    description: "The Secure Home for your Bitcoin",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "88c02269556713e3ba5631ec30f44e3d807a2079"
+  },
+  {
+    url: "https://bitblioteca.com/",
+    icon: "https://bitblioteca.com/wp-content/uploads/2022/03/cropped-cropped-Logo-simbolo-light.png",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "La Bitloteca",
+    description: "Una nueva manera de aprender sobre Bitcoin. Traducimos el mejor contenido sobre Bitcoin al español",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "86bf3315f8814c79ca313522d97fa32c350f3ae1"
+  },
+  {
+    url: "https://hodlermag.com",
+    icon: "https://hodlermag.com/wp-content/uploads/2021/09/favicon.png",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "HodlerMag",
+    description: "Un espectro se cierne sobre el dinero, el espectro de bitcoin",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "d3ad208bb09b5d4cfb6e60626a3827e8b4e34fa9"
+  },
+  {
+    url: "https://b10c.me/",
+    icon: "https://b10c.me/0xb10c.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "b10c",
+    description: "I’m 0xB10C. I work fulltime on open-source Bitcoin projects and are currently funded through community donations and by a Coinbase Bitcoin Developer Grant for the year 2021",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "3ece2c481d77f30a7ada7fdfb28c25822c27ca9f"
+  },
+  {
+    url: "https://nakamotoinstitute.org/",
+    icon: "https://timechainstats.com/img/img-11d.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Nakamoto Institute",
+    description: "I have been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party...",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "78c7474d3dcb1f8d4fd67d7a95ee4a56a02c0e03"
+  },
+  {
+    url: "https://juandemariana.org/author/alvarodmaria/",
+    icon: "https://juandemariana.org/wp-content/uploads/2022/01/Ilustracio%CC%81n-sin-ti%CC%81tulo-1-300x300.jpg",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "Alvaro D.Maria",
+    description: "Es autor de La filosofia de Bitcoin y esta trabajando ahora en escribir Micropolis",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "46512cfd59514d3ce7144dff6f2c223b637386bc"
+  },
+  {
+    url: "https://juandemariana.org/author/manuel-garcia-de-polavieja/",
+    icon: "https://juandemariana.org/wp-content/uploads/2021/01/picture-2614-1544548630.png",
+    lang: "esp",
+    tags: [
+      ""
+    ],
+    name: "Manuel Polavieja",
+    description: "Como eterno estudiante en liberalismo y teoría monetaria descubre Bitcoin en 2011 y pasa a ser su principal elemento de estudio con el objetivo de analizar hasta qué punto nos podría ayudar a alcanzar la nuestra libertad económica al margen del Estado",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "037d59a930ff16f33777afa621dfb0811b017adf"
+  },
+  {
+    url: "https://galoy.io/blog-posts/",
+    icon: "https://galoy.io/wp-content/uploads/2022/04/cropped-Galoy-Current-Logo-Square-Blue@2x-32x32.png",
+    lang: "eng",
+    tags: [
+      ""
+    ],
+    name: "Galoy",
+    description: "We share insights, guides and articles about onboarding communities and institutions to Bitcoin and the Lightning Network",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "89b3527e7ed11fdb735b693c19b04a90fad0b1e7"
+  },
+  {
+    url: "https://europeanbitcoiners.com/",
+    icon: "https://europeanbitcoiners.com/content/images/size/w256h256/2022/04/logo2-1.png",
+    lang: "eng",
+    tags: [
+      "articles"
+    ],
+    name: "European Bitcoiners",
+    description: "Block 731398 is an education and community initiative to bring together all European Plebs and those who want to learn about Bitcoin",
+    path: [
+      "bitcoin",
+      "articles"
+    ],
+    hash: "7aa924c851d7da51c5605b570bc3d51b38886e50"
+  },
+  {
+    url: "https://bitcoin-only.com/",
+    icon: "https://bitcoin-only.com/favicon.png",
+    lang: "eng",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "Bitcoin-only",
+    description: "A collection of the highest quality Bitcoin resources",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "1f848575e419fa9350d9655fff796d6257451a56"
+  },
+  {
+    url: "https://bitcoin-resources.com/",
+    icon: "https://bitcoin-resources.com/assets/images/avatar.png",
+    lang: "eng",
+    tags: [
+      "books",
+      "articles"
+    ],
+    name: "Bitcoin Resources",
+    description: "Bitcoin Resources is a free open-source project curated by volunteers",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "616a9086085007a10f286c57603ba6cbc10646b5"
+  },
+  {
+    url: "https://bitcoinminds.org/",
+    icon: "https://bitcoinminds.org/img/brand/bitcoin-logo.png",
+    lang: "eng",
+    tags: [
+      "books",
+      "articles"
+    ],
+    name: "Bitcoin Minds",
+    description: "It is the most comprehensive list of Bitcoin resources online, updated regularly.",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "486994275d447b2caafff0d9d9029f21d3282e05"
+  },
+  {
+    url: "https://bgeometrics.github.io/bitcoin_bookmarks_es.html",
+    icon: "https://bitcoinminds.org/img/brand/bitcoin-logo.png",
+    lang: "esp",
+    tags: [
+      "books",
+      "articles"
+    ],
+    name: "Bitcoin Bookmarks",
+    description: "Enlaces y recursos sobre Bitcoin en español",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "30f304ca2b702c0b9dcfd6a73dc6a906bc17e330"
+  },
+  {
+    url: "https://btclexicon.com/",
+    icon: "https://btclexicon.com/wp-content/uploads/2021/03/logo-8.png?3a343a&3a343a",
+    lang: "eng",
+    tags: [
+      "books",
+      "articles"
+    ],
+    name: "BTCLexicon",
+    description: "Dictionary to learn About Bitcoin. Comprehensive Bitcoin Knowledge Base",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "9f7926104fab6eddcd3fa0b32834eef353924d15"
+  },
+  {
+    url: "https://endthefud.org/",
+    icon: "https://cdn-icons-png.flaticon.com/512/1468/1468144.png",
+    lang: "eng",
+    tags: [
+      "articles"
+    ],
+    name: "EndTheFUD",
+    description: "The best links to articles debunking Bitcoin FUD",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "606453fcf8590b3e9da732d74c47696f1c627fae"
+  },
+  {
+    url: "https://www.getbitcoin.org/",
+    icon: "https://assets.website-files.com/621f36817af7cb248425e984/62443cc39860d9da650a8e91_Frame%203.png",
+    lang: "eng",
+    tags: [
+      "articles"
+    ],
+    name: "Get Bitcoin",
+    description: "Bitcoin gives human rights. So we are giving it away. Get your first bitcoin",
+    path: [
+      "bitcoin",
+      "resources"
+    ],
+    hash: "7ac45cce6f0837054a536e652b4228ef0753d812"
+  },
+  {
+    url: "https://lunaticoin.com/reproductor",
+    icon: "https://lunaticoin.com/wp-content/uploads/2022/01/1037971-1642694615087-137d6f269075f-1024x1024.jpg",
+    lang: "esp",
+    tags: [
+      "podcast",
+      "privacy",
+      "security",
+      "economy",
+      "liberty",
+      "technical"
+    ],
+    name: "Lunaticoin",
+    description: "Entusiasta Bitcoin | Conecta con personas de habla hispana con perfil propio dentro del mundo #bitcoin y comparte su valor",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "aad5fa7f79c69e435f27b68e322249d633a7df78"
+  },
+  {
+    url: "https://stephanlivera.com/episodes/",
+    icon: "https://i0.wp.com/stephanlivera.com/wp-content/uploads/2020/05/StephanLivera-Podcast-Img.png?resize=510%2C510&ssl=1",
+    lang: "eng",
+    tags: [
+      "podcast"
+    ],
+    name: "Stephan Libera",
+    description: "SLP is focused on educational interviews about the economics and technology of Bitcoin. Stephan has interviewed many high profile Bitcoin, Libertarian, Austrian economics and Macro guests",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "e6eac1e621dea57c51e614c352e0b7623ece3d53"
+  },
+  {
+    url: "https://tftc.io/podcasts/",
+    icon: "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/797160/797160-1579811341935-88e5cd5024bf9.jpg",
+    lang: "eng",
+    tags: [
       "privacy"
     ],
-    name: "njalla",
-    description: "Considered the worlds most notorious Privacy as a Service provider for domains, VPS' and VPNs",
+    name: "Tales from the Crypt",
+    description: "Tales from the Crypt is a podcast about Bitcoin hosted by Marty Bent",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "ecd4ab02e83b3d3361b9e55f81e6ee34f8275b97"
+    hash: "967f08fafea50f0145d28910e07fac254515171e"
   },
   {
-    url: "https://bahnhof.cloud/",
-    icon: "https://bahnhof.cloud/wp-content/uploads/2021/11/01_BL_OR_Bahnhof_RGB-1.svg",
+    url: "https://citadeldispatch.com/",
+    icon: "https://citadeldispatch.com/wp-content/uploads/2021/04/cropped-cit2color.png",
     lang: "eng",
     tags: [
-      "vps",
+      "privacy",
+      "open source"
+    ],
+    name: "Citadel Dispatch",
+    description: "An interactive live show about bitcoin, distributed systems, privacy, and open source software",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "64ec160be2b7932e44bb253efb6b837c88d5f44d"
+  },
+  {
+    url: "https://www.whatbitcoindid.com/",
+    icon: "https://images.squarespace-cdn.com/content/v1/59641a28ff7c5099c12a5eda/1571514679601-G5QKQLVUEFOQ7OBQTYL4/WBD-Lightning-Logo.png?format=1500w",
+    lang: "eng",
+    tags: [
+      "podcast",
+      "privacy",
+      "adoption"
+    ],
+    name: "What Bitcoin Did",
+    description: "The What Bitcoin Did Podcast is a tri-weekly Bitcoin podcast where host Peter McCormack interviews experts in the world of Bitcoin development, privacy, investment and adoption",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "94379010827bc92de68c6d48f722be8cf7d9b9bc"
+  },
+  {
+    url: "https://bit-buy-bit.libsyn.com/",
+    icon: "https://assets.libsyn.com/secure/content/120649532/?height=80",
+    lang: "eng",
+    tags: [
+      "podcast",
+      "privacy",
+      "adoption"
+    ],
+    name: "BIT-BUY-BIT",
+    description: "Bitcoin is misunderstood, multifaceted, complex and evolving at a staggering rate. Show host Max Buybit and guests discus its impact on the world and help dispel the myths surrounding bitcoin, blockchain and banking",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "6f1f2019fa73c39826ee18c8fdeb42cc9d5ab059"
+  },
+  {
+    url: "https://www.seetee.io/podcast/",
+    icon: "https://www.seetee.io/assets/blog/2021-03-08-shareholder-letter/thumbnail.png",
+    lang: "eng",
+    tags: [
+      "podcast",
+      "privacy",
+      "adoption"
+    ],
+    name: "seetee",
+    description: "Closing the Loop is a podcast about Bitcoin. In it, we will be speaking with the entrepreneurs, developers, and thinkers who are contributing to the evolution of this revolutionary technology",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "c37154b13af2767899d935804f2d39c4463f9f5c"
+  },
+  {
+    url: "https://optoutpod.com/",
+    icon: "https://optoutpod.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "podcast",
       "privacy"
     ],
-    name: "Bahnhof",
-    description: "Your own secure, fast and scalable cloud in Sweden",
+    name: "OptOutPodcast",
+    description: "Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "0a52f6235eb796f336295a270af0af372d88f452"
+    hash: "204ef10ff199e7ed43d43a0276910b163991e341"
   },
   {
-    url: "https://www.orangewebsite.com/offshore-hosting.php/",
-    icon: "https://www.orangewebsite.com/favicon.ico",
+    url: "https://nadobtc.libsyn.com/",
+    icon: "https://ssl-static.libsyn.com/p/assets/b/0/b/6/b0b642d92f4f5e1240be95ea3302a6a1/BitcoinMagazine_Explained_CoverArt_3000px.jpg",
     lang: "eng",
     tags: [
-      "vps",
-      "privacy"
+      "podcast",
+      "technical"
     ],
-    name: "OrangeWebsite",
-    description: "Here you can see the offshore web hosting plans that we offer to our customers. Our web hosting servers are protected by the latest security solutions available",
+    name: "Bitcoin Explained",
+    description: "Bitcoin Magazine's Technical editor Aaron van Wirdum teams up with Bitcoin core contributor Sjors Provoost to explain Bitcoin one episode at a time",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "024d3af59d40a6ce8a760f4fb462b1a661e17035"
+    hash: "b85dab5c0b2ad8b90fbb5c426bd954edaedae9e1"
   },
   {
-    url: "https://www.shinjiru.com/",
-    icon: "https://www.shinjiru.com/wp-content/themes/sjcom_child/assets/img/logo.png",
-    lang: "eng",
+    url: "https://unpodcastsobrebitcoin.buzzsprout.com/",
+    icon: "https://storage.buzzsprout.com/variants/uoj865cqitr7tedj86etg4r81zle/b49cbe86cb411762753e730c58953bb88ad958a9d657212c074729b6f04e5463.jpg",
+    lang: "esp",
     tags: [
-      "vps",
-      "privacy"
+      "podcast",
+      "technical"
     ],
-    name: "Shinjiru",
-    description: "Strongest Protection Web Hosting. Powered with DDoS Protection & Auto Migration System",
+    name: "Un podcast sobre Bitcoin",
+    description: "El dinero nos rodea y no lo entendemos. En este podcast habla de bitcoin, de dinero (que es lo mismo), de economía e inversión. Si entiendes cómo funciona el dinero, podrás controlarlo",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "a6b74d95fb2af9090b847aa4f35f12e6ade07991"
+    hash: "1db8512e76746116cad56d2343d7977e8ae1d442"
   },
   {
-    url: "https://yunohost.org/#/",
-    icon: "https://yunohost.org/_assets/logo.png",
-    lang: "eng",
+    url: "https://interescompuesto.club/podcast-interes-compuesto/",
+    icon: "https://interescompuesto.club/wp-content/uploads/logo-barra-menu.png",
+    lang: "esp",
     tags: [
-      "vps",
-      "privacy"
+      "podcast",
+      "bitcoin"
     ],
-    name: "Yunohost",
-    description: "How I met your server? you can easily manage a server for your friends, association or enterprise",
+    name: "Interes Compuesto",
+    description: "Objetivo y filosofía: densidad de contenido útil explicado para todo el mundo",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "eb803247208f5654170d9d403891f28b5dd498a7"
+    hash: "2f0f4f973af16370fddbffff4b227c94bf4df5e2"
   },
   {
-    url: "https://nextcloud.com/",
-    icon: "https://nextcloud.com/wp-content/uploads/2022/03/favicon.png",
+    url: "https://compassmining.io/education/tag/podcast/",
+    icon: "https://pbs.twimg.com/profile_images/1425165074373791744/f2CgInvP_400x400.jpg",
     lang: "eng",
     tags: [
-      "vps",
-      "privacy"
+      "podcast",
+      "mining"
     ],
-    name: "NextCloud",
-    description: "The self-hosted productivity platform that keeps you in control",
+    name: "Compass Mining",
+    description: "Staying on top of all the best Bitcoin, Bitcoin mining, and crypto podcasts is hard. The Compass Mining Media network makes it easy.",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "54631c677a3dc93d14f7df8617da75058858170c"
+    hash: "de6f4910a48c7a9a3939324b1978fd00fdc004ba"
   },
   {
-    url: "https://freedombox.org/",
-    icon: "https://freedombox.org/images/freedombox-logo-32px.png",
-    lang: "eng",
+    url: "https://bitcoinheiros.com/#escute",
+    icon: "https://bitcoinheiros.com/wp-content/uploads/2019/11/cropped-logo_bitcoinheiros-300x265.png",
+    lang: "pt",
     tags: [
-      "vps",
-      "privacy"
+      "podcast"
     ],
-    name: "Freedombox",
-    description: "Run your digital services from your home. It is a private server for non-experts",
+    name: "Bitcoinheiros",
+    description: "O encontro semanal dos bitcoinheiros. Com participação fixa de Allan, Dov, Ivan e Becas - além de convidados muito especiais",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "cf13cf9b3fbb37faad6da49c37eee93ac9db9384"
+    hash: "01c0d865f1428295e3268219d88e88959dc102b3"
   },
   {
-    url: "https://contabo.com/en/",
-    icon: "https://contabo.com/favicon.png",
+    url: "https://simplybitcoin.tv/",
+    icon: "https://simplybitcoin.tv/assets/images/image01.png",
     lang: "eng",
     tags: [
-      "vps"
+      "podcast"
     ],
-    name: "Contabo",
-    description: "Cloud Instances and Dedicated Servers for All. Get more computing power for less.",
+    name: "SimplyBitcoin",
+    description: "Daily Bitcoin news from the perspective of two taco plebs",
     path: [
-      "privacy",
-      "vps"
+      "bitcoin",
+      "podcast"
     ],
-    hash: "4b62b97aa660afcbe57dfded0f97778319e8cdd7"
+    hash: "8f7a2f0a2cea711cc095dcd7957ddc02d4502f0e"
+  },
+  {
+    url: "https://podcast.pau.ninja/",
+    icon: "/public/img/favicon/pau-ninja.png",
+    lang: "esp",
+    tags: [
+      "podcast"
+    ],
+    name: "Pau Ninja Podcast",
+    description: "El podcast multipotencial. Más de 1 millón de escuchas con invitados tan desconocidos como mediáticos",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "b161738ed50e568c2b51852f131ff7b18ce2d7ba"
+  },
+  {
+    url: "https://anchor.fm/WakeUpPod",
+    icon: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2346114/2346114-1615413607091-98cea3261d5f3.jpg",
+    lang: "eng",
+    tags: [
+      "podcast"
+    ],
+    name: "Wake Up by Aleks Svetski",
+    description: " Wake up is dedicated to helping ensure V for Vendetta and 1984 remain works of fiction. Topics will include Bitcoin, Money, Freedom, Philosophy, Psychology, Science, Ethics & more",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "598ca197d80c7bf26d6b49dc4b51ceeb2cf2d01e"
+  },
+  {
+    url: "https://www.ivoox.com/en/podcast-cadena-bloques_sq_f11164235_1.html",
+    icon: "https://static-1.ivoox.com/canales/4/8/5/8/5431644158584_XL.jpg",
+    lang: "esp",
+    tags: [
+      "podcast"
+    ],
+    name: "La Cadena de Bloques",
+    description: "Aquí aprenderás qué es bitcoin y por qué es importante, aplicaciones prácticas y todo eso sin perderte nada de la actualidad",
+    path: [
+      "bitcoin",
+      "podcast"
+    ],
+    hash: "b6b4392fd21dcfc53db9dad254d0ffe3900cdcbd"
+  },
+  {
+    url: "https://www.rsk.co/",
+    icon: "https://www.rsk.co/img/rsk_logo.svg",
+    lang: "eng",
+    tags: [
+      "sidechains",
+      "bitcoin"
+    ],
+    name: "RSK",
+    description: "Bitcoin users now can lend, borrow, trade and earn interest on their Bitcoin. The future of finance is decentralized",
+    path: [
+      "bitcoin",
+      "sidechains"
+    ],
+    hash: "1388c75e7323febd9356adf6c99765a315fd1395"
+  },
+  {
+    url: "https://moneyonchain.com/es/",
+    icon: "https://moneyonchain.com/wp-content/uploads/2021/07/logo_isotipo.svg",
+    lang: "eng",
+    tags: [
+      "sidechains",
+      "bitcoin"
+    ],
+    name: "MoC",
+    description: "Improve the performance of your bitcoins while retaining full control of your private keys",
+    path: [
+      "bitcoin",
+      "sidechains"
+    ],
+    hash: "728c8dbd052f0c3df8b9207d1a3decfbb31e7874"
+  },
+  {
+    url: "https://tropykus.com/",
+    icon: "https://tropykus.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "sidechains",
+      "bitcoin"
+    ],
+    name: "Tropykus",
+    description: "Tropykus let you buy and save with digital dollars to avoid the decrease of value of your savings in local currency",
+    path: [
+      "bitcoin",
+      "sidechains"
+    ],
+    hash: "758beb962b4a5e687bd59f25fa012b0b1bc479ec"
+  },
+  {
+    url: "https://www.sovryn.app/",
+    icon: "https://assets.website-files.com/61b362d5aad9bd2745f408ef/61fbb2b9321e3f25cf614d62_favicon-32x32.png",
+    lang: "eng",
+    tags: [
+      "sidechains",
+      "bitcoin"
+    ],
+    name: "Sovryn",
+    description: "True to Satoshi's vision, we're building decentralized finance on Bitcoin - with no central authority - where you'll always be in control of your keys",
+    path: [
+      "bitcoin",
+      "sidechains"
+    ],
+    hash: "8ef9e35f885cd751532c39f70185bff89647f270"
+  },
+  {
+    url: "https://blockstream.com/liquid/",
+    icon: "https://blockstream.com/img/nav_icons/nav_liquid.svg",
+    lang: "eng",
+    tags: [
+      "sidechains",
+      "bitcoin"
+    ],
+    name: "Liquid",
+    description: "Execute trustless swaps using non-custodial orderbooks and protect your financial privacy through confidential transactions",
+    path: [
+      "bitcoin",
+      "sidechains"
+    ],
+    hash: "4ef649cb84a59c4bf17d4e8227116f78a168bbdb"
   },
   {
     url: "https://bitcointv.com/",
@@ -1925,953 +2402,126 @@ export const domain = [
     hash: "44c0aa39c6bbee460164a39c298c5e15e7990c9e"
   },
   {
-    url: "https://www.rsk.co/",
-    icon: "https://www.rsk.co/img/rsk_logo.svg",
+    url: "https://bitcoinops.org",
+    icon: "https://bitcoinops.org/favicon.ico",
     lang: "eng",
     tags: [
-      "sidechains",
-      "bitcoin"
+      "news"
     ],
-    name: "RSK",
-    description: "Bitcoin users now can lend, borrow, trade and earn interest on their Bitcoin. The future of finance is decentralized",
+    name: "Bitcoin Optech",
+    description: "It helps Bitcoin users and businesses integrate scaling technologies.",
     path: [
       "bitcoin",
-      "sidechains"
+      "news"
     ],
-    hash: "1388c75e7323febd9356adf6c99765a315fd1395"
+    hash: "e9c85221cb3cd07e751f3eddf7742e3b3632bf0a"
   },
   {
-    url: "https://moneyonchain.com/es/",
-    icon: "https://moneyonchain.com/wp-content/uploads/2021/07/logo_isotipo.svg",
+    url: "https://bitcoinmagazine.com/",
+    icon: "https://pbs.twimg.com/profile_images/1444022922377576453/AzvXYXGr_400x400.jpg",
     lang: "eng",
     tags: [
-      "sidechains",
-      "bitcoin"
+      "news"
     ],
-    name: "MoC",
-    description: "Improve the performance of your bitcoins while retaining full control of your private keys",
+    name: "Bitcoin Magazine",
+    description: "It helps Bitcoin users and businesses integrate scaling technologies.",
     path: [
       "bitcoin",
-      "sidechains"
+      "news"
     ],
-    hash: "728c8dbd052f0c3df8b9207d1a3decfbb31e7874"
+    hash: "4ea09f5b114d45aea70abd84660bd7f19a17ca5a"
   },
   {
-    url: "https://tropykus.com/",
-    icon: "https://tropykus.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "sidechains",
-      "bitcoin"
-    ],
-    name: "Tropykus",
-    description: "Tropykus let you buy and save with digital dollars to avoid the decrease of value of your savings in local currency",
-    path: [
-      "bitcoin",
-      "sidechains"
-    ],
-    hash: "758beb962b4a5e687bd59f25fa012b0b1bc479ec"
-  },
-  {
-    url: "https://www.sovryn.app/",
-    icon: "https://assets.website-files.com/61b362d5aad9bd2745f408ef/61b363bd7a17bdab70a41731_logo.svg",
-    lang: "eng",
-    tags: [
-      "sidechains",
-      "bitcoin"
-    ],
-    name: "Sovryn",
-    description: "True to Satoshi's vision, we're building decentralized finance on Bitcoin - with no central authority - where you'll always be in control of your keys",
-    path: [
-      "bitcoin",
-      "sidechains"
-    ],
-    hash: "8ef9e35f885cd751532c39f70185bff89647f270"
-  },
-  {
-    url: "https://blockstream.com/liquid/",
-    icon: "https://blockstream.com/img/nav_icons/nav_liquid.svg",
-    lang: "eng",
-    tags: [
-      "sidechains",
-      "bitcoin"
-    ],
-    name: "Liquid",
-    description: "Execute trustless swaps using non-custodial orderbooks and protect your financial privacy through confidential transactions",
-    path: [
-      "bitcoin",
-      "sidechains"
-    ],
-    hash: "4ef649cb84a59c4bf17d4e8227116f78a168bbdb"
-  },
-  {
-    url: "https://jimmysong.substack.com/",
-    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2adf4eed-98e3-4d04-9405-4ebfcbb435b2_256x256.png",
-    lang: "eng",
-    tags: [
-      "nodes",
-      "custody"
-    ],
-    name: "Jimmy Song",
-    description: "Bitcoin from a technical perspective",
-    path: [
-      "bitcoin",
-      "substack"
-    ],
-    hash: "30e3821e2539fe36af740fb304142281bee23fdd"
-  },
-  {
-    url: "https://soberania.substack.com/",
-    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F811b1f91-98ca-4bf0-b04a-31572e2b055c_400x400.png",
+    url: "https://solobitcoin.info/",
+    icon: "https://solobitcoin.info/wp-content/uploads/2022/04/LOGO.png",
     lang: "esp",
     tags: [
-      "nodes",
-      "custody"
+      "news"
     ],
-    name: "Ideas By Muloko",
-    description: "Ideas libres e independientes, soberanía individual, era de la información, filosofía, formación sobre Bitcoin, ciberseguridad, seguridad física, software, energía",
+    name: "SoloBitcoin Info",
+    description: "Portal de noticias y contenidos curados de bitcoin",
     path: [
       "bitcoin",
-      "substack"
+      "news"
     ],
-    hash: "45aaed7a20f63999c94dc7085277f9cba1ef8b2a"
+    hash: "c36ab74d1e0863317fe24663a3f55cc957e35595"
   },
   {
-    url: "https://unasemanamejor.substack.com/",
-    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F61ab72d3-7269-45c6-b3f9-9c50dc6aaf2b_400x400.png",
-    lang: "esp",
-    tags: [
-      "nodes",
-      "custody"
-    ],
-    name: "Una semana mejor",
-    description: "Te suscribes y te mando un email cada lunes. De que te voy a hablar en ese email? Eso es sorpresa",
-    path: [
-      "bitcoin",
-      "substack"
-    ],
-    hash: "a77b49dab8d37997ea41ec42e6ba8beb3d095e22"
-  },
-  {
-    url: "https://bikesandbitcoin.substack.com/",
-    icon: "name",
-    lang: "eng",
-    tags: [],
-    name: "Bikes And Bitcoin",
-    description: "Building a Pleb citadel",
-    path: [
-      "bitcoin",
-      "substack"
-    ],
-    hash: "486b28c0f87f688aa8076182e0b24062624658aa"
-  },
-  {
-    url: "https://www.tesisbitcoin.com/",
-    icon: "https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7638662a-9897-4caf-9c9f-d1e2be7c3582_1400x931.png",
-    lang: "esp",
-    tags: [],
-    name: "La tesis de Bitcoin",
-    description: "Connotaciones económicas, tecnológicas y sociales de Bitcoin",
-    path: [
-      "bitcoin",
-      "substack"
-    ],
-    hash: "9b58941d642f5dd732b826810aa49fa414a81cac"
-  },
-  {
-    url: "https://www.getrevue.co/profile/jonnyji50127056",
-    icon: "https://s3.amazonaws.com/revue/profiles/images/000/316/988/thumb/UGCe6V5v.jpg",
-    lang: "esp",
-    tags: [],
-    name: "Jonny Jimenez",
-    description: "Bitcoin ß Lightning Network. Cuando escribo por aquí, sólo estoy hablando de Bitcoin...",
-    path: [
-      "bitcoin",
-      "substack"
-    ],
-    hash: "a06ba031fa620ab66bbf206c9c25f8be49cdbe60"
-  },
-  {
-    url: "https://6102bitcoin.com/",
-    icon: "https://s3.amazonaws.com/keybase_processed_uploads/6de09c581392ec82bbcb44ffd0655905_360_360.jpg",
+    url: "https://enegnei.github.io/This-Month-In-Bitcoin-Privacy/",
+    icon: "https://camo.githubusercontent.com/2fcfc8250ac1d14807320f45fb6645648efeaa9f0a4c50bdff6e71aa82ef1bef/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313335353836383539373230323134393338312f315f4b6748425a5a5f343030783430302e6a7067",
     lang: "eng",
     tags: [
-      "privacy"
+      "news"
     ],
-    name: "6102bitcoin",
-    description: "A pseudonymous bitcoin user and educator doing what I can to accelerate bitcoin understanding",
+    name: "This Month In Privacy",
+    description: "A newsletter about privacy-related technology developments, events, and conversations in Bitcoin that catch her eye, as well as the tools or strategies that can be used to protect our right to informational self-determination",
     path: [
       "bitcoin",
-      "articles"
+      "news"
     ],
-    hash: "13d8912a4751bdef7257d23c1d2aa5d092fcfa84"
+    hash: "a87244bd57967c93ee6dd8ad5ce9514f91c690d8"
   },
   {
-    url: "https://dergigi.com/bitcoin/",
-    icon: "https://dergigi.com/assets/images/avatar.jpg",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Dergigi",
-    description: "I am a bitcoiner and software engineer, writing words and code for Bitcoin",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "0b92bfe2e6e0fcfadf51ef777de136d4236e24d4"
-  },
-  {
-    url: "https://brandonquittem.com/",
-    icon: "https://pbs.twimg.com/profile_images/1502403738861940736/9J5VuTye_400x400.jpg",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Brandon Quitten",
-    description: "My superpower is taking complex information and turning it into simple, actionable, intelligence.",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "e9b31612b33dbfce181dac5bb470e0dd2bec0b05"
-  },
-  {
-    url: "https://linktr.ee/Svetski",
-    icon: "https://d1fdloi71mui9q.cloudfront.net/NWqdNGadQaJfYkVZ9thI_D2Wcm7E6VunWUHvq",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Aleks Svetski",
-    description: "Author, Speaker, Entrepreneur. Bitcoin, Philosophy, Frame, Psychology, History",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "210d99b620efdfc28e6fc987bdd5bcf57461ad2d"
-  },
-  {
-    url: "https://sovereignstack.tools/",
-    icon: "https://soverainstack.files.wordpress.com/2021/09/cropped-logo1.jpg",
-    lang: "eng",
-    tags: [
-      "books",
-      "articles"
-    ],
-    name: "Sovereign Stack",
-    description: "Take Back What's Yours",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "eb605a786a71752e124f3a9a944523c33c5bce92"
-  },
-  {
-    url: "https://bitcoinwords.github.io/",
-    icon: "https://bitcoinwords.github.io/assets/words-logos/wordsblackoutline-88.png",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Bitcoin Words",
-    description: "WORDS is one of the founding journals of Bitcoin thought. The mission of the project is to spread and preserve the writings about Bitcoin for future generations.",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "799ef764ae79a81fb311b1b4eb7fec36e58ceee1"
-  },
-  {
-    url: "https://unchained.com/blog/",
-    icon: "https://mynodebtc.com/images/app_icons/caravan.png",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Unchained Capital",
-    description: "Unchained Capital is a bitcoin native financial services company. We offer collaborative custody multisignature vaults and collateralized loans designed for long-term bitcoin holders.",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "4b647d0c19743afec41dd0665acf1ff1bd8138f1"
-  },
-  {
-    url: "https://insights.glassnode.com/",
-    icon: "https://insights.glassnode.com/content/images/size/w256h256/2019/06/500px-square.png",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "Glassnode Insights",
-    description: "On-Chain Data and Intelligence Platform",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "266baed0f077b41dac5eb4ef1804212ef3b2c26e"
-  },
-  {
-    url: "https://blog.keys.casa/",
-    icon: "https://keys.casa/images/casaclogo.png",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "CasaBlog",
-    description: "The Secure Home for your Bitcoin",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "88c02269556713e3ba5631ec30f44e3d807a2079"
-  },
-  {
-    url: "https://bitblioteca.com/",
-    icon: "https://bitblioteca.com/wp-content/uploads/2022/03/cropped-cropped-Logo-simbolo-light.png",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "La Bitloteca",
-    description: "Una nueva manera de aprender sobre Bitcoin. Traducimos el mejor contenido sobre Bitcoin al español",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "86bf3315f8814c79ca313522d97fa32c350f3ae1"
-  },
-  {
-    url: "https://hodlermag.com",
-    icon: "https://hodlermag.com/wp-content/uploads/2021/09/favicon.png",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "HodlerMag",
-    description: "Un espectro se cierne sobre el dinero, el espectro de bitcoin",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "d3ad208bb09b5d4cfb6e60626a3827e8b4e34fa9"
-  },
-  {
-    url: "https://b10c.me/",
-    icon: "https://b10c.me/0xb10c.png",
-    lang: "eng",
-    tags: [
-      ""
-    ],
-    name: "b10c",
-    description: "I’m 0xB10C. I work fulltime on open-source Bitcoin projects and are currently funded through community donations and by a Coinbase Bitcoin Developer Grant for the year 2021",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "3ece2c481d77f30a7ada7fdfb28c25822c27ca9f"
-  },
-  {
-    url: "https://nakamotoinstitute.org/",
+    url: "https://bitcointalk.org/index.php?board=77.0",
     icon: "https://timechainstats.com/img/img-11d.png",
     lang: "eng",
     tags: [
-      ""
+      "news"
     ],
-    name: "Nakamoto Institute",
-    description: "I have been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party...",
+    name: "Bitcoin Forum",
+    description: "Notable press hits",
     path: [
       "bitcoin",
-      "articles"
+      "news"
     ],
-    hash: "78c7474d3dcb1f8d4fd67d7a95ee4a56a02c0e03"
+    hash: "fcf2b31ffd9275448d800e35f59d1ec62e507d58"
   },
   {
-    url: "https://juandemariana.org/author/alvarodmaria/",
-    icon: "https://juandemariana.org/wp-content/uploads/2022/01/Ilustracio%CC%81n-sin-ti%CC%81tulo-1-300x300.jpg",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "Alvaro D.Maria",
-    description: "Es autor de La filosofia de Bitcoin y esta trabajando ahora en escribir Micropolis",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "46512cfd59514d3ce7144dff6f2c223b637386bc"
-  },
-  {
-    url: "https://juandemariana.org/author/manuel-garcia-de-polavieja/",
-    icon: "https://juandemariana.org/wp-content/uploads/2021/01/picture-2614-1544548630.png",
-    lang: "esp",
-    tags: [
-      ""
-    ],
-    name: "Manuel Polavieja",
-    description: "Como eterno estudiante en liberalismo y teoría monetaria descubre Bitcoin en 2011 y pasa a ser su principal elemento de estudio con el objetivo de analizar hasta qué punto nos podría ayudar a alcanzar la nuestra libertad económica al margen del Estado",
-    path: [
-      "bitcoin",
-      "articles"
-    ],
-    hash: "037d59a930ff16f33777afa621dfb0811b017adf"
-  },
-  {
-    url: "https://galoy.io/blog-posts/",
-    icon: "https://galoy.io/wp-content/uploads/2022/04/cropped-Galoy-Current-Logo-Square-Blue@2x-32x32.png",
+    url: "https://stacker.news/",
+    icon: "https://pbs.twimg.com/profile_images/1403162883941359619/oca7LMQ2_400x400.png",
     lang: "eng",
     tags: [
-      ""
+      "news"
     ],
-    name: "Galoy",
-    description: "We share insights, guides and articles about onboarding communities and institutions to Bitcoin and the Lightning Network",
+    name: "Stacker News",
+    description: "It's like Hacker News but we pay you #Bitcoin",
     path: [
       "bitcoin",
-      "articles"
+      "news"
     ],
-    hash: "89b3527e7ed11fdb735b693c19b04a90fad0b1e7"
+    hash: "aece6654499067ccf0b70eeb345e4abea1c39887"
   },
   {
-    url: "https://europeanbitcoiners.com/",
-    icon: "https://europeanbitcoiners.com/content/images/size/w256h256/2022/04/logo2-1.png",
+    url: "https://donjon.ledger.com/",
+    icon: "https://donjon.ledger.com/assets/donjonlogo.png",
     lang: "eng",
     tags: [
-      "articles"
+      "news",
+      "security"
     ],
-    name: "European Bitcoiners",
-    description: "Block 731398 is an education and community initiative to bring together all European Plebs and those who want to learn about Bitcoin",
+    name: "Donjon",
+    description: "The security research at Ledger",
     path: [
       "bitcoin",
-      "articles"
+      "news"
     ],
-    hash: "7aa924c851d7da51c5605b570bc3d51b38886e50"
+    hash: "303c4128617180ca1522fedf78083a0373caf30b"
   },
   {
-    url: "https://bitcoin-only.com/",
-    icon: "https://bitcoin-only.com/favicon.png",
+    url: "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/",
+    icon: "https://bitcoiner.guide/favicon.ico",
     lang: "eng",
     tags: [
-      "nodes",
-      "custody"
+      "news",
+      "security"
     ],
-    name: "Bitcoin-only",
-    description: "A collection of the highest quality Bitcoin resources",
+    name: "Bitcoin dev archives",
+    description: "Bitcoin development and protocol discussion. This list is lightly moderated",
     path: [
       "bitcoin",
-      "resources"
+      "news"
     ],
-    hash: "1f848575e419fa9350d9655fff796d6257451a56"
-  },
-  {
-    url: "https://bitcoin-resources.com/",
-    icon: "https://bitcoin-resources.com/assets/images/avatar.png",
-    lang: "eng",
-    tags: [
-      "books",
-      "articles"
-    ],
-    name: "Bitcoin Resources",
-    description: "Bitcoin Resources is a free open-source project curated by volunteers",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "616a9086085007a10f286c57603ba6cbc10646b5"
-  },
-  {
-    url: "https://bitcoinminds.org/",
-    icon: "https://bitcoinminds.org/img/brand/bitcoin-logo.png",
-    lang: "eng",
-    tags: [
-      "books",
-      "articles"
-    ],
-    name: "Bitcoin Minds",
-    description: "It is the most comprehensive list of Bitcoin resources online, updated regularly.",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "486994275d447b2caafff0d9d9029f21d3282e05"
-  },
-  {
-    url: "https://bgeometrics.github.io/bitcoin_bookmarks_es.html",
-    icon: "none",
-    lang: "esp",
-    tags: [
-      "books",
-      "articles"
-    ],
-    name: "Bitcoin Bookmarks",
-    description: "Enlaces y recursos sobre Bitcoin en español",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "30f304ca2b702c0b9dcfd6a73dc6a906bc17e330"
-  },
-  {
-    url: "https://btclexicon.com/",
-    icon: "https://btclexicon.com/wp-content/uploads/2021/03/logo-8.png?3a343a&3a343a",
-    lang: "eng",
-    tags: [
-      "books",
-      "articles"
-    ],
-    name: "BTCLexicon",
-    description: "Dictionary to learn About Bitcoin. Comprehensive Bitcoin Knowledge Base",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "9f7926104fab6eddcd3fa0b32834eef353924d15"
-  },
-  {
-    url: "https://endthefud.org/",
-    icon: "https://cdn-icons-png.flaticon.com/512/1468/1468144.png",
-    lang: "eng",
-    tags: [
-      "articles"
-    ],
-    name: "EndTheFUD",
-    description: "The best links to articles debunking Bitcoin FUD",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "606453fcf8590b3e9da732d74c47696f1c627fae"
-  },
-  {
-    url: "https://www.getbitcoin.org/",
-    icon: "https://assets.website-files.com/621f36817af7cb248425e984/62443cc39860d9da650a8e91_Frame%203.png",
-    lang: "eng",
-    tags: [
-      "articles"
-    ],
-    name: "Get Bitcoin",
-    description: "Bitcoin gives human rights. So we are giving it away. Get your first bitcoin",
-    path: [
-      "bitcoin",
-      "resources"
-    ],
-    hash: "7ac45cce6f0837054a536e652b4228ef0753d812"
-  },
-  {
-    url: "https://lunaticoin.com/reproductor",
-    icon: "https://lunaticoin.com/wp-content/uploads/2022/01/1037971-1642694615087-137d6f269075f-1024x1024.jpg",
-    lang: "esp",
-    tags: [
-      "podcast",
-      "privacy",
-      "security",
-      "economy",
-      "liberty",
-      "technical"
-    ],
-    name: "Lunaticoin",
-    description: "Entusiasta Bitcoin | Conecta con personas de habla hispana con perfil propio dentro del mundo #bitcoin y comparte su valor",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "aad5fa7f79c69e435f27b68e322249d633a7df78"
-  },
-  {
-    url: "https://stephanlivera.com/episodes/",
-    icon: "https://i0.wp.com/stephanlivera.com/wp-content/uploads/2020/05/StephanLivera-Podcast-Img.png?resize=510%2C510&ssl=1",
-    lang: "eng",
-    tags: [
-      "podcast"
-    ],
-    name: "Stephan Libera",
-    description: "SLP is focused on educational interviews about the economics and technology of Bitcoin. Stephan has interviewed many high profile Bitcoin, Libertarian, Austrian economics and Macro guests",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "e6eac1e621dea57c51e614c352e0b7623ece3d53"
-  },
-  {
-    url: "https://tftc.io/podcasts/",
-    icon: "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/797160/797160-1579811341935-88e5cd5024bf9.jpg",
-    lang: "eng",
-    tags: [
-      "privacy"
-    ],
-    name: "Tales from the Crypt",
-    description: "Tales from the Crypt is a podcast about Bitcoin hosted by Marty Bent",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "967f08fafea50f0145d28910e07fac254515171e"
-  },
-  {
-    url: "https://citadeldispatch.com/",
-    icon: "https://citadeldispatch.com/wp-content/uploads/2021/04/cropped-cit2color.png",
-    lang: "eng",
-    tags: [
-      "privacy",
-      "open source"
-    ],
-    name: "Citadel Dispatch",
-    description: "An interactive live show about bitcoin, distributed systems, privacy, and open source software",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "64ec160be2b7932e44bb253efb6b837c88d5f44d"
-  },
-  {
-    url: "https://www.whatbitcoindid.com/",
-    icon: "https://images.squarespace-cdn.com/content/v1/59641a28ff7c5099c12a5eda/1571514679601-G5QKQLVUEFOQ7OBQTYL4/WBD-Lightning-Logo.png?format=1500w",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "privacy",
-      "adoption"
-    ],
-    name: "What Bitcoin Did",
-    description: "The What Bitcoin Did Podcast is a tri-weekly Bitcoin podcast where host Peter McCormack interviews experts in the world of Bitcoin development, privacy, investment and adoption",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "94379010827bc92de68c6d48f722be8cf7d9b9bc"
-  },
-  {
-    url: "https://bit-buy-bit.libsyn.com/",
-    icon: "https://assets.libsyn.com/secure/content/120649532/?height=80",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "privacy",
-      "adoption"
-    ],
-    name: "BIT-BUY-BIT",
-    description: "Bitcoin is misunderstood, multifaceted, complex and evolving at a staggering rate. Show host Max Buybit and guests discus its impact on the world and help dispel the myths surrounding bitcoin, blockchain and banking",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "6f1f2019fa73c39826ee18c8fdeb42cc9d5ab059"
-  },
-  {
-    url: "https://www.seetee.io/podcast/",
-    icon: "https://www.seetee.io/assets/blog/2021-03-08-shareholder-letter/thumbnail.png",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "privacy",
-      "adoption"
-    ],
-    name: "seetee",
-    description: "Closing the Loop is a podcast about Bitcoin. In it, we will be speaking with the entrepreneurs, developers, and thinkers who are contributing to the evolution of this revolutionary technology",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "c37154b13af2767899d935804f2d39c4463f9f5c"
-  },
-  {
-    url: "https://optoutpod.com/",
-    icon: "https://optoutpod.com/favicon.ico",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "privacy"
-    ],
-    name: "OptOutPodcast",
-    description: "Opt Out is a podcast where I sit down with passionate people to learn why privacy matters to them, the tools and techniques they’ve found and leveraged, and where we encourage and inspire others towards personal privacy and data-sovereignty",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "204ef10ff199e7ed43d43a0276910b163991e341"
-  },
-  {
-    url: "https://nadobtc.libsyn.com/",
-    icon: "https://ssl-static.libsyn.com/p/assets/b/0/b/6/b0b642d92f4f5e1240be95ea3302a6a1/BitcoinMagazine_Explained_CoverArt_3000px.jpg",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "technical"
-    ],
-    name: "Bitcoin Explained",
-    description: "Bitcoin Magazine's Technical editor Aaron van Wirdum teams up with Bitcoin core contributor Sjors Provoost to explain Bitcoin one episode at a time",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "b85dab5c0b2ad8b90fbb5c426bd954edaedae9e1"
-  },
-  {
-    url: "https://unpodcastsobrebitcoin.buzzsprout.com/",
-    icon: "https://storage.buzzsprout.com/variants/uoj865cqitr7tedj86etg4r81zle/b49cbe86cb411762753e730c58953bb88ad958a9d657212c074729b6f04e5463.jpg",
-    lang: "esp",
-    tags: [
-      "podcast",
-      "technical"
-    ],
-    name: "Un podcast sobre Bitcoin",
-    description: "El dinero nos rodea y no lo entendemos. En este podcast habla de bitcoin, de dinero (que es lo mismo), de economía e inversión. Si entiendes cómo funciona el dinero, podrás controlarlo",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "1db8512e76746116cad56d2343d7977e8ae1d442"
-  },
-  {
-    url: "https://interescompuesto.club/podcast-interes-compuesto/",
-    icon: "https://interescompuesto.club/wp-content/uploads/logo-barra-menu.png",
-    lang: "esp",
-    tags: [
-      "podcast",
-      "bitcoin"
-    ],
-    name: "Interes Compuesto",
-    description: "Objetivo y filosofía: densidad de contenido útil explicado para todo el mundo",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "2f0f4f973af16370fddbffff4b227c94bf4df5e2"
-  },
-  {
-    url: "https://compassmining.io/education/tag/podcast/",
-    icon: "https://pbs.twimg.com/profile_images/1425165074373791744/f2CgInvP_400x400.jpg",
-    lang: "eng",
-    tags: [
-      "podcast",
-      "mining"
-    ],
-    name: "Compass Mining",
-    description: "Staying on top of all the best Bitcoin, Bitcoin mining, and crypto podcasts is hard. The Compass Mining Media network makes it easy.",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "de6f4910a48c7a9a3939324b1978fd00fdc004ba"
-  },
-  {
-    url: "https://bitcoinheiros.com/#escute",
-    icon: "https://bitcoinheiros.com/wp-content/uploads/2019/11/cropped-logo_bitcoinheiros-300x265.png",
-    lang: "pt",
-    tags: [
-      "podcast"
-    ],
-    name: "Bitcoinheiros",
-    description: "O encontro semanal dos bitcoinheiros. Com participação fixa de Allan, Dov, Ivan e Becas - além de convidados muito especiais",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "01c0d865f1428295e3268219d88e88959dc102b3"
-  },
-  {
-    url: "https://simplybitcoin.tv/",
-    icon: "https://simplybitcoin.tv/assets/images/image01.png",
-    lang: "eng",
-    tags: [
-      "podcast"
-    ],
-    name: "SimplyBitcoin",
-    description: "Daily Bitcoin news from the perspective of two taco plebs",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "8f7a2f0a2cea711cc095dcd7957ddc02d4502f0e"
-  },
-  {
-    url: "https://podcast.pau.ninja/",
-    icon: "/public/img/favicon/pau-ninja.png",
-    lang: "esp",
-    tags: [
-      "podcast"
-    ],
-    name: "Pau Ninja Podcast",
-    description: "El podcast multipotencial. Más de 1 millón de escuchas con invitados tan desconocidos como mediáticos",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "b161738ed50e568c2b51852f131ff7b18ce2d7ba"
-  },
-  {
-    url: "https://anchor.fm/WakeUpPod",
-    icon: "https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/production/podcast_uploaded_nologo400/2346114/2346114-1615413607091-98cea3261d5f3.jpg",
-    lang: "eng",
-    tags: [
-      "podcast"
-    ],
-    name: "Wake Up by Aleks Svetski",
-    description: " Wake up is dedicated to helping ensure V for Vendetta and 1984 remain works of fiction. Topics will include Bitcoin, Money, Freedom, Philosophy, Psychology, Science, Ethics & more",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "598ca197d80c7bf26d6b49dc4b51ceeb2cf2d01e"
-  },
-  {
-    url: "https://www.ivoox.com/en/podcast-cadena-bloques_sq_f11164235_1.html",
-    icon: "https://static-1.ivoox.com/canales/4/8/5/8/5431644158584_XL.jpg",
-    lang: "esp",
-    tags: [
-      "podcast"
-    ],
-    name: "La Cadena de Bloques",
-    description: "Aquí aprenderás qué es bitcoin y por qué es importante, aplicaciones prácticas y todo eso sin perderte nada de la actualidad",
-    path: [
-      "bitcoin",
-      "podcast"
-    ],
-    hash: "b6b4392fd21dcfc53db9dad254d0ffe3900cdcbd"
-  },
-  {
-    url: "https://ronindojo.io/",
-    icon: "https://ronindojo.io/assets/img/brand.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "RoninDojo",
-    description: "They help people to have a feature rich bitcoin experience, maintain privacy, and thrive as a sovereign individual.",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "22715a8da1a7055753df32becc8c9f195c0542e2"
-  },
-  {
-    url: "https://raspibolt.org/",
-    icon: "https://styles.redditmedia.com/t5_4mhhds/styles/communityIcon_mhu84z1fqz181.png?width=256&s=195c6567f5ede7c9cc5aa18e5a13bdceb5f3ec6a",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Raspibolt",
-    description: "Build your own do-everything-yourself Bitcoin full node that will make you a sovereign peer in the Bitcoin and Lightning network.",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "54b39e4fd7ff3a46a7f596437a4efadccc04ae8b"
-  },
-  {
-    url: "https://runcitadel.space/",
-    icon: "https://i0.wp.com/runcitadel.space/wp-content/uploads/2021/10/nav-bar-logo.png?fit=95%2C95&ssl=1",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Citadel",
-    description: "Citadel allows you to run a Bitcoin Lightning node or a personal server on a Raspberry Pi",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "d968914d93fb48711617c7be7d15c6e52ff0b1f1"
-  },
-  {
-    url: "https://mynodebtc.com/",
-    icon: "https://mynodebtc.com/favicons/favicon-32x32.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "myNode",
-    description: "myNode aims to be the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet! By combining the best open source software with our UI, management, and monitoring software, you can easily, safely, and securely use Bitcoin and Lightning",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "9bc8df1dd57c3a465e222dac49a9bffcb36e9eb7"
-  },
-  {
-    url: "https://l2.technology/sensei",
-    icon: "https://l2.technology/images/Icon-Lightning@2x.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Sensei",
-    description: "Sensei is a lightning node implementation focused on making Bitcoin accessible to the entire world",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "82a3865d8986b6d999a748a3ba5f97c35b4ae942"
-  },
-  {
-    url: "https://voltage.cloud/",
-    icon: "https://voltage.cloud/wp-content/themes/Voltage-WP-Theme/assets/images/favicon.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Voltage",
-    description: "Bitcoin infrastructure made easy. Voltage offers enterprise-grade infrastructure services for Bitcoin. Build, deploy, and scale faster with Voltage",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "21e6da5c9e5b2eabf2b0b4a62dca3158d02501ae"
-  },
-  {
-    url: "https://getumbrel.com/",
-    icon: "https://uploads-ssl.webflow.com/62966b49981ba146f4842f45/62966b49981ba1ae3c842f86_favicon.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Get Umbrel",
-    description: "A personal server for everyone",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "705ce9d40cfa30d98910e6cd0109cb95d3471e9f"
-  },
-  {
-    url: "https://start9.com/latest/",
-    icon: "https://start9.com/latest/_static/img/favicon-32x32.png",
-    lang: "eng",
-    tags: [
-      "node",
-      "privacy",
-      "security",
-      "liberty"
-    ],
-    name: "Start9Labs",
-    description: "The era of sovereign computing. Anyone can do it. No one can stop it",
-    path: [
-      "bitcoin",
-      "nodes"
-    ],
-    hash: "9005d0c14d7f633fe8eadd32252a104eaa08f8bb"
+    hash: "dc9cad3c5b5cdfa2530547e78cd0c084bcdc1aec"
   },
   {
     url: "https://github.com/Reckless-Satoshi/robosats/#user-content-try-it-out",
@@ -3184,7 +2834,7 @@ export const domain = [
   },
   {
     url: "https://www.veriphi.io/",
-    icon: "https://downloads.intercomcdn.com/i/o/286378/e05f9c2c877e17b7f785fc13/c9c2bce82b74978a3e87079f2ce6e52b.png",
+    icon: "https://www.veriphi.io/favicon.ico",
     lang: "eng",
     tags: [
       "services",
@@ -3215,784 +2865,148 @@ export const domain = [
     hash: "ac54fd8d7cc233badab01e0247da7eea3a9cf2b4"
   },
   {
-    url: "https://github.com/openoms/bitcoin-tutorials",
-    icon: "https://avatars.githubusercontent.com/u/43343391?v=4",
+    url: "https://ronindojo.io/",
+    icon: "https://ronindojo.io/assets/img/brand.png",
     lang: "eng",
     tags: [
-      "github",
-      "guides",
-      "bitcoin"
-    ],
-    name: "Bitcoin Tutorials - openoms",
-    description: "Documenting Bitcoin related setups using LND, JoinMarket, RaspiBlitz, Debian and Ubuntu",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "03999552b67fa78d31474b73ff47e782d1cfcca1"
-  },
-  {
-    url: "https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line",
-    icon: "https://avatars.githubusercontent.com/u/69103",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin"
-    ],
-    name: "Learning Bitcoin from the Command Line",
-    description: "It is a tutorial for working with Bitcoin (and Lightning) that teaches direct interaction with the servers themselves, as the most robust and secure way to begin cryptocurrency work",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "35cc9ad294f8555e9b5503e64f7fd2396aed366b"
-  },
-  {
-    url: "https://github.com/btcguide/btcguide.github.io",
-    icon: "https://avatars.githubusercontent.com/u/69905025",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin"
-    ],
-    name: "10x Security Bitcoin Guide",
-    description: "How to store bitcoin without any single point of failure",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "0320c8e4a353646a61ddcc0b2c39c95a95288fcc"
-  },
-  {
-    url: "https://github.com/darosior/python-bip32",
-    icon: "https://avatars.githubusercontent.com/u/22457751",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin",
-      "bip"
-    ],
-    name: "Python-BIP32",
-    description: "Minimalistic implementation of BIP32",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "4ac44ba80ae2b5520872134fa7ddd8b3e2652ed0"
-  },
-  {
-    url: "https://github.com/regiregi22/Hodl-de-Bitcoin-seguro",
-    icon: "https://avatars.githubusercontent.com/u/16608353?v=4",
-    lang: "esp",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin",
-      "hodl"
-    ],
-    name: "HODL de Bitcoin seguro",
-    description: "Almacena tus bitcoins de manera segura y gratuita pero solo si se realiza SIEMPRE de manera estricta y cuidadosa",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "60daa2df25d71fa6b2bb7786f95bb6670eb0468b"
-  },
-  {
-    url: "https://github.com/cointastical/P2P-Trading-Exchanges/",
-    icon: "https://avatars.githubusercontent.com/u/60823751?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "p2p"
-    ],
-    name: "P2P Trading Exchanges",
-    description: "Person-to-Person bitcoin Trading Exchanges",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "cee6173f74c165332cb0df5e00ab92fb478b6f17"
-  },
-  {
-    url: "https://github.com/openoms/joininbox",
-    icon: "https://avatars.githubusercontent.com/u/43343391?v=4",
-    lang: "eng",
-    tags: [
-      "bitcoin",
-      "github",
-      "coinjoin"
-    ],
-    name: "JoinBox",
-    description: "A minimalistic, security focused linux environment for JoinMarket with a terminal based graphical menu",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "874e9e9635082eebf9822822da6dd55030b0b3d9"
-  },
-  {
-    url: "https://github.com/PulpCattel/JoinMarket-On-Tails",
-    icon: "https://avatars.githubusercontent.com/u/51127079",
-    lang: "eng",
-    tags: [
-      "bitcoin",
-      "github",
-      "coinjoin",
-      "tails"
-    ],
-    name: "JoinMarket On Tails",
-    description: "Straightforward tutorial on how to create a JoinMarket setup on Tails",
-    path: [
-      "bitcoin",
-      "github",
-      "guides"
-    ],
-    hash: "81b845994f769c7e5718acaf6a941ee4d21fd3d9"
-  },
-  {
-    url: "https://github.com/cryptoadvance/specter-diy",
-    icon: "https://avatars.githubusercontent.com/u/52270008?s=200&v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "wallets",
-      "bitcoin",
-      "hardware"
-    ],
-    name: "Specter DIY",
-    description: "The idea of the project is to build a hardware wallet from off-the-shelf components",
-    path: [
-      "bitcoin",
-      "github",
-      "hardware"
-    ],
-    hash: "5ed558fd6fe92fa9f2b1c6cbf71bd3946b626a41"
-  },
-  {
-    url: "https://github.com/diybitcoinhardware/diybitcoinhardware.github.io",
-    icon: "https://avatars.githubusercontent.com/u/54726412?s=200&v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "hardware",
-      "bitcoin",
-      "wallets"
-    ],
-    name: "DIY Bitcoin Hardware",
-    description: "Interesting DIY bitcoin and lightning-related projects. This includes hardware wallets, verification tools, POS terminals, full nodes and other stuff",
-    path: [
-      "bitcoin",
-      "github",
-      "hardware"
-    ],
-    hash: "2a9eba3c5846bfef04e006a5d82491e2f0d2422e"
-  },
-  {
-    url: "https://github.com/SeedSigner/seedsigner",
-    icon: "https://avatars.githubusercontent.com/u/65379725",
-    lang: "eng",
-    tags: [
-      "github",
-      "hardware",
-      "bitcoin",
-      "wallets"
-    ],
-    name: "SeedSigner",
-    description: "The goal of SeedSigner is to lower the cost and complexity of Bitcoin multi-signature wallet use",
-    path: [
-      "bitcoin",
-      "github",
-      "hardware"
-    ],
-    hash: "070c5d0e3d48d27424e49691551d24bd19e5abc6"
-  },
-  {
-    url: "https://mcudev.github.io/",
-    icon: "https://avatars.githubusercontent.com/u/29890609?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "hardware",
-      "bitcoin",
-      "PoS"
-    ],
-    name: "mcudev",
-    description: "Hardware Wallets projects",
-    path: [
-      "bitcoin",
-      "github",
-      "hardware"
-    ],
-    hash: "e54593b626010ddb77839ddab109b585f005aca5"
-  },
-  {
-    url: "https://github.com/txCastOrg/txCast",
-    icon: "https://avatars.githubusercontent.com/u/77703015",
-    lang: "eng",
-    tags: [
-      "bitcoin",
-      "github",
-      "transaction",
-      "tor"
-    ],
-    name: "txCast",
-    description: "Commandline tool to quickly broadcast signed transactions over tor (at random times to break timing analysis)",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "e46bddb642da230ca9d9aad9804deec4fa771762"
-  },
-  {
-    url: "https://github.com/MuleTools/MuleTools",
-    icon: "https://avatars.githubusercontent.com/u/31126254?s=200&v=4",
-    lang: "eng",
-    tags: [
-      "bitcoin",
-      "github",
-      "broadcast",
-      "transaction"
-    ],
-    name: "MuleTools",
-    description: "Mule Tools will be a clearing house for code that enables alternative broadcast methods for bitcoin transactions with a view towards routing around censorship, network outages, hijacking by hostile external and internal actors",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "78a2cc6bd4303f7ff743b692163a7644118f1e6f"
-  },
-  {
-    url: "https://github.com/shesek/minsc",
-    icon: "https://avatars.githubusercontent.com/u/877904?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin",
-      "bip"
-    ],
-    name: "Minsc",
-    description: "Minsc is a high-level scripting language for expressing Bitcoin Script spending conditions. It is based on the Miniscript Policy language",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "572a9f6d634dc1fbcdd4a8e790a075f6ee19d631"
-  },
-  {
-    url: "https://github.com/bwt-dev/bwt",
-    icon: "https://avatars.githubusercontent.com/u/76660817",
-    lang: "eng",
-    tags: [
-      "github",
-      "guides",
-      "bitcoin",
-      "bip"
-    ],
-    name: "Bitcoin Wallet Tracker",
-    description: "bwt is a lightweight wallet descriptor/xpub tracker and query engine for Bitcoin, implemented in Rust",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "fb92b8496dea752f69e1a43191d5c807ac56c4a2"
-  },
-  {
-    url: "https://github.com/janoside/btc-rpc-explorer",
-    icon: "https://avatars.githubusercontent.com/u/99734?s=120&v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "explorer",
-      "bitcoin"
-    ],
-    name: "BTC RPC Explorer",
-    description: "Self-Hosted Bitcoin explorer for everyone running Bitcoin Core",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "47587346410de89e1b74cc348f29eca0f4081840"
-  },
-  {
-    url: "https://github.com/romanz/electrs",
-    icon: "https://avatars.githubusercontent.com/u/9900",
-    lang: "eng",
-    tags: [
-      "github",
-      "nodes",
-      "bitcoin",
-      "indexer"
-    ],
-    name: "Electrs",
-    description: "An efficient re-implementation of Electrum Server, inspired by ElectrumX, Electrum Personal Server and bitcoincore-indexd",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "0cbee5ef1bb79319b390304b0428d96de9390d1c"
-  },
-  {
-    url: "https://github.com/cculianu/Fulcrum",
-    icon: "https://avatars.githubusercontent.com/u/266627",
-    lang: "eng",
-    tags: [
-      "github",
-      "nodes",
-      "bitcoin",
-      "indexer"
-    ],
-    name: "Fulcrum",
-    description: "A fast & nimble SPV server for Bitcoin and others",
-    path: [
-      "bitcoin",
-      "github",
-      "transactions"
-    ],
-    hash: "e5d67f4a188d8d8bd65e5bb4523852b45e434515"
-  },
-  {
-    url: "https://github.com/rootzoll/raspiblitz",
-    icon: "https://raw.githubusercontent.com/rootzoll/raspiblitz/v1.7/pictures/raspilogo_tile_400px.png",
-    lang: "eng",
-    tags: [
-      "github",
-      "nodes",
-      "bitcoin"
-    ],
-    name: "Raspiblitz",
-    description: "Build your own Lightning & Bitcoin Fullnode on a RaspberryPi with a nice Display",
-    path: [
-      "bitcoin",
-      "github",
-      "node"
-    ],
-    hash: "6e12a432ad8fd9b65779964366d3e9fef02f0200"
-  },
-  {
-    url: "https://github.com/raspibolt/raspibolt/",
-    icon: "https://avatars.githubusercontent.com/u/19550140?v=4",
-    lang: "eng",
-    tags: [
-      "github",
-      "nodes",
-      "bitcoin"
-    ],
-    name: "Raspibolt",
-    description: "Build your own do-everything-yourself Bitcoin full node that will make you a sovereign peer in the Bitcoin and Lightning network",
-    path: [
-      "bitcoin",
-      "github",
-      "node"
-    ],
-    hash: "c046d2c6644ee2d3918d190fc3a17dc7d4091cf8"
-  },
-  {
-    url: "https://code.samourai.io/ronindojo",
-    icon: "https://code.samourai.io/uploads/-/system/group/avatar/41/RoninDojo-01c.png",
-    lang: "eng",
-    tags: [
-      "github",
-      "nodes",
-      "bitcoin"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
     name: "RoninDojo",
-    description: "The independent team building RoninDojo software expanding the functionality of Dojo",
+    description: "They help people to have a feature rich bitcoin experience, maintain privacy, and thrive as a sovereign individual.",
     path: [
       "bitcoin",
-      "github",
-      "node"
+      "nodes"
     ],
-    hash: "761ff634a190a0ac24222e04b0a2ece9f761da3d"
+    hash: "22715a8da1a7055753df32becc8c9f195c0542e2"
   },
   {
-    url: "https://code.samourai.io/dojo",
-    icon: "https://code.samourai.io/uploads/-/system/group/avatar/5/profile_dojo.png",
+    url: "https://raspibolt.org/",
+    icon: "https://styles.redditmedia.com/t5_4mhhds/styles/communityIcon_mhu84z1fqz181.png?width=256&s=195c6567f5ede7c9cc5aa18e5a13bdceb5f3ec6a",
     lang: "eng",
     tags: [
-      "github",
-      "nodes",
-      "bitcoin"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Dojo",
-    description: "The team responsible for development of Dojo full node wallet tracking server",
+    name: "Raspibolt",
+    description: "Build your own do-everything-yourself Bitcoin full node that will make you a sovereign peer in the Bitcoin and Lightning network.",
     path: [
       "bitcoin",
-      "github",
-      "node"
+      "nodes"
     ],
-    hash: "411a5063a3fe88a879c393f4297ca0f894b3fbdd"
+    hash: "54b39e4fd7ff3a46a7f596437a4efadccc04ae8b"
   },
   {
-    url: "https://bitcoinal.com/",
-    icon: "https://bitcoinal.com/img/b-icon.jpg",
+    url: "https://runcitadel.space/",
+    icon: "https://i0.wp.com/runcitadel.space/wp-content/uploads/2021/10/nav-bar-logo.png?fit=95%2C95&ssl=1",
     lang: "eng",
     tags: [
-      "analysis",
-      "graph",
-      "price"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Bitcoinal",
-    description: "Bitcoinal includes various applications, such as statistics, tweets, tools and games",
+    name: "Citadel",
+    description: "Citadel allows you to run a Bitcoin Lightning node or a personal server on a Raspberry Pi",
     path: [
       "bitcoin",
-      "analysis",
-      "animation"
+      "nodes"
     ],
-    hash: "fb6e2258ceda45e120f279d6f8315846f4e2bd96"
+    hash: "d968914d93fb48711617c7be7d15c6e52ff0b1f1"
   },
   {
-    url: "https://txstreet.com/v/btc",
-    icon: "https://txstreet.com/static/img/icons/icons-192.png",
+    url: "https://mynodebtc.com/",
+    icon: "https://mynodebtc.com/favicons/favicon-32x32.png",
     lang: "eng",
     tags: [
-      "analysis",
-      "graph",
-      "price"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Tx Street",
-    description: "TxStreet is a live transaction and mempool visualizer featuring Bitcoin. When a new transaction is broadcasted to the network, a person appears and attempts to board a bus in real time",
+    name: "myNode",
+    description: "myNode aims to be the easiest way to run a dedicated, easy to use, Bitcoin Node and Lightning Wallet! By combining the best open source software with our UI, management, and monitoring software, you can easily, safely, and securely use Bitcoin and Lightning",
     path: [
       "bitcoin",
-      "analysis",
-      "animation"
+      "nodes"
     ],
-    hash: "268bfdb3c9d270a20dd09b2878b9517f7bd5fe71"
+    hash: "9bc8df1dd57c3a465e222dac49a9bffcb36e9eb7"
   },
   {
-    url: "https://bits.monospace.live/",
-    icon: "https://bits.monospace.live/favicon-32x32.png",
+    url: "https://l2.technology/sensei",
+    icon: "https://l2.technology/images/Icon-Lightning@2x.png",
     lang: "eng",
     tags: [
-      "fees",
-      "bitcoin"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Bitfeed",
-    description: "On a typical day, the Bitcoin network confirms around 300,000 transactions by mining an average of 144 blocks. Bitfeed attempts to visualise this flow of information",
+    name: "Sensei",
+    description: "Sensei is a lightning node implementation focused on making Bitcoin accessible to the entire world",
     path: [
       "bitcoin",
-      "analysis",
-      "animation"
+      "nodes"
     ],
-    hash: "ac4a1dcbc77ff98a8f29c8dda5b589ee35606961"
+    hash: "82a3865d8986b6d999a748a3ba5f97c35b4ae942"
   },
   {
-    url: "http://bitcoincity.info/",
-    icon: "http://bitcoincity.info/mini.png",
+    url: "https://voltage.cloud/",
+    icon: "https://voltage.cloud/wp-content/themes/Voltage-WP-Theme/assets/images/favicon.png",
     lang: "eng",
     tags: [
-      "fees",
-      "bitcoin"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Bitcoin City",
-    description: "Each city is a bitcoin transaction, on the road to the blockchain",
+    name: "Voltage",
+    description: "Bitcoin infrastructure made easy. Voltage offers enterprise-grade infrastructure services for Bitcoin. Build, deploy, and scale faster with Voltage",
     path: [
       "bitcoin",
-      "analysis",
-      "animation"
+      "nodes"
     ],
-    hash: "20ecb1bc97821332d6ccd864105f092d522bc424"
+    hash: "21e6da5c9e5b2eabf2b0b4a62dca3158d02501ae"
   },
   {
-    url: "https://txhighway.cash",
-    icon: "https://txhighway.cash/assets/sprites/bitcoin-small-med.png",
+    url: "https://getumbrel.com/",
+    icon: "https://uploads-ssl.webflow.com/62966b49981ba146f4842f45/62966b49981ba1ae3c842f86_favicon.png",
     lang: "eng",
     tags: [
-      "fees",
-      "bitcoin"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Tx highway",
-    description: "Transaction visualizer",
+    name: "Get Umbrel",
+    description: "A personal server for everyone",
     path: [
       "bitcoin",
-      "analysis",
-      "animation"
+      "nodes"
     ],
-    hash: "471c4bbcc8a6e8ba06648bce84510c40bb951fde"
+    hash: "705ce9d40cfa30d98910e6cd0109cb95d3471e9f"
   },
   {
-    url: "https://bitcoinops.org",
-    icon: "https://bitcoinops.org/favicon.ico",
+    url: "https://start9.com/latest/",
+    icon: "https://start9.com/latest/_static/img/favicon-32x32.png",
     lang: "eng",
     tags: [
-      "news"
+      "node",
+      "privacy",
+      "security",
+      "liberty"
     ],
-    name: "Bitcoin Optech",
-    description: "It helps Bitcoin users and businesses integrate scaling technologies.",
+    name: "Start9Labs",
+    description: "The era of sovereign computing. Anyone can do it. No one can stop it",
     path: [
       "bitcoin",
-      "news"
+      "nodes"
     ],
-    hash: "e9c85221cb3cd07e751f3eddf7742e3b3632bf0a"
-  },
-  {
-    url: "https://bitcoinmagazine.com/",
-    icon: "https://pbs.twimg.com/profile_images/1444022922377576453/AzvXYXGr_400x400.jpg",
-    lang: "eng",
-    tags: [
-      "news"
-    ],
-    name: "Bitcoin Magazine",
-    description: "It helps Bitcoin users and businesses integrate scaling technologies.",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "4ea09f5b114d45aea70abd84660bd7f19a17ca5a"
-  },
-  {
-    url: "https://solobitcoin.info/",
-    icon: "https://solobitcoin.info/wp-content/uploads/2022/04/LOGO.png",
-    lang: "esp",
-    tags: [
-      "news"
-    ],
-    name: "SoloBitcoin Info",
-    description: "Portal de noticias y contenidos curados de bitcoin",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "c36ab74d1e0863317fe24663a3f55cc957e35595"
-  },
-  {
-    url: "https://enegnei.github.io/This-Month-In-Bitcoin-Privacy/",
-    icon: "https://camo.githubusercontent.com/2fcfc8250ac1d14807320f45fb6645648efeaa9f0a4c50bdff6e71aa82ef1bef/68747470733a2f2f7062732e7477696d672e636f6d2f70726f66696c655f696d616765732f313335353836383539373230323134393338312f315f4b6748425a5a5f343030783430302e6a7067",
-    lang: "eng",
-    tags: [
-      "news"
-    ],
-    name: "This Month In Privacy",
-    description: "A newsletter about privacy-related technology developments, events, and conversations in Bitcoin that catch her eye, as well as the tools or strategies that can be used to protect our right to informational self-determination",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "a87244bd57967c93ee6dd8ad5ce9514f91c690d8"
-  },
-  {
-    url: "https://bitcointalk.org/index.php?board=77.0",
-    icon: "https://timechainstats.com/img/img-11d.png",
-    lang: "eng",
-    tags: [
-      "news"
-    ],
-    name: "Bitcoin Forum",
-    description: "Notable press hits",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "fcf2b31ffd9275448d800e35f59d1ec62e507d58"
-  },
-  {
-    url: "https://stacker.news/",
-    icon: "https://pbs.twimg.com/profile_images/1403162883941359619/oca7LMQ2_400x400.png",
-    lang: "eng",
-    tags: [
-      "news"
-    ],
-    name: "Stacker News",
-    description: "It's like Hacker News but we pay you #Bitcoin",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "aece6654499067ccf0b70eeb345e4abea1c39887"
-  },
-  {
-    url: "https://donjon.ledger.com/",
-    icon: "https://donjon.ledger.com/assets/donjonlogo.png",
-    lang: "eng",
-    tags: [
-      "news",
-      "security"
-    ],
-    name: "Donjon",
-    description: "The security research at Ledger",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "303c4128617180ca1522fedf78083a0373caf30b"
-  },
-  {
-    url: "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/",
-    icon: "https://bitcoiner.guide/favicon.ico",
-    lang: "eng",
-    tags: [
-      "news",
-      "security"
-    ],
-    name: "Bitcoin dev archives",
-    description: "Bitcoin development and protocol discussion. This list is lightly moderated",
-    path: [
-      "bitcoin",
-      "news"
-    ],
-    hash: "dc9cad3c5b5cdfa2530547e78cd0c084bcdc1aec"
-  },
-  {
-    url: "https://www.lookintobitcoin.com/charts/",
-    icon: "https://www.lookintobitcoin.com/static/favicon-32x32.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "dashboard",
-      "charts"
-    ],
-    name: "Look into Bitcoin",
-    description: "Please note, the indicators below are experimental and aim to create valuation approaches for the new asset class of Bitcoin. These charts are built as informative guides. There is no guarantee certain rules within each model will continue to apply as Bitcoin progresses along its adoption journey",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "a109af7503eff86ab706e2fa8cc754bcb40bdbe3"
-  },
-  {
-    url: "http://www.bitcoinkpis.com/",
-    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "dashboard"
-    ],
-    name: "Bitcoin KPI",
-    description: "The goal of this dashboard is to help the Bitcoin community focus on the important metrics & KPIs that I think are most correlated with the success of the network and ecosystem",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "ccbabf719e817595050690766a65d9ba494b8aeb"
-  },
-  {
-    url: "https://charts.woobull.com/",
-    icon: "https://woobull.com/favicon.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "dashboard"
-    ],
-    name: "Woobull",
-    description: "Willy Woo is a leading Bitcoin on-chain analyst",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "d05a946f0503f44ea16b5a4f39ac760af90a5f98"
-  },
-  {
-    url: "https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount",
-    icon: "https://insights.glassnode.com/content/images/size/w256h256/2019/06/500px-square.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "dashboard"
-    ],
-    name: "Glassnode",
-    description: "Free and subcription charts",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "ea0567c2c4c423a3078aa51e4eb2e35d545d80df"
-  },
-  {
-    url: "https://tsypruyan.github.io/index.html",
-    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "dashboard"
-    ],
-    name: "Tsypruyan",
-    description: "Bitcoin on-chain independent research project Data is available for non-commercial use",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "63a8db3871b3d2c8be8edcf803eb2f3a45bdb34a"
-  },
-  {
-    url: "https://transactionfee.info/",
-    icon: "https://transactionfee.info/img/browser-icons/android-icon-192x192.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "dashboard"
-    ],
-    name: "Transaction Fee",
-    description: "Bitcoin Protocol Layer Statistics",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "d94b17b4072734c99608947a66d73fab3daf2922"
-  },
-  {
-    url: "https://hodlwave.com/",
-    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "utxo"
-    ],
-    name: "Hodl wave",
-    description: "Bitcoin UTXO age distribution",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "516a83953af63ee209a1eaf256714761d9782850"
-  },
-  {
-    url: "https://txstats.com/dashboard/db/home-dashboard?orgId=1",
-    icon: "https://txstats.com/public/img/bitmex.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "charts",
-      "utxo"
-    ],
-    name: "TxStats",
-    description: "It provides dashboards highlighting the usage of various advanced Bitcoin features and tracking many important statistics",
-    path: [
-      "bitcoin",
-      "analysis",
-      "charts"
-    ],
-    hash: "a19bdcb19952034ab1be1c7b24036f4c7c2e4418"
+    hash: "9005d0c14d7f633fe8eadd32252a104eaa08f8bb"
   },
   {
     url: "https://coinos.io/login",
@@ -4203,6 +3217,1067 @@ export const domain = [
       "swap"
     ],
     hash: "589204331edaafbac0e23f8f60a0ddaf2b5f3e9a"
+  },
+  {
+    url: "https://jimmysong.substack.com/",
+    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F2adf4eed-98e3-4d04-9405-4ebfcbb435b2_256x256.png",
+    lang: "eng",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "Jimmy Song",
+    description: "Bitcoin from a technical perspective",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "30e3821e2539fe36af740fb304142281bee23fdd"
+  },
+  {
+    url: "https://soberania.substack.com/",
+    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F811b1f91-98ca-4bf0-b04a-31572e2b055c_400x400.png",
+    lang: "esp",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "Ideas By Muloko",
+    description: "Ideas libres e independientes, soberanía individual, era de la información, filosofía, formación sobre Bitcoin, ciberseguridad, seguridad física, software, energía",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "45aaed7a20f63999c94dc7085277f9cba1ef8b2a"
+  },
+  {
+    url: "https://unasemanamejor.substack.com/",
+    icon: "https://cdn.substack.com/image/fetch/w_96,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F61ab72d3-7269-45c6-b3f9-9c50dc6aaf2b_400x400.png",
+    lang: "esp",
+    tags: [
+      "nodes",
+      "custody"
+    ],
+    name: "Una semana mejor",
+    description: "Te suscribes y te mando un email cada lunes. De que te voy a hablar en ese email? Eso es sorpresa",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "a77b49dab8d37997ea41ec42e6ba8beb3d095e22"
+  },
+  {
+    url: "https://bikesandbitcoin.substack.com/",
+    icon: "https://substackcdn.com/image/fetch/w_256,h_256,c_fill,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0da857fe-e35c-494e-92be-b9388e5dba6f_400x400.jpeg",
+    lang: "eng",
+    tags: [],
+    name: "Bikes And Bitcoin",
+    description: "Building a Pleb citadel",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "486b28c0f87f688aa8076182e0b24062624658aa"
+  },
+  {
+    url: "https://www.tesisbitcoin.com/",
+    icon: "https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F7638662a-9897-4caf-9c9f-d1e2be7c3582_1400x931.png",
+    lang: "esp",
+    tags: [],
+    name: "La tesis de Bitcoin",
+    description: "Connotaciones económicas, tecnológicas y sociales de Bitcoin",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "9b58941d642f5dd732b826810aa49fa414a81cac"
+  },
+  {
+    url: "https://www.getrevue.co/profile/jonnyji50127056",
+    icon: "https://s3.amazonaws.com/revue/profiles/images/000/316/988/thumb/UGCe6V5v.jpg",
+    lang: "esp",
+    tags: [],
+    name: "Jonny Jimenez",
+    description: "Bitcoin ß Lightning Network. Cuando escribo por aquí, sólo estoy hablando de Bitcoin...",
+    path: [
+      "bitcoin",
+      "substack"
+    ],
+    hash: "a06ba031fa620ab66bbf206c9c25f8be49cdbe60"
+  },
+  {
+    url: "https://github.com/cryptoadvance/specter-diy",
+    icon: "https://avatars.githubusercontent.com/u/52270008?s=200&v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "wallets",
+      "bitcoin",
+      "hardware"
+    ],
+    name: "Specter DIY",
+    description: "The idea of the project is to build a hardware wallet from off-the-shelf components",
+    path: [
+      "bitcoin",
+      "github",
+      "hardware"
+    ],
+    hash: "5ed558fd6fe92fa9f2b1c6cbf71bd3946b626a41"
+  },
+  {
+    url: "https://github.com/diybitcoinhardware/diybitcoinhardware.github.io",
+    icon: "https://avatars.githubusercontent.com/u/54726412?s=200&v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "hardware",
+      "bitcoin",
+      "wallets"
+    ],
+    name: "DIY Bitcoin Hardware",
+    description: "Interesting DIY bitcoin and lightning-related projects. This includes hardware wallets, verification tools, POS terminals, full nodes and other stuff",
+    path: [
+      "bitcoin",
+      "github",
+      "hardware"
+    ],
+    hash: "2a9eba3c5846bfef04e006a5d82491e2f0d2422e"
+  },
+  {
+    url: "https://github.com/SeedSigner/seedsigner",
+    icon: "https://avatars.githubusercontent.com/u/65379725",
+    lang: "eng",
+    tags: [
+      "github",
+      "hardware",
+      "bitcoin",
+      "wallets"
+    ],
+    name: "SeedSigner",
+    description: "The goal of SeedSigner is to lower the cost and complexity of Bitcoin multi-signature wallet use",
+    path: [
+      "bitcoin",
+      "github",
+      "hardware"
+    ],
+    hash: "070c5d0e3d48d27424e49691551d24bd19e5abc6"
+  },
+  {
+    url: "https://mcudev.github.io/",
+    icon: "https://avatars.githubusercontent.com/u/29890609?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "hardware",
+      "bitcoin",
+      "PoS"
+    ],
+    name: "mcudev",
+    description: "Hardware Wallets projects",
+    path: [
+      "bitcoin",
+      "github",
+      "hardware"
+    ],
+    hash: "e54593b626010ddb77839ddab109b585f005aca5"
+  },
+  {
+    url: "https://github.com/rootzoll/raspiblitz",
+    icon: "https://raw.githubusercontent.com/rootzoll/raspiblitz/v1.7/pictures/raspilogo_tile_400px.png",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin"
+    ],
+    name: "Raspiblitz",
+    description: "Build your own Lightning & Bitcoin Fullnode on a RaspberryPi with a nice Display",
+    path: [
+      "bitcoin",
+      "github",
+      "node"
+    ],
+    hash: "6e12a432ad8fd9b65779964366d3e9fef02f0200"
+  },
+  {
+    url: "https://github.com/raspibolt/raspibolt/",
+    icon: "https://avatars.githubusercontent.com/u/19550140?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin"
+    ],
+    name: "Raspibolt",
+    description: "Build your own do-everything-yourself Bitcoin full node that will make you a sovereign peer in the Bitcoin and Lightning network",
+    path: [
+      "bitcoin",
+      "github",
+      "node"
+    ],
+    hash: "c046d2c6644ee2d3918d190fc3a17dc7d4091cf8"
+  },
+  {
+    url: "https://code.samourai.io/ronindojo",
+    icon: "https://code.samourai.io/uploads/-/system/group/avatar/41/RoninDojo-01c.png",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin"
+    ],
+    name: "RoninDojo",
+    description: "The independent team building RoninDojo software expanding the functionality of Dojo",
+    path: [
+      "bitcoin",
+      "github",
+      "node"
+    ],
+    hash: "761ff634a190a0ac24222e04b0a2ece9f761da3d"
+  },
+  {
+    url: "https://code.samourai.io/dojo",
+    icon: "https://code.samourai.io/uploads/-/system/group/avatar/5/profile_dojo.png",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin"
+    ],
+    name: "Dojo",
+    description: "The team responsible for development of Dojo full node wallet tracking server",
+    path: [
+      "bitcoin",
+      "github",
+      "node"
+    ],
+    hash: "411a5063a3fe88a879c393f4297ca0f894b3fbdd"
+  },
+  {
+    url: "https://github.com/openoms/bitcoin-tutorials",
+    icon: "https://avatars.githubusercontent.com/u/43343391?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin"
+    ],
+    name: "Bitcoin Tutorials - openoms",
+    description: "Documenting Bitcoin related setups using LND, JoinMarket, RaspiBlitz, Debian and Ubuntu",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "03999552b67fa78d31474b73ff47e782d1cfcca1"
+  },
+  {
+    url: "https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line",
+    icon: "https://avatars.githubusercontent.com/u/69103",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin"
+    ],
+    name: "Learning Bitcoin from the Command Line",
+    description: "It is a tutorial for working with Bitcoin (and Lightning) that teaches direct interaction with the servers themselves, as the most robust and secure way to begin cryptocurrency work",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "35cc9ad294f8555e9b5503e64f7fd2396aed366b"
+  },
+  {
+    url: "https://github.com/btcguide/btcguide.github.io",
+    icon: "https://avatars.githubusercontent.com/u/69905025",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin"
+    ],
+    name: "10x Security Bitcoin Guide",
+    description: "How to store bitcoin without any single point of failure",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "0320c8e4a353646a61ddcc0b2c39c95a95288fcc"
+  },
+  {
+    url: "https://github.com/darosior/python-bip32",
+    icon: "https://avatars.githubusercontent.com/u/22457751",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin",
+      "bip"
+    ],
+    name: "Python-BIP32",
+    description: "Minimalistic implementation of BIP32",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "4ac44ba80ae2b5520872134fa7ddd8b3e2652ed0"
+  },
+  {
+    url: "https://github.com/regiregi22/Hodl-de-Bitcoin-seguro",
+    icon: "https://avatars.githubusercontent.com/u/16608353?v=4",
+    lang: "esp",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin",
+      "hodl"
+    ],
+    name: "HODL de Bitcoin seguro",
+    description: "Almacena tus bitcoins de manera segura y gratuita pero solo si se realiza SIEMPRE de manera estricta y cuidadosa",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "60daa2df25d71fa6b2bb7786f95bb6670eb0468b"
+  },
+  {
+    url: "https://github.com/cointastical/P2P-Trading-Exchanges/",
+    icon: "https://avatars.githubusercontent.com/u/60823751?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "p2p"
+    ],
+    name: "P2P Trading Exchanges",
+    description: "Person-to-Person bitcoin Trading Exchanges",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "cee6173f74c165332cb0df5e00ab92fb478b6f17"
+  },
+  {
+    url: "https://github.com/openoms/joininbox",
+    icon: "https://avatars.githubusercontent.com/u/43343391?v=4",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "github",
+      "coinjoin"
+    ],
+    name: "JoinBox",
+    description: "A minimalistic, security focused linux environment for JoinMarket with a terminal based graphical menu",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "874e9e9635082eebf9822822da6dd55030b0b3d9"
+  },
+  {
+    url: "https://github.com/PulpCattel/JoinMarket-On-Tails",
+    icon: "https://avatars.githubusercontent.com/u/51127079",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "github",
+      "coinjoin",
+      "tails"
+    ],
+    name: "JoinMarket On Tails",
+    description: "Straightforward tutorial on how to create a JoinMarket setup on Tails",
+    path: [
+      "bitcoin",
+      "github",
+      "guides"
+    ],
+    hash: "81b845994f769c7e5718acaf6a941ee4d21fd3d9"
+  },
+  {
+    url: "https://bitcoinal.com/",
+    icon: "https://bitcoinal.com/img/b-icon.jpg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "graph",
+      "price"
+    ],
+    name: "Bitcoinal",
+    description: "Bitcoinal includes various applications, such as statistics, tweets, tools and games",
+    path: [
+      "bitcoin",
+      "analysis",
+      "animation"
+    ],
+    hash: "fb6e2258ceda45e120f279d6f8315846f4e2bd96"
+  },
+  {
+    url: "https://txstreet.com/v/btc",
+    icon: "https://txstreet.com/static/img/icons/icons-192.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "graph",
+      "price"
+    ],
+    name: "Tx Street",
+    description: "TxStreet is a live transaction and mempool visualizer featuring Bitcoin. When a new transaction is broadcasted to the network, a person appears and attempts to board a bus in real time",
+    path: [
+      "bitcoin",
+      "analysis",
+      "animation"
+    ],
+    hash: "268bfdb3c9d270a20dd09b2878b9517f7bd5fe71"
+  },
+  {
+    url: "https://bits.monospace.live/",
+    icon: "https://bits.monospace.live/favicon-32x32.png",
+    lang: "eng",
+    tags: [
+      "fees",
+      "bitcoin"
+    ],
+    name: "Bitfeed",
+    description: "On a typical day, the Bitcoin network confirms around 300,000 transactions by mining an average of 144 blocks. Bitfeed attempts to visualise this flow of information",
+    path: [
+      "bitcoin",
+      "analysis",
+      "animation"
+    ],
+    hash: "ac4a1dcbc77ff98a8f29c8dda5b589ee35606961"
+  },
+  {
+    url: "http://bitcoincity.info/",
+    icon: "http://bitcoincity.info/mini.png",
+    lang: "eng",
+    tags: [
+      "fees",
+      "bitcoin"
+    ],
+    name: "Bitcoin City",
+    description: "Each city is a bitcoin transaction, on the road to the blockchain",
+    path: [
+      "bitcoin",
+      "analysis",
+      "animation"
+    ],
+    hash: "20ecb1bc97821332d6ccd864105f092d522bc424"
+  },
+  {
+    url: "https://txhighway.cash",
+    icon: "https://txhighway.cash/assets/sprites/bitcoin-small-med.png",
+    lang: "eng",
+    tags: [
+      "fees",
+      "bitcoin"
+    ],
+    name: "Tx highway",
+    description: "Transaction visualizer",
+    path: [
+      "bitcoin",
+      "analysis",
+      "animation"
+    ],
+    hash: "471c4bbcc8a6e8ba06648bce84510c40bb951fde"
+  },
+  {
+    url: "https://github.com/txCastOrg/txCast",
+    icon: "https://avatars.githubusercontent.com/u/77703015",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "github",
+      "transaction",
+      "tor"
+    ],
+    name: "txCast",
+    description: "Commandline tool to quickly broadcast signed transactions over tor (at random times to break timing analysis)",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "e46bddb642da230ca9d9aad9804deec4fa771762"
+  },
+  {
+    url: "https://github.com/MuleTools/MuleTools",
+    icon: "https://avatars.githubusercontent.com/u/31126254?s=200&v=4",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "github",
+      "broadcast",
+      "transaction"
+    ],
+    name: "MuleTools",
+    description: "Mule Tools will be a clearing house for code that enables alternative broadcast methods for bitcoin transactions with a view towards routing around censorship, network outages, hijacking by hostile external and internal actors",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "78a2cc6bd4303f7ff743b692163a7644118f1e6f"
+  },
+  {
+    url: "https://github.com/shesek/minsc",
+    icon: "https://avatars.githubusercontent.com/u/877904?v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin",
+      "bip"
+    ],
+    name: "Minsc",
+    description: "Minsc is a high-level scripting language for expressing Bitcoin Script spending conditions. It is based on the Miniscript Policy language",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "572a9f6d634dc1fbcdd4a8e790a075f6ee19d631"
+  },
+  {
+    url: "https://github.com/bwt-dev/bwt",
+    icon: "https://avatars.githubusercontent.com/u/76660817",
+    lang: "eng",
+    tags: [
+      "github",
+      "guides",
+      "bitcoin",
+      "bip"
+    ],
+    name: "Bitcoin Wallet Tracker",
+    description: "bwt is a lightweight wallet descriptor/xpub tracker and query engine for Bitcoin, implemented in Rust",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "fb92b8496dea752f69e1a43191d5c807ac56c4a2"
+  },
+  {
+    url: "https://github.com/janoside/btc-rpc-explorer",
+    icon: "https://avatars.githubusercontent.com/u/99734?s=120&v=4",
+    lang: "eng",
+    tags: [
+      "github",
+      "explorer",
+      "bitcoin"
+    ],
+    name: "BTC RPC Explorer",
+    description: "Self-Hosted Bitcoin explorer for everyone running Bitcoin Core",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "47587346410de89e1b74cc348f29eca0f4081840"
+  },
+  {
+    url: "https://github.com/romanz/electrs",
+    icon: "https://avatars.githubusercontent.com/u/9900",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin",
+      "indexer"
+    ],
+    name: "Electrs",
+    description: "An efficient re-implementation of Electrum Server, inspired by ElectrumX, Electrum Personal Server and bitcoincore-indexd",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "0cbee5ef1bb79319b390304b0428d96de9390d1c"
+  },
+  {
+    url: "https://github.com/cculianu/Fulcrum",
+    icon: "https://avatars.githubusercontent.com/u/266627",
+    lang: "eng",
+    tags: [
+      "github",
+      "nodes",
+      "bitcoin",
+      "indexer"
+    ],
+    name: "Fulcrum",
+    description: "A fast & nimble SPV server for Bitcoin and others",
+    path: [
+      "bitcoin",
+      "github",
+      "transactions"
+    ],
+    hash: "e5d67f4a188d8d8bd65e5bb4523852b45e434515"
+  },
+  {
+    url: "https://www.lookintobitcoin.com/charts/",
+    icon: "https://www.lookintobitcoin.com/static/favicon-32x32.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "dashboard",
+      "charts"
+    ],
+    name: "Look into Bitcoin",
+    description: "Please note, the indicators below are experimental and aim to create valuation approaches for the new asset class of Bitcoin. These charts are built as informative guides. There is no guarantee certain rules within each model will continue to apply as Bitcoin progresses along its adoption journey",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "a109af7503eff86ab706e2fa8cc754bcb40bdbe3"
+  },
+  {
+    url: "http://www.bitcoinkpis.com/",
+    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "dashboard"
+    ],
+    name: "Bitcoin KPI",
+    description: "The goal of this dashboard is to help the Bitcoin community focus on the important metrics & KPIs that I think are most correlated with the success of the network and ecosystem",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "ccbabf719e817595050690766a65d9ba494b8aeb"
+  },
+  {
+    url: "https://charts.woobull.com/",
+    icon: "https://woobull.com/favicon.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "dashboard"
+    ],
+    name: "Woobull",
+    description: "Willy Woo is a leading Bitcoin on-chain analyst",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "d05a946f0503f44ea16b5a4f39ac760af90a5f98"
+  },
+  {
+    url: "https://studio.glassnode.com/metrics?a=BTC&m=addresses.ActiveCount",
+    icon: "https://insights.glassnode.com/content/images/size/w256h256/2019/06/500px-square.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "dashboard"
+    ],
+    name: "Glassnode",
+    description: "Free and subcription charts",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "ea0567c2c4c423a3078aa51e4eb2e35d545d80df"
+  },
+  {
+    url: "https://tsypruyan.github.io/index.html",
+    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "dashboard"
+    ],
+    name: "Tsypruyan",
+    description: "Bitcoin on-chain independent research project Data is available for non-commercial use",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "63a8db3871b3d2c8be8edcf803eb2f3a45bdb34a"
+  },
+  {
+    url: "https://transactionfee.info/",
+    icon: "https://transactionfee.info/img/browser-icons/android-icon-192x192.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "dashboard"
+    ],
+    name: "Transaction Fee",
+    description: "Bitcoin Protocol Layer Statistics",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "d94b17b4072734c99608947a66d73fab3daf2922"
+  },
+  {
+    url: "https://hodlwave.com/",
+    icon: "https://tubitcoin.es/wp-content/plugins/cryptocurrency-price-ticker-widget/assets/coin-logos/bitcoin.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "utxo"
+    ],
+    name: "Hodl wave",
+    description: "Bitcoin UTXO age distribution",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "516a83953af63ee209a1eaf256714761d9782850"
+  },
+  {
+    url: "https://txstats.com/dashboard/db/home-dashboard?orgId=1",
+    icon: "https://txstats.com/public/img/bitmex.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "charts",
+      "utxo"
+    ],
+    name: "TxStats",
+    description: "It provides dashboards highlighting the usage of various advanced Bitcoin features and tracking many important statistics",
+    path: [
+      "bitcoin",
+      "analysis",
+      "charts"
+    ],
+    hash: "a19bdcb19952034ab1be1c7b24036f4c7c2e4418"
+  },
+  {
+    url: "https://terminal.bytetree.com/bitcoin/market",
+    icon: "https://terminal.bytetree.com/favicon-32x32.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "dashboard"
+    ],
+    name: "ByteTree",
+    description: "Bitcoin real-time on-chain data, fundamentals, technicals & market analysis. ",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "f40758c70a875134e99655ad9f6fe960366549d7"
+  },
+  {
+    url: "https://stats.buybitcoinworldwide.com/",
+    icon: "https://www.buybitcoinworldwide.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "dashboard"
+    ],
+    name: "Buy Bitcoin Worldwide",
+    description: "Any information found on this page is not to be considered as financial advice. You should do your own research before making any decisions",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "78a9d4105af404047e1c3b2c9d5ab6a2dc70eb52"
+  },
+  {
+    url: "https://bitcoin.clarkmoody.com/dashboard/",
+    icon: "https://bitcoin.clarkmoody.com/dashboard/img/touch-icon-128.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "dashboard"
+    ],
+    name: "Clark Moody | Dashboard",
+    description: "A single-page view into the metrics of the Bitcoin ecosystem.",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "182b123b54a9ee51ec9e85abf7b09e868f7bee26"
+  },
+  {
+    url: "https://bitbo.io/",
+    icon: "https://assets.bitbo.io/img/logos/bitbo-logo.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "dashboard"
+    ],
+    name: "BitBo",
+    description: "Bitbo is a real-time Bitcoin dashboard that allows anyone to monitor on-chain data, view live price action, and track key economic indicators - all for free",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "808f475f45117df4ab99c08b1e5e270de5db1d3d"
+  },
+  {
+    url: "https://alternative.me/crypto/fear-and-greed-index/",
+    icon: "https://alternative.me/images/alternative-me-logo.png",
+    lang: "eng",
+    tags: [
+      "mood",
+      "bitcoin"
+    ],
+    name: "Fear & Greed",
+    description: "Each day, we analyze emotions and sentiments from different sources and crunch them into one simple number: The Fear & Greed Index",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "0934c7ab0b35a32531e4edd408da6d6d45329c89"
+  },
+  {
+    url: "https://www.coinglass.com/today",
+    icon: "https://cdn.coinglasscdn.com/static/icon_200.png",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "price"
+    ],
+    name: "Bitcoin monthly returns",
+    description: "Futures trading & information platform,where you can find the Bitcoin Liquidations ,Bitcoin open interest, Grayscale Bitcoin Trust, Bitcoin longs vs shorts ratio and actively compare funding rates for crypto futures",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "3e829bf9e00ac0110e605e24dcc6e0b510015461"
+  },
+  {
+    url: "https://timechainstats.com/",
+    icon: "https://timechainstats.com/img/img-11d.png",
+    lang: "eng",
+    tags: [
+      "bitcoin",
+      "price"
+    ],
+    name: "Timechain Stats",
+    description: "The attacker isn't adding blocks to the end. He has to go back and redo the block his transaction is in and all the blocks after it, as well as any new blocks the network keeps adding to the end while he's doing that",
+    path: [
+      "bitcoin",
+      "analysis",
+      "metrics"
+    ],
+    hash: "d81998d068394860313ab1c27510d23ddd6bd0f8"
+  },
+  {
+    url: "https://bitcoinfees.earn.com/",
+    icon: "https://bitcoinfees.earn.com/assets/images/earn-logo-circle.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees"
+    ],
+    name: "Earn",
+    description: "The fees displayed here are Satoshis per byte of transaction data",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "286d332f2804a982adb108f979d8f49874c65d7e"
+  },
+  {
+    url: "https://mempool.space/",
+    icon: "https://mempool.space/resources/favicons/favicon.ico",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees",
+      "mempool",
+      "block"
+    ],
+    name: "Mempool Space",
+    description: "Mempool viewer in a really clear way",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "5429e2e5bc60bda1f916cd032081274288a96c6e"
+  },
+  {
+    url: "https://jochen-hoenicke.de/queue/#BTC,24h,weight",
+    icon: "https://jochen-hoenicke.de/queue/mempool-icon-192.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees"
+    ],
+    name: "Johoe's Bitcoin Mempool Statistics",
+    description: "This page displays the number, fee, or weight of the unconfirmed transactions, also known as the transactions in the mempool",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "24ca5be1a9d588025c2c45c64deb6886dafbb627"
+  },
+  {
+    url: "https://whatthefee.io/",
+    icon: "https://whatthefee.io/favicon.ico",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees"
+    ],
+    name: "What to fee",
+    description: "bitcoin feerate estimation",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "315a11924cf06740f63d65273548c14b759dfeeb"
+  },
+  {
+    url: "https://btc.bitaps.com/",
+    icon: "https://pbs.twimg.com/profile_images/1129791437413994496/P6DqkfwY_400x400.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees",
+      "mempool"
+    ],
+    name: "Bitaps",
+    description: "Cryptography, math and financial revolution. Bitcoin, because fuck the banks",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "c383e6d4a62ad2758c72b4b052f6ceb61fd92cff"
+  },
+  {
+    url: "https://www.bitrawr.com/difficulty-estimator",
+    icon: "https://www.bitrawr.com/assets/cryptothis/favicon.ico",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees",
+      "mempool"
+    ],
+    name: "Bitrawr | Difficulty",
+    description: "It is a useful Bitcoin resource guiding you to the best exchanges, most-trusted wallets, nearest ATMs, efficient mining equipment, all in one cohesive site",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "c012617e2ac185c079b23b378e9475a181d537b3"
+  },
+  {
+    url: "https://mempool.observer/",
+    icon: "https://mempool.observer/img/og_preview.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees",
+      "mempool"
+    ],
+    name: "Mempool Observer",
+    description: "The chart shows a mempool snapshot from its node. The mempool contains unconfirmed transactions waiting to be included in a block",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "5e838de89a31e25e750e8971a6950ad1bc91b17e"
+  },
+  {
+    url: "https://miningpool.observer/",
+    icon: "https://miningpool.observer/static/img/template_and_block.svg",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "fees",
+      "mempool",
+      "transactions"
+    ],
+    name: "Mining Pool Observer",
+    description: "Bitcoin Mining Pools construct blocks from unconfirmed transactions",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "f931f46211efd89453c33b215abb6b5b67486bb4"
+  },
+  {
+    url: "https://bitcoinstrings.com/",
+    icon: "https://satoshisperperson.com/favicon.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "mempool",
+      "block"
+    ],
+    name: "Bitcoin strings",
+    description: "This site reveals the blockchain in words. Author of this site takes no responsibility for the content shown",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "88bd53eb994c2549ef2a3a0d68ae9c58e6296cfd"
+  },
+  {
+    url: "https://murrayrothbot.com/",
+    icon: "https://murrayrothbot.com/murray-rothbot2.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "mempool",
+      "block"
+    ],
+    name: "Murray RothBot",
+    description: "A bitcoin bot, at your service!",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "626faeb361b7ad672758777fa12ed03afa567883"
+  },
+  {
+    url: "https://mempoolexplorer.com/",
+    icon: "https://mempoolexplorer.com/graph192.png",
+    lang: "eng",
+    tags: [
+      "analysis",
+      "mempool",
+      "block"
+    ],
+    name: "Mempool Explorer",
+    description: "This is the full mempool visualizer and it is focused on visualizing where a transaction is in the mining queue",
+    path: [
+      "bitcoin",
+      "analysis",
+      "mempool"
+    ],
+    hash: "3af016bba7c8a7dafb4b8fd76e32ede93a0b042f"
   },
   {
     url: "https://miningpoolstats.stream/bitcoin",
@@ -4876,7 +4951,7 @@ export const domain = [
   },
   {
     url: "https://coldbit.com/",
-    icon: "https://coldbit.com/wp-content/themes/supro/img/logo.svg",
+    icon: "https://coldbit.com/wp-content/uploads/2019/07/cropped-favicon-32x32.png",
     lang: "eng",
     tags: [
       "security",
@@ -5019,123 +5094,245 @@ export const domain = [
     hash: "f179cc0c6ae4c7ff83486fc3d0fc569720c4e83d"
   },
   {
-    url: "https://terminal.bytetree.com/bitcoin/market",
-    icon: "https://terminal.bytetree.com/favicon-32x32.png",
+    url: "https://criptext.com/",
+    icon: "https://cdn.criptext.com/Criptext-Email-Website/images/criptext.png",
     lang: "eng",
     tags: [
-      "analysis",
-      "dashboard"
+      "email"
     ],
-    name: "ByteTree",
-    description: "Bitcoin real-time on-chain data, fundamentals, technicals & market analysis. ",
+    name: "Criptext",
+    description: "Quite possibly the most private email service - ever. We keep your privacy, not your emails",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "f40758c70a875134e99655ad9f6fe960366549d7"
+    hash: "d95b33b0c1902780fb9a3917fdeb8a4f19b7bc3f"
   },
   {
-    url: "https://stats.buybitcoinworldwide.com/",
-    icon: "https://www.buybitcoinworldwide.com/favicon.ico",
+    url: "https://mailvelope.com/en",
+    icon: "https://mailvelope.com/img/Mailvelope/logo_signet_32.png",
     lang: "eng",
     tags: [
-      "analysis",
-      "dashboard"
+      "email"
     ],
-    name: "Buy Bitcoin Worldwide",
-    description: "Any information found on this page is not to be considered as financial advice. You should do your own research before making any decisions",
+    name: "Mailvelpe",
+    description: "Communicating securely with Mailvelope",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "78a9d4105af404047e1c3b2c9d5ab6a2dc70eb52"
+    hash: "99075f4f7301da90962ae1dae6639267a994b44d"
   },
   {
-    url: "https://bitcoin.clarkmoody.com/dashboard/",
-    icon: "https://bitcoin.clarkmoody.com/dashboard/img/touch-icon-128.png",
+    url: "https://anonaddy.com/",
+    icon: "https://anonaddy.com/favicon-32x32.png",
     lang: "eng",
     tags: [
-      "analysis",
-      "dashboard"
+      "email"
     ],
-    name: "Clark Moody | Dashboard",
-    description: "A single-page view into the metrics of the Bitcoin ecosystem.",
+    name: "Anonaddy",
+    description: "Anonymous Email Forwarding. Create Unlimited Email Aliases For Free",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "182b123b54a9ee51ec9e85abf7b09e868f7bee26"
+    hash: "648a6cb1589e845a915f8e45c068aea42046fc5e"
   },
   {
-    url: "https://bitbo.io/",
-    icon: "https://assets.bitbo.io/img/logos/bitbo-logo.svg",
+    url: "https://altmails.com/",
+    icon: "https://altmails.com/image/fv.png",
     lang: "eng",
     tags: [
-      "analysis",
-      "dashboard"
+      "email"
     ],
-    name: "BitBo",
-    description: "Bitbo is a real-time Bitcoin dashboard that allows anyone to monitor on-chain data, view live price action, and track key economic indicators - all for free",
+    name: "Altmails",
+    description: "Protect your email address from being sold or spammed. It allows you to create temporary email addresses that automatically forward all emails to your personal email account",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "808f475f45117df4ab99c08b1e5e270de5db1d3d"
+    hash: "1d816a0e0ccd8b2a5dfef4081d9ab7ad526f2c4b"
   },
   {
-    url: "https://alternative.me/crypto/fear-and-greed-index/",
-    icon: "https://alternative.me/images/alternative-me-logo.png",
+    url: "https://countermail.com/",
+    icon: "https://countermail.com/favicon.ico",
     lang: "eng",
     tags: [
-      "mood",
-      "bitcoin"
+      "email"
     ],
-    name: "Fear & Greed",
-    description: "Each day, we analyze emotions and sentiments from different sources and crunch them into one simple number: The Fear & Greed Index",
+    name: "CouinterMail",
+    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "0934c7ab0b35a32531e4edd408da6d6d45329c89"
+    hash: "11400091a22d1e776521704ad14df7daa615018e"
   },
   {
-    url: "https://www.coinglass.com/today",
-    icon: "https://cdn.coinglasscdn.com/static/icon_200.png",
+    url: "https://simplelogin.io/",
+    icon: "https://simplelogin.io/favicon.ico",
     lang: "eng",
     tags: [
-      "bitcoin",
-      "price"
+      "email"
     ],
-    name: "Bitcoin monthly returns",
-    description: "Futures trading & information platform,where you can find the Bitcoin Liquidations ,Bitcoin open interest, Grayscale Bitcoin Trust, Bitcoin longs vs shorts ratio and actively compare funding rates for crypto futures",
+    name: "SimpleLogin",
+    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "3e829bf9e00ac0110e605e24dcc6e0b510015461"
+    hash: "422c1beae0ee087994406ffa580dc2acd38cce68"
   },
   {
-    url: "https://timechainstats.com/",
-    icon: "https://timechainstats.com/img/img-11d.png",
+    url: "https://disroot.org/en/services/email",
+    icon: "https://disroot.org/user/themes/disroot/images/favicon.png",
     lang: "eng",
     tags: [
-      "bitcoin",
-      "price"
+      "email"
     ],
-    name: "Timechain Stats",
-    description: "The attacker isn't adding blocks to the end. He has to go back and redo the block his transaction is in and all the blocks after it, as well as any new blocks the network keeps adding to the end while he's doing that",
+    name: "Disroot",
+    description: "It is a secure and easy to use online email service, designed to provide maximum security and privacy without any unnecessary complexity",
     path: [
-      "bitcoin",
-      "analysis",
-      "metrics"
+      "privacy",
+      "email"
     ],
-    hash: "d81998d068394860313ab1c27510d23ddd6bd0f8"
+    hash: "58feebff06b965b40ded828d5a0ec70418d6783e"
+  },
+  {
+    url: "https://www.msgsafe.io/",
+    icon: "https://www.msgsafe.io/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Msgsafe",
+    description: "Private, end-to-end encrypted, online communication. For everyone",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "9a1943608e14fcfabb355c2c4e1b3db3687b960f"
+  },
+  {
+    url: "https://mailbox.org/en/",
+    icon: "https://mailbox.org/files/layout/logo.svg",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Mailbox",
+    description: "mailbox.org is operated by the family business Heinlein Support GmbH from Berlin, Germany, whose origins go back to the year 1992",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "3541b1d1bbc22d26c976f9058bf2da658fc24d01"
+  },
+  {
+    url: "https://e4ward.com/",
+    icon: "https://e4ward.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "E4ward",
+    description: "Eliminate spam in 3 easy steps",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "5cf92ca6071ed4360d85f444052136ba07737e08"
+  },
+  {
+    url: "https://dnmx.org/",
+    icon: "https://dnmx.org/assets/img/dnmxlogo.png",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Dnmx",
+    description: "Dark Net Email Exchange is a dark net email provider that allows anyone to create an email account anonymously and receive/send emails to the clear net",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "6b75589d4e3249a6d730ad2bcaf81d9eb9349862"
+  },
+  {
+    url: "https://tutanota.com/",
+    icon: "https://tutanota.com/resources/favicon/logo-favicon-192.png",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Tutanota",
+    description: "Secure email for everybody. It is the world's most secure email service, easy to use and private by design. Sign up for encrypted email now",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "28e0de1527c8e973381d7c883408e4c4cc475dcf"
+  },
+  {
+    url: "https://protonmail.com/",
+    icon: "https://proton.me/favicons/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Protonmail",
+    description: "Secure Email Based in Switzerland",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "3c885e6820b02e62a88e9a3b373509faecb2f5c3"
+  },
+  {
+    url: "https://www.guerrillamail.com/",
+    icon: "https://www.guerrillamail.com/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Guerrilla Mail",
+    description: "Avoid spam and stay safe - use a disposable email address!",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "1fed256715a58a1de33e386a1ae925d65fab40e0"
+  },
+  {
+    url: "https://lavabit.com/",
+    icon: "https://lavabit.com/favicons/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email"
+    ],
+    name: "Lavabit",
+    description: "Secure email for the world. Because everyone has the right to communicate privately",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "032847712d91699630f4d7c29dfe19764f5417ae"
+  },
+  {
+    url: "https://skiff.com/",
+    icon: "https://skiff.com/favicon/favicon.ico",
+    lang: "eng",
+    tags: [
+      "email",
+      "privacy"
+    ],
+    name: "Skiff",
+    description: "Take your thoughts and ideas to the next level with a private, end-to-end encrypted workspace",
+    path: [
+      "privacy",
+      "email"
+    ],
+    hash: "d80cb5880256c54300be1b9f50370117a9e38cfa"
   },
   {
     url: "https://sat-cent.vercel.app/",
@@ -5229,7 +5426,7 @@ export const domain = [
   },
   {
     url: "https://www.pricedinbitcoin21.com/landing",
-    icon: "https://pricedinbitcoin.s3.us-east-2.amazonaws.com/1627678550585F9C5707F-6CD6-47A3-A3F7-3C210168C003.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2PN7GATX6BQECJO6%2F20220628%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20220628T152948Z&X-Amz-Expires=900&X-Amz-Signature=060a0432636d677d93b8c5f4885676fa3cba8437b4b307207ba47d34cd6f1d05&X-Amz-SignedHeaders=host",
+    icon: "https://pricedinbitcoin.s3.us-east-2.amazonaws.com/1627678550585F9C5707F-6CD6-47A3-A3F7-3C210168C003.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA2PN7GATX6BQECJO6%2F20220629%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20220629T085928Z&X-Amz-Expires=900&X-Amz-Signature=723493904c61c66ce4eafae3f2956699a27632447196ba3b3492909a9f83872b&X-Amz-SignedHeaders=host",
     lang: "eng",
     tags: [
       "analysis",
@@ -5355,202 +5552,5 @@ export const domain = [
       "money"
     ],
     hash: "5c8125f337d4125b02613021cd748c0b4160608c"
-  },
-  {
-    url: "https://bitcoinfees.earn.com/",
-    icon: "https://bitcoinfees.earn.com/assets/images/earn-logo-circle.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees"
-    ],
-    name: "Earn",
-    description: "The fees displayed here are Satoshis per byte of transaction data",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "286d332f2804a982adb108f979d8f49874c65d7e"
-  },
-  {
-    url: "https://mempool.space/",
-    icon: "https://mempool.space/resources/mempool-space-logo.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees",
-      "mempool",
-      "block"
-    ],
-    name: "Mempool Space",
-    description: "Mempool viewer in a really clear way",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "5429e2e5bc60bda1f916cd032081274288a96c6e"
-  },
-  {
-    url: "https://jochen-hoenicke.de/queue/#BTC,24h,weight",
-    icon: "https://jochen-hoenicke.de/queue/mempool-icon-192.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees"
-    ],
-    name: "Johoe's Bitcoin Mempool Statistics",
-    description: "This page displays the number, fee, or weight of the unconfirmed transactions, also known as the transactions in the mempool",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "24ca5be1a9d588025c2c45c64deb6886dafbb627"
-  },
-  {
-    url: "https://whatthefee.io/",
-    icon: "https://whatthefee.io/favicon.ico",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees"
-    ],
-    name: "What to fee",
-    description: "bitcoin feerate estimation",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "315a11924cf06740f63d65273548c14b759dfeeb"
-  },
-  {
-    url: "https://btc.bitaps.com/",
-    icon: "https://pbs.twimg.com/profile_images/1129791437413994496/P6DqkfwY_400x400.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees",
-      "mempool"
-    ],
-    name: "Bitaps",
-    description: "Cryptography, math and financial revolution. Bitcoin, because fuck the banks",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "c383e6d4a62ad2758c72b4b052f6ceb61fd92cff"
-  },
-  {
-    url: "https://www.bitrawr.com/difficulty-estimator",
-    icon: "https://bitrawr.s3.eu-central-1.amazonaws.com/assets/logo_images/bitrawr-text-logo.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees",
-      "mempool"
-    ],
-    name: "Bitrawr | Difficulty",
-    description: "It is a useful Bitcoin resource guiding you to the best exchanges, most-trusted wallets, nearest ATMs, efficient mining equipment, all in one cohesive site",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "c012617e2ac185c079b23b378e9475a181d537b3"
-  },
-  {
-    url: "https://mempool.observer/",
-    icon: "https://mempool.observer/img/og_preview.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees",
-      "mempool"
-    ],
-    name: "Mempool Observer",
-    description: "The chart shows a mempool snapshot from its node. The mempool contains unconfirmed transactions waiting to be included in a block",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "5e838de89a31e25e750e8971a6950ad1bc91b17e"
-  },
-  {
-    url: "https://miningpool.observer/",
-    icon: "https://miningpool.observer/static/img/template_and_block.svg",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "fees",
-      "mempool",
-      "transactions"
-    ],
-    name: "Mining Pool Observer",
-    description: "Bitcoin Mining Pools construct blocks from unconfirmed transactions",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "f931f46211efd89453c33b215abb6b5b67486bb4"
-  },
-  {
-    url: "https://bitcoinstrings.com/",
-    icon: "https://satoshisperperson.com/favicon.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "mempool",
-      "block"
-    ],
-    name: "Bitcoin strings",
-    description: "This site reveals the blockchain in words. Author of this site takes no responsibility for the content shown",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "88bd53eb994c2549ef2a3a0d68ae9c58e6296cfd"
-  },
-  {
-    url: "https://murrayrothbot.com/",
-    icon: "https://murrayrothbot.com/murray-rothbot2.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "mempool",
-      "block"
-    ],
-    name: "Murray RothBot",
-    description: "A bitcoin bot, at your service!",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "626faeb361b7ad672758777fa12ed03afa567883"
-  },
-  {
-    url: "https://mempoolexplorer.com/",
-    icon: "https://mempoolexplorer.com/graph192.png",
-    lang: "eng",
-    tags: [
-      "analysis",
-      "mempool",
-      "block"
-    ],
-    name: "Mempool Explorer",
-    description: "This is the full mempool visualizer and it is focused on visualizing where a transaction is in the mining queue",
-    path: [
-      "bitcoin",
-      "analysis",
-      "mempool"
-    ],
-    hash: "3af016bba7c8a7dafb4b8fd76e32ede93a0b042f"
   }
 ]

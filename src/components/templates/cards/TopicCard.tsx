@@ -13,11 +13,16 @@ interface FolderCardProps {
   icon: string;
   folderType: FolderType;
   iconType?: string;
+  navigateEvent: any
 }
 
-const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, folderType }: FolderCardProps) => {
+const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, folderType, navigateEvent }: FolderCardProps) => {
 
-  const imageNumber = getRandomInt(folderType);
+  // We need to extract from the array the topic. Might do in the server
+  const cardType = FolderType.ROOT;
+
+  const imageNumber = getRandomInt(cardType);
+  console.log(imageNumber)
 
   const renderIcon = () => {
     return getIconType(icon) === SVG ?
@@ -25,9 +30,9 @@ const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, folderT
       <CustomIcon name={icon}/>
   }
   console.log('TODO: Name has to be without format');
-  const formatName = `${name[0].toUpperCase()}${name.substring(1)}`
+  const formatName = `${name[0].toUpperCase()}${name.substring(1)}`;
   return (
-    <div className={`topic-card ${folderType.toLowerCase()}-number-${imageNumber} shadow`}>
+    <div className={`topic-card ${cardType.toLowerCase()}-number-${imageNumber} shadow`} onClick={() => navigateEvent(formatName)}>
       { renderIcon() }
       <div className='topic-name'><span>{formatName}</span></div>
       <div className='topic-description'><span>{description.substring(0, 70)}</span></div>
