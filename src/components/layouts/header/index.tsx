@@ -1,7 +1,7 @@
 import { GoPrimitiveDot } from "react-icons/go";
 import { Link } from "react-router-dom";
-import { EXPLORER_ROUTE, HOME_ROUTE, MARKET_ROUTE } from "../../../constants";
 
+import { EXPLORER_ROUTE, HOME_ROUTE, MARKET_ROUTE } from "@/constants";
 import './header.style.scss';
 
 const Header: React.FC = () => {

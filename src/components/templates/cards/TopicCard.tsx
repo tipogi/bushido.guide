@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FolderType, SVG } from '../../../constants';
-import { getIconType, getRandomInt } from '../../../services';
+import { FolderType, SVG } from '@/constants';
+import { getIconType, getRandomInt } from '@/services';
 import CustomIcon from '../icons/CustomIcon';
 import CustomSVG from '../icons/CustomSvg';
 

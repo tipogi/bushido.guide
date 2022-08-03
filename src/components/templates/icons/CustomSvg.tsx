@@ -1,4 +1,4 @@
-import { BITCOIN, PRIVACY, WALLET, SIDECHAIN, NODE, BLOCK, MINE, SATOSHI, HARDWARE, TRANSACTIONS, COLD_STORAGE } from "../../../constants/icon.constants";
+import { BITCOIN, PRIVACY, WALLET, SIDECHAIN, NODE, BLOCK, MINE, SATOSHI, HARDWARE, TRANSACTIONS, COLD_STORAGE } from "@/constants/icon.constants";
 import NotFound from "./svg/NotFound";
 import Bitcoin from "./svg/Bitcoin";
 import Privacy from "./svg/Privacy";

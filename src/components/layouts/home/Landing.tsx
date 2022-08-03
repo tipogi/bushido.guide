@@ -1,6 +1,5 @@
 import { gql, useLazyQuery, useQuery } from '@apollo/client';
-import { Link } from 'react-router-dom';
-import { EXPLORER_ROUTE } from '../../../constants';
+
 import './styles/landing.scss';
 
 const HA_GENERIC = gql `

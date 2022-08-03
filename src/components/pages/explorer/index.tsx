@@ -1,16 +1,8 @@
-import { useEffect, useState } from 'react';
-import { domain } from '../../../data/domain';
-import { FolderType } from '../../../constants';
-import DomainCard from '../../templates/cards/DomainCard';
+import TopicCard from '@/components/templates/cards/TopicCard';
+import useTopicQuery from '@/hooks/useTopicQuery';
+import useExplorerNavigate from '@/hooks/useExplorerNavigate';
 
 import '../styles/explorer.scss';
-import { useLazyQuery } from '@apollo/client';
-import { SHOW_TOPICS } from '../../../graphql/queries';
-import { Branch } from './Explorer copy';
-import TopicCard from '../../templates/cards/TopicCard';
-import { useLocation, useNavigate } from 'react-router-dom';
-import useTopicQuery from '../../../hooks/useTopicQuery';
-import useExplorerNavigate from '../../../hooks/useExplorerNavigate';
 
 interface Domain {
   name: string

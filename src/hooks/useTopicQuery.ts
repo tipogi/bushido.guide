@@ -4,6 +4,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import { SHOW_DOMAINS, SHOW_TOPICS } from "../graphql/queries";
 
+interface ILocation {
+  pathname: string
+  state: IState
+}
+
 interface IState {
   cardType: string
 }
@@ -11,7 +16,7 @@ interface IState {
 export default function useTopicQuery() {
   const [getTopics, topicArray ] = useLazyQuery(SHOW_TOPICS);
   const [getDomains, domainArray ] = useLazyQuery(SHOW_DOMAINS);
-  const { pathname, state } = useLocation();
+  const { pathname, state } = useLocation() as ILocation;
 
   const loadTopics = useCallback((path: string[]) => {
     getTopics({ variables: { data: { path }}})

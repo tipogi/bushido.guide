@@ -1,5 +1,5 @@
 import { GiCyberEye } from "react-icons/gi";
-import Language from "../../pages/explorer/components/Language"
+import Language from "@/components/pages/explorer/components/Language"
 import Image from "../generic/Image"
 
 interface DomainCardProps {

@@ -1,5 +1,5 @@
-import { ENG, ESP } from "../../../../constants";
-import Image from "../../../templates/generic/Image";
+import { ENG, ESP } from "@/constants";
+import Image from "@/components/templates/generic/Image";
 
 interface LanguageProps {
   lang: string
