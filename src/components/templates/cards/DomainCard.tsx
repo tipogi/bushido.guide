@@ -1,6 +1,6 @@
-import { GiCyberEye } from "react-icons/gi";
-import Language from "@/components/pages/explorer/components/Language"
-import Image from "../generic/Image"
+import { GiCyberEye } from 'react-icons/gi';
+import Language from '~/components/pages/explorer/components/Language'
+import Image from '../generic/Image'
 
 interface DomainCardProps {
   name: string
@@ -13,7 +13,7 @@ interface DomainCardProps {
 const DomainCard: React.FC<DomainCardProps> = ({ icon, name, description, lang, url }) => {
 
   return (
-    <div className="domain-card">
+    <div className="domain-card" onClick={() => window.open(url)}>
       <Image iconUrl={icon} />
       <div className="text-container">
         <div className="domain-name">{name}</div>

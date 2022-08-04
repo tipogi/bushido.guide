@@ -1,16 +1,16 @@
-import { BITCOIN, PRIVACY, WALLET, SIDECHAIN, NODE, BLOCK, MINE, SATOSHI, HARDWARE, TRANSACTIONS, COLD_STORAGE } from "@/constants/icon.constants";
-import NotFound from "./svg/NotFound";
-import Bitcoin from "./svg/Bitcoin";
-import Privacy from "./svg/Privacy";
-import SideChain from "./svg/SideChain";
-import Wallet from "./svg/Wallet";
+import { BITCOIN, PRIVACY, WALLET, SIDECHAIN, NODE, BLOCK, MINE, SATOSHI, HARDWARE, TRANSACTIONS, COLD_STORAGE } from '~/constants/icon.constants';
+import NotFound from './svg/NotFound';
+import Bitcoin from './svg/Bitcoin';
+import Privacy from './svg/Privacy';
+import SideChain from './svg/SideChain';
+import Wallet from './svg/Wallet';
 import Node from './svg/Node';
-import Block from "./svg/Block";
-import Mining from "./svg/Mining";
-import Satoshi from "./svg/Satoshi";
-import Hardware from "./svg/Hardware";
-import Transactions from "./svg/Transactions";
-import ColdStorage from "./svg/ColdStorage";
+import Block from './svg/Block';
+import Mining from './svg/Mining';
+import Satoshi from './svg/Satoshi';
+import Hardware from './svg/Hardware';
+import Transactions from './svg/Transactions';
+import ColdStorage from './svg/ColdStorage';
 
 interface CustomSVGProps {
   name: string

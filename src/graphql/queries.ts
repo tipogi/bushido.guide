@@ -19,6 +19,8 @@ export const SHOW_DOMAINS = gql `
       description
       icon
       hash
+      lang
+      url
     }
   }
 `

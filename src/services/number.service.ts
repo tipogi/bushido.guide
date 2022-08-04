@@ -1,8 +1,8 @@
-import { FolderType } from "../constants";
+import { CardType } from '~/constants';
 
 const MIN_NUMBER = 1;
 
-export const getRandomInt = (folderType: FolderType) => {
+export const getRandomInt = (folderType: CardType) => {
   const min = Math.ceil(MIN_NUMBER);
   const max = Math.floor(getMaxNumber(folderType));
   return Math.floor(Math.random() * (max - min) + min);
@@ -14,13 +14,13 @@ export const getRandomInt = (folderType: FolderType) => {
  * @param folderType 
  * @returns 
  */
-const getMaxNumber = (folderType: FolderType) => {
+const getMaxNumber = (folderType: CardType) => {
   switch (folderType) {
-    case FolderType.ROOT:
+    case CardType.ROOT:
       return 6;
-    case FolderType.BRANCH:
+    case CardType.BRANCH:
       return 6;
-    case FolderType.LEAF:
+    case CardType.LEAF:
       return 12;
     default:
       return 0;

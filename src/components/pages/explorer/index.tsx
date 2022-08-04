@@ -1,53 +1,29 @@
-import TopicCard from '@/components/templates/cards/TopicCard';
-import useTopicQuery from '@/hooks/useTopicQuery';
-import useExplorerNavigate from '@/hooks/useExplorerNavigate';
+import { useLocation } from 'react-router-dom';
+
+import { CardType } from '~/constants';
+import DomainList from '~/components/layouts/explorer/DomainList';
+import TopicBoard from '~/components/layouts/explorer/TopicBoard';
 
 import '../styles/explorer.scss';
 
-interface Domain {
-  name: string
-  description: string
-  url: string
-  icon: string
-  lang: string
-  hash: string
+interface ILocation {
+  state: IState
+}
+
+interface IState {
+  cardType: CardType
 }
 
 const Explorer: React.FC = () => {
-
-  const { topicArray } = useTopicQuery();
-  let explorerNavigate = useExplorerNavigate(); 
-
-  const renderCards = () => {
-    if (topicArray.data) {
-      return (
-        topicArray.data.showTopics.map((card: any) => {
-          return (
-            <TopicCard 
-              name={card.name}
-              description={card.description}
-              icon={ card.icon } 
-              folderType={card.type} 
-              key={card.hash}
-              navigateEvent={(name: string) => {
-                console.log('Event Name param:', name)
-                console.log('Event card object:', card)
-                explorerNavigate(name, card.type)
-              }}
-            />
-          )
-        })
-      )
-    } else {
-      return <h1>Empty</h1>
-    }
-  }
+  const { state } = useLocation() as ILocation;
 
   return (
     <div id="explorer-container" className='block-wo-height'>
       <div id="list-container">
         {
-          renderCards()
+          state && state.cardType === CardType.LEAF 
+            ? <DomainList/>
+            : <TopicBoard/>
         }
       </div>
     </div>

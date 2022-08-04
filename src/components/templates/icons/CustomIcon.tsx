@@ -20,7 +20,7 @@ import { BsPersonBoundingBox } from "react-icons/bs";
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES,
   STORE, SUBSTACK, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS
- } from "@/constants";
+ } from "~/constants";
 
 
 interface CustomIconProps {

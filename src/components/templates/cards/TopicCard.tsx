@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { FolderType, SVG } from '@/constants';
-import { getIconType, getRandomInt } from '@/services';
+import { CardType, SVG } from '~/constants';
+import { getIconType, getRandomInt } from '~/services';
 import CustomIcon from '../icons/CustomIcon';
 import CustomSVG from '../icons/CustomSvg';
 
@@ -11,15 +11,15 @@ interface FolderCardProps {
   name: string;
   description: string;
   icon: string;
-  folderType: FolderType;
+  cardType: CardType;
   iconType?: string;
   navigateEvent: any
 }
 
-const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, folderType, navigateEvent }: FolderCardProps) => {
+const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, navigateEvent }: FolderCardProps) => {
 
   // We need to extract from the array the topic. Might do in the server
-  const cardType = FolderType.ROOT;
+  const cardType = CardType.ROOT;
 
   const imageNumber = getRandomInt(cardType);
   console.log(imageNumber)
