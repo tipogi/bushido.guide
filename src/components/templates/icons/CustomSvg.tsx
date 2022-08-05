@@ -21,14 +21,8 @@ const CustomSVG: React.FC<CustomSVGProps> = ({ name }: CustomSVGProps) => {
     switch (name) {
       case BITCOIN:
         return Bitcoin;
-      case PRIVACY:
-        return Privacy;
       case WALLET:
         return Wallet;
-      case SIDECHAIN:
-        return SideChain;
-      case NODE:
-        return Node;
       case BLOCK:
         return Block;
       case MINE:
@@ -41,6 +35,13 @@ const CustomSVG: React.FC<CustomSVGProps> = ({ name }: CustomSVGProps) => {
         return Transactions;
       case COLD_STORAGE:
         return ColdStorage;
+      // Not in use. Actually use icons
+      case PRIVACY:
+        return Privacy;
+      case NODE:
+        return Node;
+      case SIDECHAIN:
+        return SideChain;
       default:
         return NotFound;
     }

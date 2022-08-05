@@ -3,23 +3,25 @@ import { FaGithub, FaBook, FaMicrophoneAlt, FaRegNewspaper, FaStore, FaCloud, Fa
 // HeroIcons
 import { HiCubeTransparent, HiCode } from "react-icons/hi";
 //Material Icon
-import { MdOndemandVideo, MdArticle, MdMarkEmailUnread, MdAnimation, MdSimCard } from 'react-icons/md';
+import { MdFactCheck, MdArticle, MdMarkEmailUnread, MdAnimation, MdSimCard, MdExpand } from 'react-icons/md';
 // Flat Icons
 import { FiLayers, FiHardDrive } from 'react-icons/fi';
 // Remix Icon
 import { RiCodeBoxLine } from 'react-icons/ri';
 // Simple Icons
-import { SiSubstack } from "react-icons/si";
+import { SiSubstack, SiAudiomack } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineColumnWidth, AiOutlineCloudServer } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineCloudServer } from "react-icons/ai";
 // IonIcons
 import { IoBarChart, IoAnalyticsSharp } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCollectionPlay, BsShieldLock, BsKeyboard, BsLayersHalf } from "react-icons/bs";
+// Game Icons
+import { GiBuyCard, GiMisdirection } from "react-icons/gi";
 
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES,
-  STORE, SUBSTACK, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS
+  STORE, SUBSTACK, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN
  } from "~/constants";
 
 
@@ -35,25 +37,25 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case ANALYSIS:
         return <HiCubeTransparent/>;
       case GUIDE:
-        return <FaBook/>
+        return <GiMisdirection/>
       case DEV:
         return <RiCodeBoxLine/>;
       case ARTICLES:
         return <MdArticle/>;
       case MULTIMEDIA:
-        return <MdOndemandVideo/>;
+        return <BsCollectionPlay/>;
       case RESOURCES:
-        return <FiLayers/>;
+        return <BsLayersHalf/>;
       case PODCAST:
-        return <FaMicrophoneAlt/>;
+        return <SiAudiomack/>;
       case SUBSTACK:
         return <SiSubstack/>;
       case NEWS:
-        return <FaRegNewspaper/>;
+        return <BsKeyboard/>;
       case SWAP:
         return <AiOutlineSwap/>;
       case P2P:
-        return <AiOutlineColumnWidth/>;
+        return <GiBuyCard/>;
       case STORE:
         return <FaStore/>;
       case SERVICES:
@@ -78,6 +80,12 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <MdSimCard/>;
       case VPS:
         return <AiOutlineCloudServer/>;
+      case PRIVACY:
+        return <BsShieldLock/>
+      case NODE:
+        return <MdFactCheck/>
+      case SIDECHAIN:
+        return <MdExpand/>;
       default:
         return <HiCode/>;
     }

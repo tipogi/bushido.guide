@@ -1,10 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
-import { EXPLORER_GENERIC_ROUTE, EXPLORER_ROUTE, HOME_ROUTE } from '../constants';
-import Home from './pages/Home';
+import { EXPLORER_GENERIC_ROUTE, HOME_ROUTE, MARKET_ROUTE,  } from '../constants';
+import Home from '../layouts/home';
 import Explorer from './pages/explorer';
 
 import './pages/styles/app.scss';
-import Header from './layouts/header';
+import Header from '../layouts/header';
+import Market from './pages/market';
 
 const App: React.FC = () => {
   
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path={HOME_ROUTE} element={<Home/>}></Route>
         <Route path={EXPLORER_GENERIC_ROUTE} element={<Explorer/>}></Route>
+        <Route path={MARKET_ROUTE} element={<Market/>}></Route>
       </Routes>
     </div>
   )

@@ -2,6 +2,8 @@ import { CardType } from '~/constants';
 import { useCallback, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+const EXPLORER_PATH = '/explorer/'
+
 export default function useExplorerNavigate() {
   const navigate = useNavigate()
   const { pathname } = useLocation();
@@ -10,7 +12,7 @@ export default function useExplorerNavigate() {
     let pathTo = `${name.toLowerCase()}`;
     // Create the new path if it is not root
     if (cardType !== CardType.ROOT) 
-      pathTo = `${pathname.split('/explorer/').slice(1)[0]}/${name.toLowerCase()}`
+      pathTo = `${pathname.split(EXPLORER_PATH).slice(1)[0]}/${name.toLowerCase()}`
     // Push to another path
     navigate(pathTo, { state: { cardType }})
   }, [pathname])

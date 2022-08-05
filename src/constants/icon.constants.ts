@@ -43,4 +43,50 @@ export const VPS = 'vps';
 
 // LANGUAGES
 export const ENG = 'eng';
-export const ESP = 'esp'
+export const ESP = 'esp';
+
+
+export const getIconType = (name: string): string | undefined => {
+  switch (name) {
+    // Identify the SVG icons
+    case BITCOIN:
+    case WALLET:
+    case BLOCK:
+    case MINE:
+    case SATOSHI:
+    case HARDWARE:
+    case TRANSACTIONS:
+    case COLD_STORAGE:
+      return SVG;
+    // Identify React Icons
+    case GITHUB:
+    case ANALYSIS:
+    case GUIDE:
+    case DEV:
+    case ARTICLES:
+    case MULTIMEDIA:
+    case RESOURCES:
+    case PODCAST:
+    case SUBSTACK:
+    case NEWS:
+    case SWAP:
+    case P2P:
+    case STORE:
+    case SERVICES:
+    case EMAIL:
+    case ANIMATION:
+    case CHARTS:
+    case METRICS:
+    case TOOLS:
+    case PEOPLE:
+    case CRYPTOGRAPHY:
+    case OS:
+    case SMS:
+    case VPS:
+    case PRIVACY:
+    case NODE:
+    case SIDECHAIN:
+    default:
+      return REACT_ICON;
+  }
+}

@@ -1,13 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import { CardType, SVG } from '~/constants';
-import { getIconType, getRandomInt } from '~/services';
+import { getIconType, getRandomInt } from '~/constants';
 import CustomIcon from '../icons/CustomIcon';
 import CustomSVG from '../icons/CustomSvg';
 
 import './styles/topic-card.style.scss';
 
 interface FolderCardProps {
+  index: number;
   name: string;
   description: string;
   icon: string;
@@ -16,13 +18,27 @@ interface FolderCardProps {
   navigateEvent: any
 }
 
-const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, navigateEvent }: FolderCardProps) => {
+const variants = {
+  hidden: {
+    opacity: 0,
+    y: -(Math.random() * (50 - 0) + 0)
+  },
+  visible: ({ delay }) => ({
+    opacity: 1,
+    transition: {
+      delay,
+      duration: .5
+    },
+    y: 0
+  })
+}
+
+const TopicCard: React.FC<FolderCardProps> = ({ index, name, description, icon, navigateEvent, hash }: FolderCardProps) => {
 
   // We need to extract from the array the topic. Might do in the server
   const cardType = CardType.ROOT;
 
   const imageNumber = getRandomInt(cardType);
-  console.log(imageNumber)
 
   const renderIcon = () => {
     return getIconType(icon) === SVG ?
@@ -32,11 +48,22 @@ const TopicCard: React.FC<FolderCardProps> = ({ name, description, icon, navigat
   console.log('TODO: Name has to be without format');
   const formatName = `${name[0].toUpperCase()}${name.substring(1)}`;
   return (
-    <div className={`topic-card ${cardType.toLowerCase()}-number-${imageNumber} shadow`} onClick={() => navigateEvent(formatName)}>
-      { renderIcon() }
-      <div className='topic-name'><span>{formatName}</span></div>
-      <div className='topic-description'><span>{description.substring(0, 70)}</span></div>
-    </div>
+    <motion.div 
+      className={`topic-card ${cardType.toLowerCase()}-number-${imageNumber} shadow`} 
+      onClick={() => navigateEvent(formatName)}
+      initial='hidden'
+      animate='visible'
+      exit='hidden'
+      variants={variants}
+      layoutId={`${name}_${hash}`}
+      custom={{ delay: (index + 1) * 0.2 }}
+    >
+      <div className='topic-headline'>
+        { renderIcon() }
+        <div className='topic-name'><span>{formatName}</span></div>
+      </div>
+      <div className='topic-description'><span>{description.substring(0, 90)}</span></div>
+    </motion.div>
   )
 }
 

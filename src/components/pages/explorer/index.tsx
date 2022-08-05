@@ -1,10 +1,11 @@
 import { useLocation } from 'react-router-dom';
 
 import { CardType } from '~/constants';
-import DomainList from '~/components/layouts/explorer/DomainList';
-import TopicBoard from '~/components/layouts/explorer/TopicBoard';
+import DomainList from './components/DomainList';
+import TopicBoard from './components/TopicBoard';
 
-import '../styles/explorer.scss';
+import './styles/explorer.scss';
+import '~/layouts/others/styles/generic.style.scss'
 
 interface ILocation {
   state: IState
@@ -18,14 +19,12 @@ const Explorer: React.FC = () => {
   const { state } = useLocation() as ILocation;
 
   return (
-    <div id="explorer-container" className='block-wo-height'>
-      <div id="list-container">
+    <div className='main-container block-wo-height'>
         {
           state && state.cardType === CardType.LEAF 
             ? <DomainList/>
             : <TopicBoard/>
         }
-      </div>
     </div>
   )
 }

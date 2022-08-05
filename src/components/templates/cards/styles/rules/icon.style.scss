@@ -1,23 +1,10 @@
 .icon {
-  color: #45484b;
+  color: #0F0E17;;
   &.react-icons {
-    display: flex;
-    justify-content: left;
-    height: 25px;
-    width: inherit;
-    padding-left: 10px;
-    padding-top: 7px;
-    font-size: 1.4em;
+    font-size: 2em;
+    margin-top: 8px;
   }
   &.custom-svg {
-    height: 25px;
-    width: 5em;
-    margin-left: 5px;
-    margin-top: 5px;
-    display: flex;
-    justify-content: left;
-    svg {
-      width: 35%;
-    }
+    width: 2.5em;
   }
 }
