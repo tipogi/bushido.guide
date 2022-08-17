@@ -24,3 +24,24 @@ export const SHOW_DOMAINS = gql `
     }
   }
 `
+
+export const SHOW_MARKET_OFFERS = gql `
+  query showMarketOffersEntryPoint($data: ShowMarketOffersInput!) {
+    showMarketOffers(data: $data) {
+      offers {
+        exchange
+        dif
+        maker_status
+        min_btc
+        max_btc
+        min_amount
+        max_amount
+        method {
+          icon
+          others
+        }
+      }
+      price
+    }
+  }
+`

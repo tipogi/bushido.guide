@@ -5,7 +5,6 @@ import DomainList from './components/DomainList';
 import TopicBoard from './components/TopicBoard';
 
 import './styles/explorer.scss';
-import '~/layouts/others/styles/generic.style.scss'
 
 interface ILocation {
   state: IState

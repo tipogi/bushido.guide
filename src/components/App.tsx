@@ -2,10 +2,10 @@ import { Route, Routes } from 'react-router-dom';
 import { EXPLORER_GENERIC_ROUTE, HOME_ROUTE, MARKET_ROUTE,  } from '../constants';
 import Home from '../layouts/home';
 import Explorer from './pages/explorer';
-
-import './pages/styles/app.scss';
 import Header from '../layouts/header';
 import Market from './pages/market';
+
+import './pages/styles/app.scss';
 
 const App: React.FC = () => {
   

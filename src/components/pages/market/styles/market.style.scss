@@ -1,0 +1,71 @@
+.main-container {
+  #offer-request {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFFFFE;
+    background: #252525;
+    padding: 10px;
+    border-radius: 10px;
+    #description {
+      h1 {
+        font-size: 1.2em;
+        span.highlight {
+          color: #F25F4C;
+          font-weight: 400;
+        }
+      }
+    }
+    #price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #number {
+        margin-top: 10px;
+        color: #F25F4C;
+        font-size: 2em;
+      }
+    }
+  }
+  #offer-lists {
+    ul {
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        span {
+          flex: 1;
+          text-align: center;
+        }
+        img {
+          height: 40px;
+          border-radius: 30px;
+        }
+        span.maker-online {
+          color: #45ea45;
+        }
+        span.maker-recently_online {
+          color: #d99313;
+        }
+        span.maker-offline {
+          color: #9f4646;
+        }
+        :nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6) {
+          flex: 1;
+          color:white;
+        }
+        div {
+          display: flex;
+          flex: 2;
+          justify-content: center;
+          img {
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}

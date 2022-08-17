@@ -18,7 +18,14 @@
   width: 100vw;
   display: flex;
 }
-.block-wo-height {
+.block-without-height {
   width: 100vw;
   display: flex;
+}
+
+.main-container {
+  background: #272b33;
+  padding: 100px 40px;
+  width: 100%;
+  min-height: 100vh;
 }
