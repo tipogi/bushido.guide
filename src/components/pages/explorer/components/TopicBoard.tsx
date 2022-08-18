@@ -1,6 +1,6 @@
 import TopicCard from '~/components/templates/cards/TopicCard';
-import useExplorerNavigate from '~/hooks/useExplorerNavigate';
-import useExplorerQuery from '~/hooks/useExplorerQuery';
+import useExplorerNavigate from '~/hooks/router/useExplorerNavigate';
+import useExplorerQuery from '~/hooks/graphql/useExplorerQuery';
 import { SHOW_TOPICS } from '~/services/graphql/queries';
 import { CardType } from '~/constants';
 

@@ -28,6 +28,7 @@
     }
   }
   #offer-lists {
+    padding: 50px 150px;
     ul {
       gap: 15px;
       display: flex;
@@ -36,11 +37,19 @@
         display: flex;
         align-items: center;
         width: 100%;
+        padding: 10px;
+        &:hover {
+          border: 3px solid #f2604c;
+          padding: 7px;
+          span {
+            color: #f2604c !important;
+          }
+        }
         span {
           flex: 1;
           text-align: center;
         }
-        img {
+        img.exchange-icon {
           height: 40px;
           border-radius: 30px;
         }
@@ -57,12 +66,28 @@
           flex: 1;
           color:white;
         }
-        div {
+        .market-payment-methods {
           display: flex;
           flex: 2;
           justify-content: center;
-          img {
-            border-radius: 8px;
+          align-items: center;
+          grid-gap: 20px;
+          .payment-icons {
+            display: flex;
+            justify-content: flex-start;
+            flex: 0;
+            grid-gap: 15px;
+            img {
+              height: 30px;
+              border-radius: 8px;
+            }
+          }
+          .other-payments {
+            display: flex;
+            justify-content: flex-start;
+            flex: 0;
+            grid-gap: 5px;
+            color: white;
           }
         }
       }

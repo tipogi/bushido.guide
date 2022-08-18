@@ -37,7 +37,7 @@ export const SHOW_MARKET_OFFERS = gql `
         min_amount
         max_amount
         method {
-          icon
+          icons
           others
         }
       }

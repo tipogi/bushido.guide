@@ -1,6 +1,6 @@
 import DomainCard from '~/components/templates/cards/DomainCard'
 import { SHOW_DOMAINS } from '~/services/graphql/queries'
-import useExplorerQuery from '~/hooks/useExplorerQuery'
+import useExplorerQuery from '~/hooks/graphql/useExplorerQuery'
 
 interface Domain {
   name: string

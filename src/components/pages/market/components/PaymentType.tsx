@@ -1,24 +1,19 @@
 import { useCallback, useMemo } from "react";
 import { 
-  AMAZON_BASE64, AMAZON_GIFT_CARD, BANK, BANK_BASE64, BIZUM, BIZUM_BASE64, CASH_APP, CASH_APP_BASE64, 
-  CASH_BY_EMAIL, 
-  CASH_BY_EMAIL_BASE64, 
-  CLEAR_X_CHANGE, F2F, F2F_BASE64, HALCASH, HALCASH_BASE64, LITECOIN, LITECOIN_BASE64, LN, LN_BASE64, 
+  AMAZON_BASE64, AMAZON_GIFT_CARD, APPLE_PAY, APPLE_PAY_BASE64, BANK, BANK_BASE64, BIZUM, BIZUM_BASE64, CASH_APP, CASH_APP_BASE64, 
+  CASH_BY_EMAIL, CASH_BY_EMAIL_BASE64, 
+  CLEAR_X_CHANGE, F2F, F2F_BASE64, GOOGLE_PLAY_BASE64, GOOGLE_PLAY_GIFT_CARD, HALCASH, HALCASH_BASE64, LIQUID, LIQUID_BASE64, LITECOIN, LITECOIN_BASE64, LN, LN_BASE64, 
   MONERO, MONERO_BASE64, N26, N26_BASE64, PAYPAL, PAYPAL_BASE64, REBELLION, REBELLION_BASE64, REVOLUT, 
   REVOLUT_BASE64, SEPA, SEPA_BASE64, SKRILL, SKRILL_BASE64, STRIKE, STRIKE_BASE64, TETHER, 
-  TETHER_BASE64, WISE, WISE_BASE64, ZELLE, ZELLE_BASE64 
+  TETHER_BASE64, VENMO, VENMO_BASE64, WISE, WISE_BASE64, ZELLE, ZELLE_BASE64 
 } from "~/constants";
+import { IPaymentMethod } from "~/hooks/graphql/interfaces";
 
-interface IMethods {
-  icon: string[];
-  others: string[]
+interface PaymentTypeProps {
+  method: IPaymentMethod
 }
 
-interface IPaymentTypes {
-  method: IMethods
-}
-
-export default function PaymentType({ method }: IPaymentTypes) {
+export default function PaymentType({ method }: PaymentTypeProps) {
   console.log(method)
   /*console.log(method.icon)
   const paymentTypes = useMemo(() => {
@@ -45,6 +40,8 @@ export default function PaymentType({ method }: IPaymentTypes) {
         return ZELLE_BASE64;
       case SKRILL:
         return SKRILL_BASE64;
+      case VENMO:
+        return VENMO_BASE64;
       case CASH_APP:
         return CASH_APP_BASE64;
       case STRIKE:
@@ -57,10 +54,14 @@ export default function PaymentType({ method }: IPaymentTypes) {
         return HALCASH_BASE64;
       case AMAZON_GIFT_CARD:
         return AMAZON_BASE64;
+      case APPLE_PAY:
+        return APPLE_PAY_BASE64;
       case LN:
         return LN_BASE64;
       case MONERO:
         return MONERO_BASE64;
+      case LIQUID:
+        return LIQUID_BASE64;
       case TETHER:
         return TETHER_BASE64;
       case LITECOIN:
@@ -71,6 +72,8 @@ export default function PaymentType({ method }: IPaymentTypes) {
         return F2F_BASE64;
       case CASH_BY_EMAIL:
         return CASH_BY_EMAIL_BASE64;
+      case GOOGLE_PLAY_GIFT_CARD:
+        return GOOGLE_PLAY_BASE64;
       default:
         return method;
     }
@@ -79,9 +82,7 @@ export default function PaymentType({ method }: IPaymentTypes) {
   const renderIcons = (icon: string[]) => {
     return icon.map((value, index) => {
       return (
-        <div key={index}>
-          <img src={`${extractImg(value) }`}/>
-        </div>
+        <img key={index} src={`${extractImg(value) }`}/>
       )
     })
   }
@@ -93,8 +94,8 @@ export default function PaymentType({ method }: IPaymentTypes) {
   
   return (
     <div className="market-payment-methods">
-      { method.icon.length !== 0 && renderIcons(method.icon)}
-      { method.others.length !== 0 && renderPaymentLabels(method.others) }
+      { method.icons.length !== 0 && <div className="payment-icons">{renderIcons(method.icons)}</div> }
+      { method.others.length !== 0 && <div className="other-payments">{ renderPaymentLabels(method.others) }</div> }
     </div>
   )
 }

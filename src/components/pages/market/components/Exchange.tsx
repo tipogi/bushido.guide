@@ -26,6 +26,6 @@ export default function Exchange({ name }: IExchange) {
   }, [])
 
   return (
-    <img src={`${extractImg(name) }`}/>
+    <img className="exchange-icon" src={`${extractImg(name) }`}/>
   )
 }
