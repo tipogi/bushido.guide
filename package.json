@@ -11,12 +11,14 @@
     "@apollo/client": "^3.6.9",
     "framer-motion": "7.0.0",
     "graphql": "^16.5.0",
+    "lodash": "^4.17.21",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.184",
     "@types/node": "^18.6.3",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",

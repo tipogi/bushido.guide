@@ -1,0 +1,99 @@
+#filter {
+  display: flex;
+  flex-direction: row;
+  .offer-direction {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    .direction {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      background-color: white;
+      color: #f2604c;
+    }
+    .selected {
+      background-color: #f2604c;
+      color: white;
+    }
+  }
+  .offer-exchange {
+    display: flex;
+    flex: 2;
+    justify-content: flex-start;
+    .exchange {
+      background: white;
+      padding: 10px 20px;
+      label {
+        color: #f2604c
+      }
+      &.selected {
+        background: #f2604c;
+        label {
+          color: white;
+        }
+      }
+      input {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+  .offer-currency, .offer-premium {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    select {
+      /* Reset Select */
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      /* Personalize */
+      padding: 0 1em;
+      color: #fff;
+      background-color: #f2604c;;
+      background-image: none;
+      cursor: pointer;
+    }
+    /* Remove IE arrow */
+    select::-ms-expand {
+      display: none;
+    }
+    /* Custom Select wrapper */
+    .select {
+      position: relative;
+      display: flex;
+      width: 20em;
+      height: 3em;
+      border-radius: .25em;
+      overflow: hidden;
+    }
+    /* Arrow */
+    .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1em;
+      background-color: #f2604c;;
+      transition: .25s all ease;
+      pointer-events: none;
+    }
+    /* Transition */
+    .select:hover::after {
+      color: #f2604c;
+    }
+  }
+  .apply-filter-block {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    button {
+      padding: 0 30px;
+      background: #a7a9be;
+      color: black;
+    }
+  }
+}
