@@ -14,7 +14,7 @@ interface PaymentTypeProps {
 }
 
 export default function PaymentType({ method }: PaymentTypeProps) {
-  console.log(method)
+  //console.log(method)
   /*console.log(method.icon)
   const paymentTypes = useMemo(() => {
     const paymentTypes = method.icon;

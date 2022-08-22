@@ -44,18 +44,21 @@
     display: flex;
     justify-content: flex-start;
     flex: 1;
+    align-items: center;
     select {
       /* Reset Select */
+      width: 60px;
       appearance: none;
       outline: 0;
       border: 0;
       box-shadow: none;
       /* Personalize */
-      padding: 0 1em;
+      padding: 1em;
       color: #fff;
       background-color: #f2604c;;
       background-image: none;
       cursor: pointer;
+      text-align: center;
     }
     /* Remove IE arrow */
     select::-ms-expand {
@@ -85,6 +88,10 @@
     .select:hover::after {
       color: #f2604c;
     }
+    label {
+      color: white;
+      padding-right: 30px;
+    }
   }
   .apply-filter-block {
     display: flex;
@@ -92,7 +99,8 @@
     flex: 1;
     button {
       padding: 0 30px;
-      background: #a7a9be;
+      background: #e5942c;
+      //background: #a7a9be;
       color: black;
     }
   }

@@ -8,10 +8,12 @@ interface FConfiguratorProps {
 
 export default function FilterConfigurator({ reload }: FConfiguratorProps) {
   
-  const { direction, exchanges, changePaymentDirection, toggleExchange } = useContext(FilterContext);
+  const { direction, exchanges, changePaymentDirection, toggleExchange, saveMarketFilters, changeCurrency, changePremium } = useContext(FilterContext);
 
-  const renderExchanges = () => {
-    console.log(exchanges);
+  const fetchMarketOffers = () => {
+    saveMarketFilters()
+    console.log('onCLick Event: reload')
+    reload()
   }
 
   return (
@@ -36,16 +38,16 @@ export default function FilterConfigurator({ reload }: FConfiguratorProps) {
           </div>
         </div>
         <div className="offer-currency">
-          <select>
-            <option value="1">Currency</option>
+          <label>Currency</label>
+          <select onChange={(e) => changeCurrency(e.target.value)}>
             <option value="usd">USD</option>
             <option value="eur">EUR</option>
             <option value="gbp">GBP</option>
           </select>
         </div>
         <div className="offer-premium">
-          <select>
-            <option value="1">Premium</option>
+          <label>Premium</label>
+          <select onChange={(e) => changePremium(parseInt(e.target.value))}>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -59,7 +61,7 @@ export default function FilterConfigurator({ reload }: FConfiguratorProps) {
           </select>
         </div>
         <div className="apply-filter-block">
-          <button onClick={reload}>Reload</button>
+          <button onClick={fetchMarketOffers}>Reload</button>
         </div>
       </div>
     </div>

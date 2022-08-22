@@ -1,11 +1,12 @@
-import useMarketQuery from "~/hooks/graphql/useMarketQuery";
 import Exchange from "./components/table/Exchange";
 import Maker from "./components/table/Maker";
 import PaymentType from "./components/table/PaymentType";
+import Filter from "./components/filter";
+import { IOffer } from "~/hooks/graphql/interfaces";
+import useMarketQuery from "~/hooks/graphql/useMarketQuery";
+import { FilterContextProvider } from "./context/FilterContext";
 
 import './styles/market.style.scss'
-import { IOffer } from "~/hooks/graphql/interfaces";
-import Filter from "./components/filter";
 
 export default function Market() {
 
@@ -31,13 +32,15 @@ export default function Market() {
   }
 
   return (
-    <div className="main-container">
-      <Filter price={22522} reload={updateTable} />
-      <div id='offer-lists'>
-        <ul>
-          { marketOffers.data && renderOffers() }
-        </ul>
-  </div>
-    </div>
+    <FilterContextProvider>
+      <div className="main-container">
+        <Filter price={22522} reload={updateTable} />
+        <div id='offer-lists'>
+          <ul>
+            { marketOffers.data && renderOffers() }
+          </ul>
+        </div>
+      </div>
+    </FilterContextProvider>
   )
 }

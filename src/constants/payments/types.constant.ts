@@ -24,3 +24,9 @@ export const TETHER = 'Tether'
 export const LITECOIN = 'Litecoin'
 export const F2F = 'F2F'
 export const CASH_BY_EMAIL = 'CASH_BY_MAIL'
+
+// Payment direction
+export enum OFFER_DIRECTION {
+  BUY = 'buy',
+  SELL = 'sell',
+}

@@ -1,6 +1,8 @@
 import { useReducer } from "react";
 import { FilterActions, IFilterActions } from "../reducer/action.types";
 import { map, filter } from 'lodash';
+import useMarketFilterState, { MARKET_FILTER_LOCAL_STORAGE_KEY } from "./useMarketFilterState";
+import { OFFER_DIRECTION } from "~/constants";
 
 export interface IStaticReducerState {
   currency: string;
@@ -10,7 +12,10 @@ export interface IStaticReducerState {
 export interface IFilterContext extends IStaticReducerState {
   changePaymentDirection(): void;
   toggleExchange(exchange: string): void;
-  direction: string;
+  saveMarketFilters(): void;
+  changeCurrency(currency: string): void;
+  changePremium(premium: number): void;
+  direction: OFFER_DIRECTION;
   exchanges: string[];
 }
 
@@ -18,23 +23,9 @@ interface IExchangeObj {
   [key: string]: boolean;
 }
 
-interface IReducerState extends IStaticReducerState{
+export interface IReducerState extends IStaticReducerState{
   exchanges: IExchangeObj;
   direction: boolean;
-}
-
-
-
-const filterInitState = {
-  // true: BUY, false: SELL
-  direction: true,
-  exchanges: {
-    'hodlhodl': true,
-    'bisq': false,
-    'robosats': true
-  },
-  currency: 'usd',
-  premium: 10
 }
 
 const reducer = (state: IReducerState, action: IFilterActions) => {
@@ -50,6 +41,13 @@ const reducer = (state: IReducerState, action: IFilterActions) => {
       return filter(newExchangeState, (value) => value).length === 0
       ? state
       : { ...state, exchanges: newExchangeState }
+    case FilterActions.SAVE_FILTERS:
+      localStorage.setItem(MARKET_FILTER_LOCAL_STORAGE_KEY, JSON.stringify(state))
+      return state;
+    case FilterActions.CHANGE_CURRENCY:
+      return { ...state, currency: action.payload.currency }
+    case FilterActions.CHANGE_PREMIUM:
+      return { ...state, premium: action.payload.premium }
     default:
       return state;
   }
@@ -57,14 +55,18 @@ const reducer = (state: IReducerState, action: IFilterActions) => {
 
 
 export default function useFilterReducer(): IFilterContext  {
-  const [ { direction, exchanges, currency, premium }, dispatch ] = useReducer(reducer, filterInitState); 
+  const { marketState } = useMarketFilterState()
+  const [ { direction, exchanges, currency, premium }, dispatch ] = useReducer(reducer, marketState()); 
 
   const exchangesArray = filter(map(exchanges, (active, name) => active ? name : 'out'), (exchange: string) => exchange !== 'out')
 
   return {
     changePaymentDirection: () => dispatch({ type: FilterActions.CHANGE_DIRECTION }),
     toggleExchange: (exchange: string) => dispatch({ type: FilterActions.TOGGLE_EXCHANGE, payload: { exchange }}),
-    direction: direction ? 'buy' : 'sell',
+    saveMarketFilters: () => dispatch({ type: FilterActions.SAVE_FILTERS }),
+    changeCurrency: (currency: string) => dispatch({ type: FilterActions.CHANGE_CURRENCY, payload: { currency }}),
+    changePremium: (premium: number) => dispatch({ type: FilterActions.CHANGE_PREMIUM, payload: { premium }}),
+    direction: direction ? OFFER_DIRECTION.BUY : OFFER_DIRECTION.SELL,
     exchanges: exchangesArray,
     currency,
     premium
