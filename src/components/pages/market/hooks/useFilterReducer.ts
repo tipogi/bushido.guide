@@ -38,9 +38,13 @@ const reducer = (state: IReducerState, action: IFilterActions) => {
       const oldExchangeState = state.exchanges;
       const newExchangeState = { ...oldExchangeState, [exchangeToEdit]: !oldExchangeState[exchangeToEdit]}
       // We cannot have any exchange, do not mutate the state
-      return filter(newExchangeState, (value) => value).length === 0
-      ? state
-      : { ...state, exchanges: newExchangeState }
+      if (filter(newExchangeState, (value) => value).length === 0) {
+        return state;
+      } else {
+        const newState = { ...state, exchanges: newExchangeState };
+        localStorage.setItem(MARKET_FILTER_LOCAL_STORAGE_KEY, JSON.stringify(newState));
+        return newState;
+      }
     case FilterActions.SAVE_FILTERS:
       localStorage.setItem(MARKET_FILTER_LOCAL_STORAGE_KEY, JSON.stringify(state))
       return state;

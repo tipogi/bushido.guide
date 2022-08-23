@@ -12,6 +12,19 @@
       flex: 1;
       display: flex;
       justify-content: center;
+      &.active {
+        svg {
+          color:#f2604c;
+          font-size: 20px;
+        }
+      }
+      svg {
+        cursor: pointer;
+        &:hover {
+          color: #f2604c;
+        }
+      }
+      
     }
     #description {
       flex: 8;

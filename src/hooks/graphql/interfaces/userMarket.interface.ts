@@ -29,7 +29,7 @@ export interface IOffer {
 
 interface IMarketOffers {
   offers: IOffer[],
-  price: number
+  price: string
 }
 
 export interface IMarketOffersQueryData {

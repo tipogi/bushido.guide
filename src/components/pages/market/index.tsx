@@ -1,10 +1,7 @@
-import Exchange from "./components/table/Exchange";
-import Maker from "./components/table/Maker";
-import PaymentType from "./components/table/PaymentType";
 import Filter from "./components/filter";
-import { IOffer } from "~/hooks/graphql/interfaces";
 import useMarketQuery from "~/hooks/graphql/useMarketQuery";
 import { FilterContextProvider } from "./context/FilterContext";
+import OffersTable from "./components/table";
 
 import './styles/market.style.scss'
 
@@ -16,30 +13,15 @@ export default function Market() {
     setCall((prevState) => !prevState)
   }
 
-  const renderOffers = () => {
-    return marketOffers.data?.showMarketOffers.offers.map(({ exchange, dif, maker_status, min_amount, max_amount, method }: IOffer, index) => {
-      return (
-        <li key={index}>
-          <Exchange name={exchange}/>
-          <Maker status={maker_status}/>
-          <span>{dif}</span>
-          <span>{`$${min_amount}`}</span>
-          <span>{`$${max_amount}`}</span>
-          <PaymentType method={method}/>
-        </li>
-      )
-    })
-  }
+  console.log(marketOffers)
 
   return (
     <FilterContextProvider>
       <div className="main-container">
         <Filter price={22522} reload={updateTable} />
-        <div id='offer-lists'>
-          <ul>
-            { marketOffers.data && renderOffers() }
-          </ul>
-        </div>
+        { (marketOffers.data === undefined || marketOffers.loading) && <div style={{ marginTop: '100px', color: 'white'}}>LOADING...</div>}
+        { (marketOffers.error || marketOffers.data?.showMarketOffers.price === '0') && <div style={{ marginTop: '100px', color: 'white'}}>It was an error while we were fetching the offers</div>}
+        { (marketOffers.data && marketOffers.data.showMarketOffers.price !== '0') && <OffersTable exchangeOffers={marketOffers.data.showMarketOffers.offers} /> }
       </div>
     </FilterContextProvider>
   )

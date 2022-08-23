@@ -1,20 +1,32 @@
 #filter {
   display: flex;
   flex-direction: row;
+  #info-block {
+    display: flex;
+    align-items: center;
+    svg {
+      color: #72757e;
+      font-size: 20px;
+    }
+  }
   .offer-direction {
     display: flex;
     flex: 2;
     justify-content: center;
-    .direction {
+    .offer-switch {
       display: flex;
-      justify-content: center;
-      padding: 10px 20px;
-      background-color: white;
-      color: #f2604c;
-    }
-    .selected {
-      background-color: #f2604c;
-      color: white;
+      cursor: pointer;
+      .direction {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        background-color: white;
+        color: #f2604c;
+      }
+      .selected {
+        background-color: #f2604c;
+        color: white;
+      }
     }
   }
   .offer-exchange {
@@ -96,12 +108,28 @@
   .apply-filter-block {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     flex: 1;
     button {
-      padding: 0 30px;
-      background: #e5942c;
-      //background: #a7a9be;
-      color: black;
+      padding: 0 15px;
+      background: white;
+      color: #f2604c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      svg {
+        font-size: 20px;
+      }
+    }
+    svg {
+      font-size: 40px;
+      color: white;
+      transform: rotate(90deg);
+      cursor: pointer;
+      &:hover {
+        color: #f2604c
+      }
     }
   }
 }
