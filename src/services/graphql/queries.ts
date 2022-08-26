@@ -21,6 +21,7 @@ export const SHOW_DOMAINS = gql `
       hash
       lang
       url
+      visits
     }
   }
 `

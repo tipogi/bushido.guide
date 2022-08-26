@@ -19,7 +19,7 @@
 }
 #list-container {
   width: 100%;
-  margin: 50px 100px;
+  padding: 50px 100px;
   display: flex;
   justify-content: flex-start;
   align-content: flex-start;
@@ -81,6 +81,9 @@
       }
       .view-container svg {
         color: #e6942c;
+      }
+      .language-container img {
+        filter: none;
       }
     }
   }
