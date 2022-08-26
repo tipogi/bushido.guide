@@ -1,10 +1,13 @@
 .icon {
-  color: #0F0E17;;
+  color: #ffbe6d;
   &.react-icons {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 8px;
   }
   &.custom-svg {
     width: 2.5em;
+  }
+  path {
+    stroke: rgb(255, 190, 109);
   }
 }

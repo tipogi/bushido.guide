@@ -1,11 +1,11 @@
 // Font Awesome
-import { FaGithub, FaBook, FaMicrophoneAlt, FaRegNewspaper, FaStore, FaCloud, FaToolbox, FaSignature } from 'react-icons/fa';
+import { FaGithub, FaStore, FaCloud, FaToolbox, FaSignature } from 'react-icons/fa';
 // HeroIcons
 import { HiCubeTransparent, HiCode } from "react-icons/hi";
 //Material Icon
-import { MdFactCheck, MdArticle, MdMarkEmailUnread, MdAnimation, MdSimCard, MdExpand } from 'react-icons/md';
+import { MdArticle, MdMarkEmailUnread, MdAnimation, MdSimCard, MdExpand } from 'react-icons/md';
 // Flat Icons
-import { FiLayers, FiHardDrive } from 'react-icons/fi';
+import { FiHardDrive } from 'react-icons/fi';
 // Remix Icon
 import { RiCodeBoxLine } from 'react-icons/ri';
 // Simple Icons
@@ -18,6 +18,8 @@ import { IoBarChart, IoAnalyticsSharp } from "react-icons/io5";
 import { BsPersonBoundingBox, BsCollectionPlay, BsShieldLock, BsKeyboard, BsLayersHalf } from "react-icons/bs";
 // Game Icons
 import { GiBuyCard, GiMisdirection } from "react-icons/gi";
+// Grommet-Icons
+import { GrCluster } from "react-icons/gr";
 
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES,
@@ -83,7 +85,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case PRIVACY:
         return <BsShieldLock/>
       case NODE:
-        return <MdFactCheck/>
+        return <GrCluster/>
       case SIDECHAIN:
         return <MdExpand/>;
       default:

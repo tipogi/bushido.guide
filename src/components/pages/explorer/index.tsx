@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router-dom';
 
 import { CardType } from '~/constants';
+import Breadcrumbs from './components/Breadcrumbs';
 import DomainList from './components/DomainList';
 import TopicBoard from './components/TopicBoard';
 
@@ -19,6 +20,7 @@ const Explorer: React.FC = () => {
 
   return (
     <div className='main-container block-wo-height'>
+      <Breadcrumbs/>
         {
           state && state.cardType === CardType.LEAF 
             ? <DomainList/>

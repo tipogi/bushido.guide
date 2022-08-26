@@ -20,7 +20,6 @@ export default function useMarketFilterState() {
   const marketState = useCallback<() => IReducerState>(() => {
     const bushidoStore = localStorage.getItem(MARKET_FILTER_LOCAL_STORAGE_KEY);
     if (bushidoStore) {
-      console.log(JSON.parse(bushidoStore))
       return JSON.parse(bushidoStore);
     } else {
       const marketFilterInitState = DEFAULT_FILTER;

@@ -1,11 +1,18 @@
-#list-breadcrumbs {
-  color: #F25F4C;
-  font-size: 1.2em;
-}
-#list-breadcrumbs-legend {
-  margin-top: 5px 0 0 10px;
-  color: #ffe3c4;
-  font-size: .7em;
+.breadcrumb-block {
+  #list-breadcrumbs {
+    color: #F25F4C;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    svg, span {
+      margin-right: 10px;
+    }
+  }
+  #list-breadcrumbs-legend {
+    margin: 15px 0 0 30px;
+    color: #ffe3c4;
+    font-size: .7em;
+  }
 }
 #container-list {
   margin: 50px 100px;

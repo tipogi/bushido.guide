@@ -1,6 +1,10 @@
-@font-face {
+/*@font-face {
   font-family: 'longcang';
   src: url('/public/fonts/long-cang.regular.ttf');
+}*/
+@font-face {
+  font-family: 'silkscreen';
+  src: url('/public/fonts/luckiestGuy-regular.ttf');
 }
 
 .topic-card {
@@ -17,11 +21,13 @@
     align-items: center;
     padding: 0 15px 0 10px;
     .topic-name {
-      color: #0F0E17;
+      padding-top: 10px;
+      color: #272b33;
       font-weight: 600;
-      font-size: 1.6em;
+      font-size: 1.2em;
+      display: flex;
       span {
-        font-family: 'longcang'
+        font-family: 'silkscreen'
       }
     }
     @import './rules/icon.style';

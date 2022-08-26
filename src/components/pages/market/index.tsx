@@ -1,27 +1,26 @@
 import Filter from "./components/filter";
 import useMarketQuery from "~/hooks/graphql/useMarketQuery";
 import { FilterContextProvider } from "./context/FilterContext";
+import CircleLoader, { LoaderTypes } from "../../templates/generic/CircleLoader";
 import OffersTable from "./components/table";
 
-import './styles/market.style.scss'
+import './styles/market/market.style.scss'
 
 export default function Market() {
 
-  const { marketOffers, setCall } = useMarketQuery();
+  const { loading, error, data, price, setCall } = useMarketQuery();
   
   const updateTable = () => {
     setCall((prevState) => !prevState)
   }
 
-  console.log(marketOffers)
-
   return (
     <FilterContextProvider>
       <div className="main-container">
-        <Filter price={22522} reload={updateTable} />
-        { (marketOffers.data === undefined || marketOffers.loading) && <div style={{ marginTop: '100px', color: 'white'}}>LOADING...</div>}
-        { (marketOffers.error || marketOffers.data?.showMarketOffers.price === '0') && <div style={{ marginTop: '100px', color: 'white'}}>It was an error while we were fetching the offers</div>}
-        { (marketOffers.data && marketOffers.data.showMarketOffers.price !== '0') && <OffersTable exchangeOffers={marketOffers.data.showMarketOffers.offers} /> }
+        <Filter price={price} reload={updateTable} />
+        { loading && <CircleLoader type={LoaderTypes.MARKET}/> }
+        { error && <div style={{ marginTop: '100px', color: 'white'}}>It was an error while we were fetching the offers</div>}
+        { data && <OffersTable exchangeOffers={data.showMarketOffers.offers} /> }
       </div>
     </FilterContextProvider>
   )

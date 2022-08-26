@@ -28,5 +28,19 @@ export default function useMarketQuery() {
     getMarketOffers({ variables: { data: queryData}})
   }, [reload]);
 
-  return { marketOffers, setCall }
+  console.log(marketOffers)
+
+  return { 
+    loading: marketOffers.data === undefined || marketOffers.loading,
+    error: marketOffers.error || marketOffers.data?.showMarketOffers.price === '0',
+    data: marketOffers.data && marketOffers.data.showMarketOffers.price !== '0'
+      ? marketOffers.data 
+      : undefined,
+    price: marketOffers.data && marketOffers.data.showMarketOffers.price !== '0' 
+      ? marketOffers.data.showMarketOffers.price 
+      : marketOffers.loading 
+        ? undefined 
+        : '0',
+    setCall 
+  }
 }

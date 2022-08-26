@@ -2,11 +2,11 @@ import { useState } from "react";
 import FilterConfigurator from "./configurator";
 import FilterDisplay from "./FilterDisplay";
 
-import '../../styles/filter.style.scss';
+import '../../styles/filter/filter.style.scss';
 
 interface FilterProps {
-  price: number;
-  reload: any
+  price: string | undefined;
+  reload(): any
 }
 
 

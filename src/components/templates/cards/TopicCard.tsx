@@ -15,6 +15,7 @@ interface FolderCardProps {
   icon: string;
   cardType: CardType;
   iconType?: string;
+  hash: string
   navigateEvent: any
 }
 
@@ -27,7 +28,7 @@ const variants = {
     opacity: 1,
     transition: {
       delay,
-      duration: .5
+      duration: .35
     },
     y: 0
   })
@@ -56,7 +57,7 @@ const TopicCard: React.FC<FolderCardProps> = ({ index, name, description, icon, 
       exit='hidden'
       variants={variants}
       layoutId={`${name}_${hash}`}
-      custom={{ delay: (index + 1) * 0.2 }}
+      custom={{ delay: (index + 1) * 0.1 }}
     >
       <div className='topic-headline'>
         { renderIcon() }
