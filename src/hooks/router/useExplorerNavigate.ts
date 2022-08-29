@@ -1,34 +1,48 @@
 import { CardType } from '~/constants';
 import { useCallback, useMemo } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Location } from 'react-router-dom';
 import useDescriptionStorage from './useDescriptionStorage';
 
 const EXPLORER_PATH = '/explorer/'
 
-export default function useExplorerNavigate() {
+interface IRouteNavigationState {
+  cardType: CardType,
+  description: string
+}
+
+interface IReturnObject {
+  explorerNavigate(name: string, cardType: string, description: string): void;
+  pathArray: string[];
+  state: IRouteNavigationState;
+}
+
+export default function useExplorerNavigate(): IReturnObject {
   const navigate = useNavigate();
-  const { pathname, state } = useLocation();
-  const { findDescription, setDescription } = useDescriptionStorage()
+  const location = useLocation();
+  const pathName = location.pathname;
+  // Casting the state prop
+  const state = location.state as IRouteNavigationState;
+  const { setDescription } = useDescriptionStorage()
   
 
   const explorerNavigate = useCallback((name: string, cardType: string, description: string) => {
     let pathTo = `${name.toLowerCase()}`;
     // Create the new path if it is not root
     if (cardType !== CardType.ROOT) 
-      pathTo = `${pathname.split(EXPLORER_PATH).slice(1)[0]}/${name.toLowerCase()}`
+      pathTo = `${pathName.split(EXPLORER_PATH).slice(1)[0]}/${name.toLowerCase()}`
     // Push to another path
     navigate(pathTo, { state: { cardType, description }})
-    console.log(pathTo);
+    // Save the topic description to after use it in the breadcrumbs component
     setDescription(pathTo, description)
-  }, [pathname])
+  }, [pathName])
 
   const pathArray = useMemo(() => {
-    return pathname
+    return pathName
       // Exclude from the URL explorer and create an array with the rest topics
       .slice(1).split('/').slice(1)
       // Lower case all the topics to make the query
       .map(topic => `${topic[0].toUpperCase()}${topic.substring(1)}`)
-  }, [pathname])
+  }, [pathName])
 
   return { explorerNavigate, pathArray, state };
 }
