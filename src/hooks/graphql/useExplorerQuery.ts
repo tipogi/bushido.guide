@@ -3,19 +3,27 @@ import { useCallback, useEffect } from 'react';
 
 import useExplorerNavigate from '../router/useExplorerNavigate';
 
-export default function useExplorerQuery(query: DocumentNode) {
+export enum QUERY_OF {
+  TOPIC = 'showTopics',
+  DOMAIN = 'showDomains'
+}
+
+export default function useExplorerQuery(query: DocumentNode, key: QUERY_OF) {
   const [getLeafs, leafList ] = useLazyQuery(query);
   const { pathArray } = useExplorerNavigate();
 
   const loadSelectedPathLeafs = useCallback((path: string[]) => {
-    console.log('loadSelectedPathLeafs')
     getLeafs({ variables: { data: { path }}})
   }, [])
 
   useEffect(() => {
-    console.log('useEffect', pathArray)
     loadSelectedPathLeafs(pathArray)
   }, [pathArray])
 
-  return { leafList }
+  return {
+    loading: leafList.data === undefined || leafList.loading,
+    error: leafList.error,
+    data: leafList.data?.[key],
+    leafList
+  }
 }

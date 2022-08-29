@@ -23,7 +23,7 @@ export const ARTICLES = 'articles';
 export const MULTIMEDIA = 'multimedia';
 export const RESOURCES = 'resources';
 export const PODCAST = 'podcast';
-export const SUBSTACK = 'substack';
+export const NEWSLETTER = 'newsletter';
 export const NEWS = 'news';
 export const SWAP = 'swap';
 export const P2P = 'p2p';
@@ -44,6 +44,8 @@ export const VPS = 'vps';
 // LANGUAGES
 export const ENG = 'eng';
 export const ESP = 'esp';
+export const DEU = 'deu';
+export const BR = 'br';
 
 
 export const getIconType = (name: string): string | undefined => {
@@ -67,7 +69,7 @@ export const getIconType = (name: string): string | undefined => {
     case MULTIMEDIA:
     case RESOURCES:
     case PODCAST:
-    case SUBSTACK:
+    case NEWSLETTER:
     case NEWS:
     case SWAP:
     case P2P:

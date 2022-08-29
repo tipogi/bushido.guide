@@ -1,4 +1,4 @@
-import { ENG, ESP } from "~/constants";
+import { BR, DEU, ENG, ESP } from "~/constants";
 
 interface LanguageProps {
   lang: string
@@ -13,10 +13,16 @@ const getLanguageUrl = (lang: string) => {
   let src;
   switch (lang) {
     case ENG:
-      src = '/public/img/others/eng.png';
+      src = '/public/img/lang/eng.png';
       break;
     case ESP:
-      src = '/public/img/others/esp.png';
+      src = '/public/img/lang/esp.png';
+      break;
+    case DEU:
+      src = '/public/img/lang/deu.png';
+      break;
+    case BR:
+      src = '/public/img/lang/br.png';
       break;
     default:
       src = '';

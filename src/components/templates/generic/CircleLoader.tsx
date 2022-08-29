@@ -1,8 +1,8 @@
 import './styles/circle-loader.style.scss';
 
 export enum LoaderTypes {
-  MARKET = 'Market',
-  EXPLORER = 'Explorer'
+  MARKET = 'market',
+  EXPLORER = 'explorer'
 }
 
 interface ILoaderProps {

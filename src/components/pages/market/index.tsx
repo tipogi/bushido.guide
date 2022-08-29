@@ -1,7 +1,7 @@
 import Filter from "./components/filter";
 import useMarketQuery from "~/hooks/graphql/useMarketQuery";
 import { FilterContextProvider } from "./context/FilterContext";
-import CircleLoader, { LoaderTypes } from "../../templates/generic/CircleLoader";
+import CircleLoader, { LoaderTypes } from "~/components/templates/generic/CircleLoader";
 import OffersTable from "./components/table";
 
 import './styles/market/market.style.scss'

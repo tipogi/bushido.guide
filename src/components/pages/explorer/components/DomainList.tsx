@@ -1,6 +1,7 @@
 import DomainCard from '~/components/templates/cards/DomainCard'
 import { SHOW_DOMAINS } from '~/services/graphql/queries'
-import useExplorerQuery from '~/hooks/graphql/useExplorerQuery'
+import useExplorerQuery, { QUERY_OF } from '~/hooks/graphql/useExplorerQuery'
+import CircleLoader, { LoaderTypes } from '~/components/templates/generic/CircleLoader'
 
 interface Domain {
   name: string
@@ -14,35 +15,32 @@ interface Domain {
 
 export default function DomainList() {
 
-  const { leafList } = useExplorerQuery(SHOW_DOMAINS);
-  console.log(leafList)
+  const { loading, error, data } = useExplorerQuery(SHOW_DOMAINS, QUERY_OF.DOMAIN);
 
   const renderDomainList = () => {
-    if (leafList.data) {
-      return (
-        leafList.data.showDomains.map(({ icon, name, description, lang, url, hash, visits }: Domain) => {
-          return (
-            <DomainCard
-              icon={icon}
-              name={name}
-              description={description}
-              visits={ visits }
-              lang={lang}
-              url={url}
-              key={hash}
-              hash={hash}
-            />
-          )
-        })
-      )
-    } else {
-      return <h1>Empty Domains</h1>
-    }
+    return (
+      data.map(({ icon, name, description, lang, url, hash, visits }: Domain) => {
+        return (
+          <DomainCard
+            icon={icon}
+            name={name}
+            description={description}
+            visits={ visits }
+            lang={lang}
+            url={url}
+            key={hash}
+            hash={hash}
+          />
+        )
+      })
+    )
   }
 
   return (
     <div id="list-container">
-      { renderDomainList() }
+      { !loading && data && renderDomainList() }
+      { error && <span>Error</span>}
+      { loading && <CircleLoader type={LoaderTypes.EXPLORER}/>}
     </div>
   )
 }

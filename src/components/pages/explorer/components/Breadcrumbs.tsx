@@ -1,11 +1,10 @@
 import { forEach, slice } from 'lodash';
-import test from 'node:test';
 import { RiTerminalBoxFill } from 'react-icons/ri';
-import { useNavigate } from 'react-router-dom';
 import { CardType } from '~/constants';
 import useBreadcrumbsNavigate from '~/hooks/router/useBreadcrumbsNavigate';
-import useDescriptionStorage from '~/hooks/router/useDescriptionStorage';
 import useExplorerNavigate from '~/hooks/router/useExplorerNavigate';
+
+import '../styles/breadcrumbs.scss';
 
 export default function Breadcrumbs() {
 
@@ -13,11 +12,11 @@ export default function Breadcrumbs() {
   const { navigateToCrumbTopic } = useBreadcrumbsNavigate();
 
   function renderCrumbs() {
+    const rootProps = { key: 'crumb_root' };
+    console.log(pathArray)
+    if (pathArray.length > 0 ) Object.assign(rootProps, { onClick: () => navigateToCrumbTopic([''], CardType.ROOT) })
     let crumbs = [
-      <RiTerminalBoxFill 
-        onClick={() => navigateToCrumbTopic([''], CardType.ROOT)} 
-        key={'crumb_root'}
-        />
+      <RiTerminalBoxFill { ...rootProps }/>
     ];
     forEach(pathArray, (topic, index) => {
       if (pathArray.length - 1 > index) {

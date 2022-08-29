@@ -9,7 +9,7 @@
     transform: rotate(360deg);
   }
 }
-@keyframes rotate2 {
+@keyframes rotate2-market {
   0% {
     transform: rotate(0deg);
     border-top-color: #f2604c;
@@ -21,6 +21,20 @@
   100% {
     transform: rotate(360deg);
     border-top-color: #f2604c;
+  }
+}
+@keyframes rotate2-explorer {
+  0% {
+    transform: rotate(0deg);
+    border-top-color: #e6942c;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top-color: white;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top-color: #e6942c;
   }
 }
 @mixin loaderDivMixin {
@@ -51,11 +65,18 @@
   @include loaderDivMixin;
   border-radius: 50%;
   padding: 4px;
-  animation: rotate2 4s infinite linear;
+  animation: rotate2-market 4s infinite linear;
 }
 div:hover {
   animation-play-state: paused;
 }
 .loader, .loader * {
   will-change: transform;
+}
+
+.explorer-loader .loader2, .loader2 div {
+  border-top-color: #e6942c;
+}
+.explorer-loader .loader1, .loader1 div {
+  animation: rotate2-explorer 4s infinite linear;
 }

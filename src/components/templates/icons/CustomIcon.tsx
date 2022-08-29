@@ -23,7 +23,7 @@ import { GrCluster } from "react-icons/gr";
 
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES,
-  STORE, SUBSTACK, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN
+  STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN
  } from "~/constants";
 
 
@@ -50,7 +50,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <BsLayersHalf/>;
       case PODCAST:
         return <SiAudiomack/>;
-      case SUBSTACK:
+      case NEWSLETTER:
         return <SiSubstack/>;
       case NEWS:
         return <BsKeyboard/>;
