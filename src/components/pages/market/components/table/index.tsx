@@ -1,5 +1,6 @@
 import { find } from "lodash"
 import { useContext, useMemo } from "react"
+import ErrorNotification from "~/components/templates/generic/ErrorNotification"
 import { IOffer } from "~/hooks/graphql/interfaces"
 import FilterContext from "../../context/FilterContext"
 import MarketHeader from "./MarketHeader"
@@ -33,7 +34,7 @@ export default function OffersTable({ exchangeOffers }: IOffersTableProps) {
   return (
     <div id='offer-lists'>
       { filteredOffers.length !== 0 && renderOfferTable() }
-      { filteredOffers.length === 0 && <div style={{ marginTop: '100px', color: 'white'}}>Error while fetching filtered exchanges or does not exist any offer</div>}
+      { filteredOffers.length === 0 && <ErrorNotification/>}
     </div>
   )
 }

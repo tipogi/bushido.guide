@@ -1,0 +1,33 @@
+#cards-container, #list-container, #offer-lists {
+  .topic-error-block {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > svg {
+      fill: #f2604c;
+      font-size: 3em;
+      margin-bottom: 50px;
+    }
+    h1 {
+      color: #ffe3c4;
+      font-size: 1.5em;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: #e5942c;
+      color: #f8ddc0;
+      cursor: pointer;
+      svg {
+        font-size: 1.5em;
+        margin-right: 10px;
+      }
+    }
+  }
+}

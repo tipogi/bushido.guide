@@ -4,6 +4,7 @@ import useExplorerQuery, { QUERY_OF } from '~/hooks/graphql/useExplorerQuery';
 import { SHOW_TOPICS } from '~/services/graphql/queries';
 import { CardType } from '~/constants';
 import CircleLoader, { LoaderTypes } from "~/components/templates/generic/CircleLoader";
+import ErrorNotification from '../../../templates/generic/ErrorNotification';
 
 interface Card {
   name: string
@@ -41,7 +42,7 @@ export default function TopicBoard() {
         { !loading && data && 
           <div id='container-list'>{ renderTopicBoard() }</div> 
         }
-      { error && <span>Error</span>}
+      { error && <ErrorNotification/>}
       { loading && <CircleLoader type={LoaderTypes.EXPLORER}/>}
     </div>
   )

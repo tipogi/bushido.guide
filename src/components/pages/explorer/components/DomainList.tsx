@@ -2,6 +2,7 @@ import DomainCard from '~/components/templates/cards/DomainCard'
 import { SHOW_DOMAINS } from '~/services/graphql/queries'
 import useExplorerQuery, { QUERY_OF } from '~/hooks/graphql/useExplorerQuery'
 import CircleLoader, { LoaderTypes } from '~/components/templates/generic/CircleLoader'
+import ErrorNotification from '../../../templates/generic/ErrorNotification'
 
 interface Domain {
   name: string
@@ -39,8 +40,12 @@ export default function DomainList() {
   return (
     <div id="list-container">
       { !loading && data && renderDomainList() }
-      { error && <span>Error</span>}
+      { error && <ErrorNotification/>}
       { loading && <CircleLoader type={LoaderTypes.EXPLORER}/>}
     </div>
   )
 }
+
+/**
+ * 
+ */

@@ -30,8 +30,9 @@
         width: 100%;
         padding: 10px;
         &:hover {
-          border: 3px solid #f2604c;
-          padding: 7px;
+          border: 2px solid #563b37;
+          padding: 8px;
+          border-radius: 4px;
           span {
             color: #f2604c !important;
           }
@@ -41,17 +42,17 @@
           text-align: center;
         }
         img.exchange-icon {
-          height: 40px;
+          height: 25px;
           border-radius: 30px;
         }
         span.maker-online {
-          color: #45ea45;
+          color: #45ea45 !important;
         }
         span.maker-recently_online {
-          color: #d99313;
+          color: #d99313 !important;
         }
         span.maker-offline {
-          color: #9f4646;
+          color: #9f4646 !important;
         }
         :nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6) {
           flex: 1;
@@ -68,9 +69,44 @@
             justify-content: flex-start;
             flex: 0;
             grid-gap: 15px;
-            img {
-              height: 30px;
-              border-radius: 8px;
+            .tooltip {
+              display: flex;
+              position: relative;
+              img {
+                height: 30px;
+                border-radius: 8px;
+                &.litecoin, &.liquid {
+                  border-radius: 20px;
+                }
+              }
+              .tooltiptext {
+                visibility: hidden;
+                background-color: rgb(128 128 128 / 50%);
+                color: #fff !important;
+                text-align: center;
+                padding: 5px 10px;
+                border-radius: 6px;
+                top: -40px;
+                /* Position the tooltip text - see examples below! */
+                position: absolute;
+                z-index: 1;
+                font-size: 10px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: rgb(128 128 128 / 50%) transparent transparent transparent;
+                }
+              }
+              
+              /* Show the tooltip text when you mouse over the tooltip container */
+              &:hover .tooltiptext {
+                visibility: visible;
+              }
             }
           }
           .other-payments {

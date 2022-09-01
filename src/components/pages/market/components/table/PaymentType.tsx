@@ -82,7 +82,11 @@ export default function PaymentType({ method }: PaymentTypeProps) {
   const renderIcons = (icon: string[]) => {
     return icon.map((value, index) => {
       return (
-        <img key={index} src={`${extractImg(value) }`}/>
+        <div className="tooltip">
+          <img className={value.toLowerCase()} key={index} src={`${extractImg(value) }`}/>
+          <span className="tooltiptext">{ value.toLowerCase() }</span>
+        </div>
+        
       )
     })
   }

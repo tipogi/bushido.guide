@@ -5,6 +5,7 @@ import CircleLoader, { LoaderTypes } from "~/components/templates/generic/Circle
 import OffersTable from "./components/table";
 
 import './styles/market/market.style.scss'
+import ErrorNotification from "~/components/templates/generic/ErrorNotification";
 
 export default function Market() {
 
@@ -19,7 +20,7 @@ export default function Market() {
       <div className="main-container">
         <Filter price={price} reload={updateTable} />
         { loading && <CircleLoader type={LoaderTypes.MARKET}/> }
-        { error && <div style={{ marginTop: '100px', color: 'white'}}>It was an error while we were fetching the offers</div>}
+        { error && <ErrorNotification/>}
         { data && <OffersTable exchangeOffers={data.showMarketOffers.offers} /> }
       </div>
     </FilterContextProvider>

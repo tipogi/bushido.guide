@@ -74,9 +74,9 @@ div:hover {
   will-change: transform;
 }
 
-.explorer-loader .loader2, .loader2 div {
+.explorer-loader .loader2, .explorer-loader .loader2 div {
   border-top-color: #e6942c;
 }
-.explorer-loader .loader1, .loader1 div {
+.explorer-loader .loader1, .explorer-loader .loader1 div {
   animation: rotate2-explorer 4s infinite linear;
 }
