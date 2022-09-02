@@ -40,6 +40,10 @@ export const CRYPTOGRAPHY = 'cryptography';
 export const OS = 'os';
 export const SMS = 'sms';
 export const VPS = 'vps';
+export const LINUX = 'linux';
+export const MEMPOOL = 'mempool';
+export const CARD = 'card';
+export const SOFTWARE = 'software'
 
 // LANGUAGES
 export const ENG = 'eng';
@@ -51,17 +55,17 @@ export const BR = 'br';
 export const getIconType = (name: string): string | undefined => {
   switch (name) {
     // Identify the SVG icons
-    case BITCOIN:
-    case WALLET:
     case BLOCK:
-    case MINE:
     case SATOSHI:
+        return SVG;
+        // Identify React Icons
+    case BITCOIN:
+    case COLD_STORAGE:
+    case GITHUB:
     case HARDWARE:
     case TRANSACTIONS:
-    case COLD_STORAGE:
-      return SVG;
-    // Identify React Icons
-    case GITHUB:
+    case MINE:
+    case WALLET:
     case ANALYSIS:
     case GUIDE:
     case DEV:
@@ -88,6 +92,7 @@ export const getIconType = (name: string): string | undefined => {
     case PRIVACY:
     case NODE:
     case SIDECHAIN:
+    case SOFTWARE:
     default:
       return REACT_ICON;
   }

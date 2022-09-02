@@ -1,7 +1,7 @@
 const Satoshi:React.FC = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path fillRule="evenodd" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0zM8.693 8.742l7.637 2.063.337-1.462L9.029 7.28l-.336 1.462zm5.526-3.05l-.406 1.774-1.448-.392.407-1.774 1.447.392zM11.227 18.7l.408-1.774-1.448-.391-.408 1.774 1.448.391zm4.421-4.934L8.011 11.7l.336-1.462 7.637 2.066-.336 1.462zm-8.316.89l7.638 2.064.336-1.462-7.638-2.064-.336 1.462z" clipRule="evenodd"></path>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path d="M7 7.91h10M12 5.455V3M12 21v-2.455M7 12h10M7 16.09h10"></path>
     </svg>
   )
 }
