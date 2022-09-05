@@ -30,7 +30,6 @@ export default function FilterConfigurator({ reload, toggleFilter }: FConfigurat
   return (
     <div id="filter-configurator">
       <div id="filter">
-        <div id='info-block'><FaInfoCircle/></div>
         <Direction/>
         <Exchanges/>
         <Premium/>

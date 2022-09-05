@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { IoFilterSharp } from "react-icons/io5";
 import BarsLoader from "~/components/templates/generic/BarsLoader";
 import FilterContext from "../../context/FilterContext";
+import useFilterCurrency from "../../hooks/useFilterCurrency";
 
 interface IFilterDisplayProps {
   toggleFilter(): void;
@@ -14,11 +15,14 @@ export default function FilterDisplay({ toggleFilter, btcPrice, activeFilter }: 
 
   const { direction, exchanges, premium, currency } = useContext(FilterContext);
   const filterIconClass = classNames({ active: activeFilter });
+  const symbol = useFilterCurrency();
 
   const renderBtcPrice = () => {
     if (btcPrice) {
-      return `$${btcPrice.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")}`
-      //return <BarsLoader/>
+      const price = btcPrice == '0'
+      ? '-' 
+      : `${symbol}${btcPrice.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1.")}`
+      return price
     }
     return <BarsLoader/>
   }

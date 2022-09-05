@@ -21,7 +21,7 @@ export default function useExplorerQuery(query: DocumentNode, key: QUERY_OF) {
   }, [pathArray])
 
   return {
-    loading: leafList.data === undefined || leafList.loading,
+    loading: (leafList.data === undefined || leafList.loading) && leafList.error === undefined,
     error: leafList.error,
     data: leafList.data?.[key],
     leafList

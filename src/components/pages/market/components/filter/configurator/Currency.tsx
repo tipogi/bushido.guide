@@ -12,6 +12,8 @@ export default function Currency() {
         <option value="usd">USD</option>
         <option value="eur">EUR</option>
         <option value="gbp">GBP</option>
+        <option value="aud">AUD</option>
+        <option value="cad">CAD</option>
       </select>
     </div>
   )

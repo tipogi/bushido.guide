@@ -15,6 +15,7 @@ export default function useMarketQuery() {
   const [reload, setCall] = useState(false);
   const { marketState } = useMarketFilterState();
   const [getMarketOffers, marketOffers ] = useLazyQuery<IMarketOffersQueryData>(SHOW_MARKET_OFFERS);
+  console.log(marketOffers)
 
   useEffect(() => {
     const newData = marketState();
@@ -29,7 +30,7 @@ export default function useMarketQuery() {
   }, [reload]);
 
   return { 
-    loading: marketOffers.data === undefined || marketOffers.loading,
+    loading: (marketOffers.data === undefined || marketOffers.loading) && marketOffers.error === undefined,
     error: marketOffers.error || marketOffers.data?.showMarketOffers.price === '0',
     data: marketOffers.data && marketOffers.data.showMarketOffers.price !== '0'
       ? marketOffers.data 

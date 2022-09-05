@@ -63,7 +63,7 @@ const TopicCard: React.FC<FolderCardProps> = ({ index, name, description, icon, 
         { renderIcon() }
         <div className='topic-name'><span>{formatName}</span></div>
       </div>
-      <div className='topic-description'><span>{description.substring(0, 90)}</span></div>
+      <div className='topic-description'><span>{`${description.substring(0, 50)}...`}</span></div>
     </motion.div>
   )
 }

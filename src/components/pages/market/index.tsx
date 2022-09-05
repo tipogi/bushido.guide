@@ -10,6 +10,8 @@ import ErrorNotification from "~/components/templates/generic/ErrorNotification"
 export default function Market() {
 
   const { loading, error, data, price, setCall } = useMarketQuery();
+
+  console.log(loading, error)
   
   const updateTable = () => {
     setCall((prevState) => !prevState)

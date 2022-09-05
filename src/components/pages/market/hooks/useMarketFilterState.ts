@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { IReducerState } from "./useFilterReducer";
 
-export const MARKET_FILTER_LOCAL_STORAGE_KEY = 'bushido.market';
+export const MARKET_FILTER_LOCAL_STORAGE_KEY = 'bs.market';
 
 const DEFAULT_FILTER: IReducerState = { 
   // true: BUY, false: SELL

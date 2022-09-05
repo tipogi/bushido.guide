@@ -24,6 +24,8 @@ export const TETHER = 'Tether'
 export const LITECOIN = 'Litecoin'
 export const F2F = 'F2F'
 export const CASH_BY_EMAIL = 'CASH_BY_MAIL'
+export const E_TRANS = 'e-trans'
+export const AU_PAYID = 'AUSTRALIA_PAYID'
 
 // Payment direction
 export enum OFFER_DIRECTION {

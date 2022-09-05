@@ -27,7 +27,7 @@ const DomainCard: React.FC<DomainCardProps> = ({ icon, name, description, lang, 
 
   return (
     <div className="domain-card" onClick={() => openDomainTab(url)}>
-      <Image iconUrl={icon} />
+      <Image iconUrl={icon} name={name}/>
       <div className="text-container">
         <div className="domain-name">{name}</div>
         <div className="domain-description">{description}</div>

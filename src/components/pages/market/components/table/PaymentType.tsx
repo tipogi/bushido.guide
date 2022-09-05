@@ -1,8 +1,8 @@
 import { useCallback, useMemo } from "react";
 import { 
-  AMAZON_BASE64, AMAZON_GIFT_CARD, APPLE_PAY, APPLE_PAY_BASE64, BANK, BANK_BASE64, BIZUM, BIZUM_BASE64, CASH_APP, CASH_APP_BASE64, 
+  AMAZON_BASE64, AMAZON_GIFT_CARD, APPLE_PAY, APPLE_PAY_BASE64, AU_PAYID, AU_PAYID_BASE64, BANK, BANK_BASE64, BIZUM, BIZUM_BASE64, CASH_APP, CASH_APP_BASE64, 
   CASH_BY_EMAIL, CASH_BY_EMAIL_BASE64, 
-  CLEAR_X_CHANGE, F2F, F2F_BASE64, GOOGLE_PLAY_BASE64, GOOGLE_PLAY_GIFT_CARD, HALCASH, HALCASH_BASE64, LIQUID, LIQUID_BASE64, LITECOIN, LITECOIN_BASE64, LN, LN_BASE64, 
+  CLEAR_X_CHANGE, E_TRANS, E_TRANS_BASE64, F2F, F2F_BASE64, GOOGLE_PLAY_BASE64, GOOGLE_PLAY_GIFT_CARD, HALCASH, HALCASH_BASE64, LIQUID, LIQUID_BASE64, LITECOIN, LITECOIN_BASE64, LN, LN_BASE64, 
   MONERO, MONERO_BASE64, N26, N26_BASE64, PAYPAL, PAYPAL_BASE64, REBELLION, REBELLION_BASE64, REVOLUT, 
   REVOLUT_BASE64, SEPA, SEPA_BASE64, SKRILL, SKRILL_BASE64, STRIKE, STRIKE_BASE64, TETHER, 
   TETHER_BASE64, VENMO, VENMO_BASE64, WISE, WISE_BASE64, ZELLE, ZELLE_BASE64 
@@ -14,14 +14,6 @@ interface PaymentTypeProps {
 }
 
 export default function PaymentType({ method }: PaymentTypeProps) {
-  //console.log(method)
-  /*console.log(method.icon)
-  const paymentTypes = useMemo(() => {
-    const paymentTypes = method.icon;
-    return paymentTypes.length === 1 
-      ? paymentTypes[0]
-      : paymentTypes;
-  }, [method])*/
 
   const extractImg = useCallback((method: string) => {
     switch(method) {
@@ -52,6 +44,10 @@ export default function PaymentType({ method }: PaymentTypeProps) {
         return SEPA_BASE64;
       case HALCASH:
         return HALCASH_BASE64;
+      case E_TRANS:
+        return E_TRANS_BASE64;
+      case AU_PAYID:
+        return AU_PAYID_BASE64;
       case AMAZON_GIFT_CARD:
         return AMAZON_BASE64;
       case APPLE_PAY:
@@ -82,8 +78,8 @@ export default function PaymentType({ method }: PaymentTypeProps) {
   const renderIcons = (icon: string[]) => {
     return icon.map((value, index) => {
       return (
-        <div className="tooltip">
-          <img className={value.toLowerCase()} key={index} src={`${extractImg(value) }`}/>
+        <div  key={`pay_icon${index}`} className="tooltip">
+          <img className={value.toLowerCase()} src={`${extractImg(value) }`}/>
           <span className="tooltiptext">{ value.toLowerCase() }</span>
         </div>
         

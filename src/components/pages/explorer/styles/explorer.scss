@@ -7,6 +7,16 @@
   display: grid;
   grid-template-columns: repeat(6,1fr);
   gap: 30px;
+  .topic-card {
+    .icon {
+      &#sidechain {
+        transform: rotate(90deg);
+      }
+    }
+    .topic-description, .topic-name {
+      user-select: none;
+    }
+  }
 }
 #list-container {
   width: 100%;
@@ -28,6 +38,10 @@
       .domain-img {
         height: 25px;
         filter: grayscale(85%);
+        &#img-Blockplate {
+          background: #f2604c;
+          border-radius: 5px;
+        }
       }
     }
     .text-container {

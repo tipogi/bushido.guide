@@ -3,7 +3,8 @@ import { MdOutlineImageNotSupported } from "react-icons/md";
 import { FcRemoveImage } from "react-icons/fc";
 
 interface ImageProps {
-  iconUrl: string
+  iconUrl: string;
+  name: string;
 }
 
 const imgStyle = {
@@ -11,7 +12,7 @@ const imgStyle = {
   filter: 'grayscale(1)'
 }
 
-const Image: React.FC<ImageProps> = ({ iconUrl }) => {
+const Image: React.FC<ImageProps> = ({ iconUrl, name }) => {
 
   const [imgNotFound, setNotFound] = useState(false);
 
@@ -25,7 +26,7 @@ const Image: React.FC<ImageProps> = ({ iconUrl }) => {
 
   return (
     <div className="img-container">
-      <img className="domain-img" src={iconUrl} onError={() => setNotFound(true)}></img>
+      <img className="domain-img" id={`img-${name}`}src={iconUrl} onError={() => setNotFound(true)}></img>
     </div>
   )
 }
