@@ -9,22 +9,6 @@ $point_radius: 16px;
 $circle_radius: 160px;
 $start_anim_delta: 5;
 
-#virtutes-view {
- background: #272b33; 
- flex-wrap: wrap;
- flex-direction: column;
- justify-content: center;
- align-items: center;
-}
-
-.main {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .navigation-circle {
 	display: block;
 	position: relative;
