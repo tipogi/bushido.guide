@@ -4,6 +4,7 @@ import Home from '../layouts/home';
 import Explorer from './pages/explorer';
 import Header from '../layouts/header';
 import Market from './pages/market';
+import Footer from '~/layouts/footer';
 
 import './pages/styles/app.scss';
 
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path={EXPLORER_GENERIC_ROUTE} element={<Explorer/>}></Route>
         <Route path={MARKET_ROUTE} element={<Market/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   )
 }

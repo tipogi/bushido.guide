@@ -4,9 +4,10 @@ import Root from './components/Root'
 import { ApolloClient, InMemoryCache, gql, ApolloProvider } from '@apollo/client';
 
 import './index.css'
+import { URI_IP, URI_PORT } from './constants';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: `http://${URI_IP}:${URI_PORT}/graphql`,
   cache: new InMemoryCache()
 })
 

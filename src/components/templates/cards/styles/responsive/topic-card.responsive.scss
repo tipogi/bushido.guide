@@ -1,0 +1,23 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .topic-card {
+    width: 140px;
+    height: 75px;
+    .topic-headline {
+      height: 50px;
+      .topic-name {
+        font-size: .8rem;
+      }
+      .icon {
+        &.react-icons {
+          font-size: 1rem;
+        }
+        &.custom-svg {
+          width: 1.5rem;
+        }
+      }
+    }
+    .topic-description {
+      font-size: .5rem;
+    }
+  }
+}

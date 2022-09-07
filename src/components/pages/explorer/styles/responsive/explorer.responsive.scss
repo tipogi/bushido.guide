@@ -1,0 +1,31 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 30px;
+      margin: 30px 0;
+    }
+    #list-container {
+      padding: 30px 0px;
+      .domain-card {
+        .img-container {
+          width: 20%;
+        }
+        .text-container {
+          width: 80%;
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+        .view-container, .language-container {
+          display: none;
+        }
+      }
+    }
+  }
+}

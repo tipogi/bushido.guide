@@ -12,7 +12,7 @@ export default defineConfig({
   },
   /* Access from our local network
    IMPORTANT: Deactivate when we do not need
-  server: { 
+  */server: { 
     host: '0.0.0.0'
-  }*/
+  }
 })

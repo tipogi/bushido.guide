@@ -24,7 +24,7 @@
       padding-top: 10px;
       color: #272b33;
       font-weight: 600;
-      font-size: 1em;
+      font-size: 1rem;
       display: flex;
       span {
         font-family: 'silkscreen'
@@ -36,7 +36,7 @@
   .topic-description {
     display: flex;
     justify-content: center;
-    font-size: .6em;
+    font-size: .6rem;
     height: 40px;
     overflow: hidden;
     margin: 0 10px;
@@ -52,3 +52,6 @@
   //@import './rules/shadow.style';
   //@import './rules/pseudo-classes.style';
 }
+
+
+@import './responsive/topic-card.responsive.scss';

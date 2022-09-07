@@ -1,12 +1,12 @@
 .breadcrumb-block {
   #list-breadcrumbs {
     color: #F25F4C;
-    font-size: 1.2em;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     svg {
       margin-right: 20px;
-      font-size: 1.5em;
+      font-size: 1.2rem;
       &:hover {
         color: #ffe3c4;
         cursor: pointer;
@@ -29,6 +29,8 @@
   #list-breadcrumbs-legend {
     margin: 15px 0 0 50px;
     color: #72757e;
-    font-size: .9em;
+    font-size: .7rem;
   }
 }
+
+@import "./responsive/breadcrumbs.responsive.scss";

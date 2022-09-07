@@ -1,3 +1,7 @@
+#cards-container {
+  display: flex;
+  justify-content: center;
+}
 #container-list {
   margin: 50px 100px;
   /*display: flex;
@@ -7,6 +11,7 @@
   display: grid;
   grid-template-columns: repeat(6,1fr);
   gap: 30px;
+
   .topic-card {
     .icon {
       &#sidechain {
@@ -56,7 +61,8 @@
       .domain-description {
         color:#ffe3c4;
         font-weight: 100;
-        font-size: 14px;
+        //font-size: 14px;
+        font-size: 1rem;
       }
     }
     .view-container {
@@ -96,3 +102,5 @@
     }
   }
 }
+
+@import "./responsive/explorer.responsive.scss"

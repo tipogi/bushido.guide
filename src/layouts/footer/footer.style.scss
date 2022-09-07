@@ -1,0 +1,11 @@
+#bushido-footer {
+  height: 50px;
+  background-image: linear-gradient(to bottom, #272b33, #393a3b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    fill: #e5942c;
+    margin-right: 10px;
+  }
+}
