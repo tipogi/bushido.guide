@@ -15,7 +15,8 @@
       &.active {
         svg {
           color:#f2604c;
-          font-size: 20px;
+          //font-size: 20px;
+          font-size: 1.5rem;
         }
       }
       svg {
@@ -29,7 +30,7 @@
     #description {
       flex: 8;
       h1 {
-        font-size: 1em;
+        font-size: 1rem;
         span.highlight {
           color: #F25F4C;
           font-weight: 400;
@@ -45,7 +46,7 @@
         margin-top: 10px;
         height: 35px;
         color: #F25F4C;
-        font-size: 1.7em;
+        font-size: 1.7rem;
       }
     }
   }
@@ -61,4 +62,5 @@
     }
   }
 }
-/*transform: rotate(180deg);*/
+
+@import "../responsive/filter.responsive.scss";

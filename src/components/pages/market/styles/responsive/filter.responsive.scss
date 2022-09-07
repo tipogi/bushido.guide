@@ -1,0 +1,83 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  #offer-filter {
+    #filter-display {
+      #description {
+        h1 {
+          font-size: .65rem;
+        }
+      }
+      #filter-action {
+        svg {
+          font-size: .6rem;
+        }
+        &.active {
+          svg {
+            font-size: .6rem;
+          }
+        }
+      }
+      #price {
+        #keyword {
+          font-size: .5rem;
+        }
+        #number {
+          font-size: 1rem;
+          height: 15px;
+          div {
+            margin-top: -10px;
+            .bar-loader {
+              height: 15px;
+              width: 2px;
+            }
+            .bar-loader::after, .bar-loader::before {
+              height: 15px;
+              width: 2px;
+              animation: responsive_animloader 0.3s  0.45s  linear infinite alternate;
+            }
+          }
+        }
+      }
+    }
+    #filter-configurator #filter {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      grid-gap: 20px;
+      padding: 20px 20px;
+      .offer-direction {
+        height: 20px;
+        .offer-switch {
+          .direction {
+            font-size: .7rem;
+            padding: 5px;
+          }
+        }
+      }
+      .offer-exchange {
+        height: 20px;
+        .exchange {
+          font-size: .7rem;
+          padding: 4px;
+        }
+      }
+      .offer-currency, .offer-premium {
+        height: 30px;
+      }
+      .offer-currency, .offer-premium {
+        height: 20px;
+        select {
+          padding: 2px 5px;
+        }
+        label {
+          padding: 0 20px;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes responsive_animloader {
+  0%   { height: 15px} 
+  100% { height: 4px}
+}

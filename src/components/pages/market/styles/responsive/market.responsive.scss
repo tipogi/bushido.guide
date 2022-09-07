@@ -1,0 +1,29 @@
+.main-container {
+  #offer-lists {
+    padding: 0;
+    #market-header {
+      padding: 20px 0 10px;
+      font-size: .7rem
+    }
+    ul {
+      li {
+        img.exchange-icon {
+          height: 20px;
+          margin-right: 10px;
+        }
+        span {
+          font-size: .7rem;
+        }
+        .market-payment-methods {
+          overflow: scroll;
+          .payment-icons {
+            gap: 5px;
+            .tooltip  img {
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
