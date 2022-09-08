@@ -10,28 +10,35 @@
   align-items: center;
   .description-text {
     font-family: 'orbitron';
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #ffe3c4;
     font-weight: 200;
     .highlight {
       font-family: 'orbitron';
       color: #e5942c;
+      font-size: 1.5rem;
     }
   }
   .circle-block {
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
-    div {
+    div.main {
       flex: 2;
     }
-    h1 {
+    .legend-block {
       display: flex;
       flex: 1;
+      justify-content: center;
       align-items: center;
-      font-family: 'orbitron';
-      color: #72757e;
-      font-size: .8em;
+      flex-direction: column;
+      grid-gap: 30px;
+      h1 {
+        font-family: 'orbitron';
+        color: #72757e;
+        font-size: .8em;
+      }
     }
   }
 }
 
+@import "./responsive/virtutes.responsive.scss";

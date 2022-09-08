@@ -1,11 +1,16 @@
 #bushido-footer {
-  height: 50px;
-  background-image: linear-gradient(to bottom, #272b33, #393a3b);
+  background-image: linear-gradient(to bottom, #272b33, #1e2127);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  svg {
-    fill: #e5942c;
-    margin-right: 10px;
+  padding: 25px;
+  #quote {
+    color: #72757e;
+  }
+  #contact {
+    svg {
+      fill: #e5942c;
+      margin-right: 10px;
+    }
   }
 }

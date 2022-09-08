@@ -1,5 +1,5 @@
 import { bushidoVirtutes } from '~/constants/bushido';
-import '../styles/description.virtutes.scss';
+import '../styles/others/description.virtutes.scss';
 
 export default function Virtutes() {
 
