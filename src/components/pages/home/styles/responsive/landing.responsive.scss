@@ -1,6 +1,14 @@
 /* 
   ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ##Screen = 2800px to higher resolution desktops
+*/
+@media (min-width: 2800px) {
+  
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 2000px to higher resolution desktops
 */
 @media (min-width: 2000px) {
 }
@@ -33,7 +41,20 @@
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
-  
+  #landing-view {
+    #quotes-block {
+      height: 70vh;
+      #quote-container {
+        top: 50%;
+        #headline {
+          font-size: 2.2rem;
+        }
+        #secondary {
+          font-size: 1rem;
+        }
+      }
+    }
+  } 
 }
 
 /* 
@@ -42,4 +63,15 @@
 */
 @media (min-width: 320px) and (max-width: 480px) {
 
+  #landing-view {
+    #quotes-block {
+      height: 70vh;
+      #quote-container {
+        top: 50%;
+        #headline {
+          font-size: 2rem;
+        }
+      }
+    }
+  } 
 }

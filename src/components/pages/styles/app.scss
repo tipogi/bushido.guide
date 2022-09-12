@@ -15,7 +15,7 @@
 }
 
 .block {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
 }
@@ -30,3 +30,6 @@
   width: 100%;
   min-height: 100vh;
 }
+
+
+@import "./responsive/app.responsive.scss"

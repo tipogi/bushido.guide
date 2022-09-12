@@ -1,15 +1,23 @@
 /* 
   ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ##Screen = 2800px to higher resolution desktops
 */
-@media (min-width: 2000px) {
+@media (min-width: 2800px) {
+  
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1800px to higher resolution desktops
+*/
+@media (min-width: 1800px) and (max-width: 2799px) {
   
 }
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ##Device = Desktops, retina displays
+  ##Screen = 1440px to higher resolution desktops
 */
-@media (min-width: 1281px) {
+@media (min-width: 1281px) and (max-width: 1799px) {
   
 }
 
@@ -42,7 +50,9 @@
   ##Screen = B/w 481px to 767px
 */
 @media (min-width: 481px) and (max-width: 767px) {
-  
+  :root {
+    font-size: 14px;
+  }
 }
 
 /* 
@@ -50,7 +60,7 @@
   ##Screen = B/w 320px to 479px
 */
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
-    font-size: 10px;
+  :root {
+    font-size: 12px;
   }
 }

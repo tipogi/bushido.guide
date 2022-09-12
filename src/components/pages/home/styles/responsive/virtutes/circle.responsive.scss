@@ -1,0 +1,103 @@
+$point_radius_small: 20px;
+$circle_radius_small: 200px;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+
+.navigation-circle {
+    height: $circle_radius_small * 2;
+    width: $circle_radius_small * 2;
+    &__list {
+      height: $circle_radius_small * 2;
+      width: $circle_radius_small * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_small});
+
+    &__point {
+      height: $point_radius_small * 2;
+      width: $point_radius_small * 2;
+      top: -#{$point_radius_small};
+
+      &:before {
+        height: $point_radius_small * 2;
+        width: $point_radius_small * 2;
+        line-height: $point_radius_small * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_small;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_small * 2;
+    left: $point_radius_small * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_small $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_small * 2 + 2;
+    left: $point_radius_small * 2;
+  }
+}
+
+
+  $point_radius_xsmall: 14px;
+  $circle_radius_xsmall: 120px;
+
+  @media (max-width: 1024px) {
+    .navigation-circle {
+      height: $circle_radius_xsmall * 2;
+      width: $circle_radius_xsmall * 2;
+      &__list {
+        height: $circle_radius_xsmall * 2;
+        width: $circle_radius_xsmall * 2;
+      }
+    }
+  
+    .navigation-circle-list-item {
+      width: calc(50% + #{$point_radius_xsmall});
+  
+      &__point {
+        height: $point_radius_xsmall * 2;
+        width: $point_radius_xsmall * 2;
+        top: -#{$point_radius_xsmall};
+  
+        &:before {
+          height: $point_radius_xsmall * 2;
+          width: $point_radius_xsmall * 2;
+          line-height: $point_radius_xsmall * 2;
+        }
+      }
+    }
+  
+    .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+      font-size: $point_radius_xsmall;
+    }
+  
+    .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+      width: $point_radius_xsmall * 2;
+      left: $point_radius_xsmall * 2 + 2;
+    }
+  
+    .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+    .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+      box-shadow: inset 0px 0px 0px $point_radius_xsmall $color_primary;
+    }
+    .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+    .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+      width: $point_radius_xsmall * 2 + 2;
+      left: $point_radius_xsmall * 2;
+    }
+  }

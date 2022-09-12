@@ -7,8 +7,8 @@ const Footer: React.FC = () => {
     <div id="bushido-footer">
         <div id="quote">"The most dangerous creation of any society is the man who has nothing left to lose" - James Baldwin</div>
         <div id="contact">
-          <FaGithub/>
           <HiMail/>
+          <FaGithub/>
         </div>
     </div>
   )

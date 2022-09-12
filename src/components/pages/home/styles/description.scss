@@ -5,7 +5,7 @@
 
 #description-view {
   background: #272b33; 
-  padding: 100px;
+  padding: 80px 100px 80px;
   flex-wrap: wrap;
   align-items: center;
   .description-text {
@@ -20,7 +20,7 @@
     }
   }
   .circle-block {
-    margin-top: 150px;
+    margin-top: 80px;
     display: flex;
     div.main {
       flex: 2;
@@ -35,10 +35,10 @@
       h1 {
         font-family: 'orbitron';
         color: #72757e;
-        font-size: .8em;
+        font-size: .9em;
       }
     }
   }
 }
 
-@import "./responsive/virtutes.responsive.scss";
+@import "./responsive/description.responsive.scss";
