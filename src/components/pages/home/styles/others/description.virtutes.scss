@@ -203,6 +203,7 @@ $start_anim_delta: 5;
 .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
 	width: $default_point_radius * 2;
 	left: $default_point_radius * 2 + 2;
+	z-index: -1;
 }
 
 .navigation-circle-list-item:hover .navigation-circle-list-item__meta {
@@ -220,6 +221,7 @@ $start_anim_delta: 5;
 .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
 	width: $default_point_radius * 2 + 2;
 	left: $default_point_radius * 2;
+	z-index: -1;
 }
 
 .navigation-circle-list-item:active .navigation-circle-list-item__meta,

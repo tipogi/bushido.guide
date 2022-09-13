@@ -1,13 +1,227 @@
-$point_radius_small: 20px;
-$circle_radius_small: 200px;
+/* 
+  ##Device = Desktops
+  ##Screen = 2100px to higher resolution desktops
+*/
+$point_radius_large: 35px;
+$circle_radius_large: 300px;
+
+@media (min-width: 2100px) and (max-width: 2799px) {
+
+.navigation-circle {
+    height: $circle_radius_large * 2;
+    width: $circle_radius_large * 2;
+    &__list {
+      height: $circle_radius_large * 2;
+      width: $circle_radius_large * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_large});
+
+    &__point {
+      height: $point_radius_large * 2;
+      width: $point_radius_large * 2;
+      top: -#{$point_radius_large};
+
+      &:before {
+        height: $point_radius_large * 2;
+        width: $point_radius_large * 2;
+        line-height: $point_radius_large * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_large;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_large * 2;
+    left: $point_radius_large * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_large $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_large * 2 + 2;
+    left: $point_radius_large * 2;
+  }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1679px to higher resolution desktops
+*/
+$point_radius_default: 30px;
+$circle_radius_default: 260px;
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+
+.navigation-circle {
+    height: $circle_radius_default * 2;
+    width: $circle_radius_default * 2;
+    &__list {
+      height: $circle_radius_default * 2;
+      width: $circle_radius_default * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_default});
+
+    &__point {
+      height: $point_radius_default * 2;
+      width: $point_radius_default * 2;
+      top: -#{$point_radius_default};
+
+      &:before {
+        height: $point_radius_default * 2;
+        width: $point_radius_default * 2;
+        line-height: $point_radius_default * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_default;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_default * 2;
+    left: $point_radius_default * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_default $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_default * 2 + 2;
+    left: $point_radius_default * 2;
+  }
+}
 
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-@media (min-width: 1281px) {
+$point_radius_default: 20px;
+$circle_radius_default: 200px;
+
+@media (min-width: 1281px) and (max-width: 1679px) {
 
 .navigation-circle {
+    height: $circle_radius_default * 2;
+    width: $circle_radius_default * 2;
+    &__list {
+      height: $circle_radius_default * 2;
+      width: $circle_radius_default * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_default});
+
+    &__point {
+      height: $point_radius_default * 2;
+      width: $point_radius_default * 2;
+      top: -#{$point_radius_default};
+
+      &:before {
+        height: $point_radius_default * 2;
+        width: $point_radius_default * 2;
+        line-height: $point_radius_default * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_default;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_default * 2;
+    left: $point_radius_default * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_default $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_default * 2 + 2;
+    left: $point_radius_default * 2;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait), desktops
+  ##Screen = B/w 768px to 1280px
+*/
+$point_radius_medium: 22px;
+$circle_radius_medium: 180px;
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .navigation-circle {
+    height: $circle_radius_medium * 2;
+    width: $circle_radius_medium * 2;
+    &__list {
+      height: $circle_radius_medium * 2;
+      width: $circle_radius_medium * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_medium});
+
+    &__point {
+      height: $point_radius_medium * 2;
+      width: $point_radius_medium * 2;
+      top: -#{$point_radius_medium};
+
+      &:before {
+        height: $point_radius_medium * 2;
+        width: $point_radius_medium * 2;
+        line-height: $point_radius_medium * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_medium;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_medium * 2;
+    left: $point_radius_medium * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_medium $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_medium * 2 + 2;
+    left: $point_radius_medium * 2;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+$point_radius_small: 16px;
+$circle_radius_small: 160px;
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navigation-circle {
     height: $circle_radius_small * 2;
     width: $circle_radius_small * 2;
     &__list {
@@ -52,52 +266,56 @@ $circle_radius_small: 200px;
   }
 }
 
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
-  $point_radius_xsmall: 14px;
-  $circle_radius_xsmall: 120px;
+$point_radius_xsmall: 14px;
+$circle_radius_xsmall: 120px;
 
-  @media (max-width: 1024px) {
-    .navigation-circle {
+@media (min-width: 320px) and (max-width: 480px) {
+  .navigation-circle {
+    height: $circle_radius_xsmall * 2;
+    width: $circle_radius_xsmall * 2;
+    &__list {
       height: $circle_radius_xsmall * 2;
       width: $circle_radius_xsmall * 2;
-      &__list {
-        height: $circle_radius_xsmall * 2;
-        width: $circle_radius_xsmall * 2;
-      }
-    }
-  
-    .navigation-circle-list-item {
-      width: calc(50% + #{$point_radius_xsmall});
-  
-      &__point {
-        height: $point_radius_xsmall * 2;
-        width: $point_radius_xsmall * 2;
-        top: -#{$point_radius_xsmall};
-  
-        &:before {
-          height: $point_radius_xsmall * 2;
-          width: $point_radius_xsmall * 2;
-          line-height: $point_radius_xsmall * 2;
-        }
-      }
-    }
-  
-    .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
-      font-size: $point_radius_xsmall;
-    }
-  
-    .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
-      width: $point_radius_xsmall * 2;
-      left: $point_radius_xsmall * 2 + 2;
-    }
-  
-    .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
-    .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
-      box-shadow: inset 0px 0px 0px $point_radius_xsmall $color_primary;
-    }
-    .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
-    .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
-      width: $point_radius_xsmall * 2 + 2;
-      left: $point_radius_xsmall * 2;
     }
   }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_xsmall});
+
+    &__point {
+      height: $point_radius_xsmall * 2;
+      width: $point_radius_xsmall * 2;
+      top: -#{$point_radius_xsmall};
+
+      &:before {
+        height: $point_radius_xsmall * 2;
+        width: $point_radius_xsmall * 2;
+        line-height: $point_radius_xsmall * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_xsmall;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_xsmall * 2;
+    left: $point_radius_xsmall * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_xsmall $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_xsmall * 2 + 2;
+    left: $point_radius_xsmall * 2;
+  }
+}
