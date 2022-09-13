@@ -35,7 +35,7 @@ export default function Quotes({ dotNumber }: IQuoutesProps) {
       }
       const motionH5Props = {
         id: 'secondary',
-        initial: { x: -2500 }
+        initial: { x: -3500 }
       }
       if (selectedDot) {
         Object.assign(motionH1Props, h1Animation);

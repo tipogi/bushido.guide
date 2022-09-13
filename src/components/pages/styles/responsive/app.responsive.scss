@@ -3,7 +3,9 @@
   ##Screen = 2800px to higher resolution desktops
 */
 @media (min-width: 2800px) {
-  
+  :root {
+    font-size: 35px;
+  }
 }
 
 /* 

@@ -1,5 +1,58 @@
 /* 
   ##Device = Desktops
+  ##Screen = 2800px to higher resolution desktops
+*/
+$point_radius_xlarge: 45px;
+$circle_radius_xlarge: 400px;
+
+@media (min-width: 2800px) {
+  .navigation-circle {
+    height: $circle_radius_xlarge * 2;
+    width: $circle_radius_xlarge * 2;
+    &__list {
+      height: $circle_radius_xlarge * 2;
+      width: $circle_radius_xlarge * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_xlarge});
+
+    &__point {
+      height: $point_radius_xlarge * 2;
+      width: $point_radius_xlarge * 2;
+      top: -#{$point_radius_xlarge};
+
+      &:before {
+        height: $point_radius_xlarge * 2;
+        width: $point_radius_xlarge * 2;
+        line-height: $point_radius_xlarge * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_xlarge;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_xlarge * 2;
+    left: $point_radius_xlarge * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_xlarge $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_xlarge * 2 + 2;
+    left: $point_radius_xlarge * 2;
+  }
+}
+
+/* 
+  ##Device = Desktops
   ##Screen = 2100px to higher resolution desktops
 */
 $point_radius_large: 35px;
@@ -7,7 +60,7 @@ $circle_radius_large: 300px;
 
 @media (min-width: 2100px) and (max-width: 2799px) {
 
-.navigation-circle {
+  .navigation-circle {
     height: $circle_radius_large * 2;
     width: $circle_radius_large * 2;
     &__list {

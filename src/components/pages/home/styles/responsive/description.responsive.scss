@@ -3,14 +3,20 @@
   ##Screen = 2800px to higher resolution desktops
 */
 @media (min-width: 2800px) {
-  
+  #description-view {
+    .circle-block {
+      .legend-block h1 {
+        font-size: 2em;
+      }
+    } 
+  }
 }
 
 /* 
   ##Device = Desktops
   ##Screen = 2000px to higher resolution desktops
 */
-@media (min-width: 1680px) {
+@media (min-width: 1680px) and (max-width: 2799px) {
   #description-view {
     .circle-block {
       margin-top: 50px;
