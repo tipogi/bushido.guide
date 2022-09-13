@@ -13,6 +13,24 @@
 &.root-number-5 {
   background-image: url(/img/cards/root/stacked-waves-e.svg);
 }
+
+@media (min-width: 1680px) {
+  &.root-number-1 {
+    background-image: url(/img/cards/root/responsive/stacked-waves-a-responsive.svg);
+  }
+  &.root-number-2 {
+    background-image: url(/img/cards/root/responsive/stacked-waves-b-responsive.svg);
+  }
+  &.root-number-3 {
+    background-image: url(/img/cards/root/responsive/stacked-waves-c-responsive.svg);
+  }
+  &.root-number-4 {
+    background-image: url(/img/cards/root/responsive/stacked-waves-d-responsive.svg);
+  }
+  &.root-number-5 {
+    background-image: url(/img/cards/root/responsive/stacked-waves-e-responsive.svg);
+  }
+}
 // Branch cards backgrounds
 &.branch-number-1 {
   background-image: url(/img/cards/branch/blob-scene-a.svg);

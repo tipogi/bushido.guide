@@ -1,8 +1,240 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 2800px) {
   .main-container {
     padding: 80px 20px 50px !important;
     #container-list {
-      display: grid;
+      grid-template-columns: repeat(6,1fr);
+      gap: 60px;
+      margin-top: 150px;
+    }
+    #list-container {
+      padding: 80px 0px;
+      .domain-card {
+        padding: 20px 0;
+        .img-container {
+          width: 10%;
+          .domain-img {
+            height: 50px;
+            &:hover {
+              height: 60px;
+            }
+          }
+        }
+        .text-container {
+          width: 70%;
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+        .view-container {
+          svg {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
+        .language-container {
+          img {
+            height: .8rem;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2799px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      grid-template-columns: repeat(5,1fr);
+      gap: 50px;
+      margin-top: 150px;
+    }
+    #list-container {
+      padding: 80px 0px;
+      .domain-card {
+        .img-container {
+          width: 10%;
+          .domain-img {
+            height: 50px;
+            &:hover {
+              height: 60px;
+            }
+          }
+        }
+        .text-container {
+          width: 70%;
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+        .view-container {
+          svg {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
+        .language-container {
+          img {
+            height: .8rem;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      grid-template-columns: repeat(4,1fr);
+      gap: 50px;
+    }
+    #list-container {
+      padding: 30px 0px;
+      .domain-card {
+        .text-container {
+          width: 65%;
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      grid-template-columns: repeat(5,1fr);
+      gap: 40px;
+    }
+    
+    #list-container {
+      padding: 30px 0px;
+      .domain-card {
+        .text-container {
+          width: 65%;
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      grid-template-columns: repeat(4,1fr);
+      gap: 40px;
+      margin: 50px 0;
+    }
+    #list-container {
+      padding: 30px 0px;
+      .domain-card {
+        .text-container {
+          .domain-name {
+            font-size: .8rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+          }
+        }
+        .view-container {
+          svg {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
+        .language-container {
+          img {
+            height: .8rem;
+            filter: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
+      grid-template-columns: repeat(3,1fr);
+      gap: 40px;
+      margin: 50px 0;
+    }
+    #list-container {
+      padding: 30px 0px;
+      .domain-card {
+        .img-container .domain-img {
+          filter: none;
+        }
+        .text-container {
+          margin-right: 15px;
+          width: 65%;
+          .domain-name {
+            font-weight: 500;
+            font-size: .9rem;
+          }
+          .domain-description {
+            font-size: .7rem;
+            font-weight: 400;
+          }
+        }
+        .view-container {
+          svg {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1rem;
+          }
+        }
+        .language-container {
+          img {
+            height: .8rem;
+            filter: none;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main-container {
+    padding: 80px 20px 50px !important;
+    #container-list {
       grid-template-columns: repeat(2,1fr);
       gap: 30px;
       margin: 30px 0;
@@ -11,10 +243,13 @@
       padding: 30px 0px;
       .domain-card {
         .img-container {
-          width: 20%;
+          width: 25%;
+          .domain-img {
+            filter: none;
+          }
         }
         .text-container {
-          width: 80%;
+          width: 75%;
           .domain-name {
             font-size: .8rem;
           }

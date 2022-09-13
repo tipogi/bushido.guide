@@ -1,9 +1,11 @@
 .breadcrumb-block {
   #list-breadcrumbs {
-    color: #F25F4C;
-    font-size: 1rem;
     display: flex;
     align-items: center;
+    color: #F25F4C;
+    span {
+      font-size: 1.2rem;
+    }
     svg {
       margin-right: 20px;
       font-size: 1.2rem;
@@ -29,7 +31,7 @@
   #list-breadcrumbs-legend {
     margin: 15px 0 0 50px;
     color: #72757e;
-    font-size: .7rem;
+    font-size: 1rem;
   }
 }
 

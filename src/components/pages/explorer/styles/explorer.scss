@@ -61,8 +61,8 @@
       .domain-description {
         color:#ffe3c4;
         font-weight: 100;
-        //font-size: 14px;
         font-size: 1rem;
+        font-weight: 300;
       }
     }
     .view-container {
@@ -78,7 +78,7 @@
       justify-content: end;
       width: 5%;
       img {
-        height: 1em;
+        height: 1rem;
         filter: grayscale(1);
         border-radius: 10px;
       }

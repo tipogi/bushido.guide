@@ -1,21 +1,19 @@
 // Font Awesome
-import { FaGithub, FaStore, FaToolbox, FaSignature, FaSwimmingPool, FaPhotoVideo } from 'react-icons/fa';
+import { FaSignature, FaSwimmingPool } from 'react-icons/fa';
 // HeroIcons
-import { HiCubeTransparent, HiCode, HiOutlineCreditCard, HiOutlineCode } from "react-icons/hi";
+import { HiCode, HiOutlineCubeTransparent } from "react-icons/hi";
 //Material Icon
-import { MdMarkEmailUnread, MdAnimation, MdSimCard, MdExpand, MdLaptopChromebook } from 'react-icons/md';
+import { MdMarkEmailUnread, MdAnimation, MdExpand, MdLaptopChromebook, MdLocalMovies, MdOutlineStorefront } from 'react-icons/md';
 // Flat Icons
 import { FiHardDrive } from 'react-icons/fi';
-// Remix Icon
-import { RiArticleLine, RiCodeBoxLine, RiShoppingBasket2Line } from 'react-icons/ri';
 // Simple Icons
 import { SiAudiomack } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineBarChart } from "react-icons/ai";
 // IonIcons
-import { IoBarChart, IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline } from "react-icons/io5";
+import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCollectionPlay, BsLayersHalf, BsCloudCheck, BsMailbox, BsShieldLock, BsCpu, BsCardChecklist, BsCurrencyBitcoin, BsSim } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsShieldLock, BsCpu, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back } from "react-icons/bs";
 // Game Icons
 import { GiBuyCard, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
@@ -23,7 +21,7 @@ import { GrCluster } from "react-icons/gr";
 // Devicons
 import { DiLinux } from "react-icons/di";
 // VS Code
-import { VscPackage, VscGithub } from "react-icons/vsc";
+import { VscPackage } from "react-icons/vsc";
 
 
 import { 
@@ -41,17 +39,17 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
   const renderIcon = (): JSX.Element => {
     switch (name) {
       case GITHUB:
-        return <VscGithub/>;
+        return <BsGithub/>;
       case ANALYSIS:
-        return <HiCubeTransparent/>;
+        return <HiOutlineCubeTransparent/>;
       case GUIDE:
         return <GiMisdirection/>
       case DEV:
-        return <HiOutlineCode/>;
+        return <BsCodeSlash/>;
       case ARTICLES:
-        return <RiArticleLine/>;
+        return <IoDocumentTextOutline/>;
       case MULTIMEDIA:
-        return <FaPhotoVideo/>;
+        return <MdLocalMovies/>;
       case RESOURCES:
         return <IoLayersOutline/>;
       case PODCAST:
@@ -65,7 +63,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case P2P:
         return <GiBuyCard/>;
       case STORE:
-        return <RiShoppingBasket2Line/>;
+        return <MdOutlineStorefront/>;
       case SERVICES:
         return <BsCloudCheck/>;
       case EMAIL:
@@ -73,7 +71,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case ANIMATION:
         return <MdAnimation/>;
       case CHARTS:
-        return <IoBarChart/>;
+        return <AiOutlineBarChart/>;
       case METRICS:
         return <IoAnalyticsSharp/>;
       case TOOLS:
@@ -99,7 +97,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case MEMPOOL:
         return <FaSwimmingPool/>;
       case CARD:
-        return <HiOutlineCreditCard/>;
+        return <BsCreditCard2Back/>;
       case WALLET:
         return <GoKey/>;
       case MINE:

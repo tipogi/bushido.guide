@@ -1,11 +1,11 @@
 .icon {
   color: #73757e;
-  &.react-icons {
-    font-size: 1.5em;
+  &.react-icons svg {
+    font-size: 1.5rem;
     margin-top: 8px;
   }
-  &.custom-svg {
-    width: 2.5em;
+  &.custom-svg svg {
+    width: 2.5rem;
   }
   path {
     stroke: #73757e;

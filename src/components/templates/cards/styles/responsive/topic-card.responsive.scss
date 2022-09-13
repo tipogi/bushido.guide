@@ -1,23 +1,143 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 2800px) {
+  .topic-card {
+    width: 400px;
+    height: 210px;
+    .topic-headline {
+      height: 60%;
+      .icon {
+        &.react-icons svg {
+          font-size: 1.6rem;
+        }
+        &.custom-svg svg {
+          width: 2.1rem;
+        }
+      }
+    }
+    .topic-description {
+      height: 35%;
+      span {
+        font-size: .6rem;
+        line-height: 1.4;
+      }
+    } 
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2799px) {
+  .topic-card {
+    width: 360px;
+    height: 180px;
+    .topic-headline {
+      height: 110px;
+      .icon {
+        &.react-icons svg {
+          font-size: 1.8rem;
+        }
+        &.custom-svg svg {
+          width: 2.5rem;
+        }
+      }
+    }
+    .topic-description span {
+      font-size: .6rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+  .topic-card {
+    width: 300px;
+    height: 140px;
+    .topic-headline {
+      height: 80px;
+      .icon {
+        &.react-icons svg {
+          font-size: 1.8rem;
+        }
+        &.custom-svg svg {
+          width: 2.5rem;
+        }
+      }
+    }
+    .topic-description span {
+      font-size: .6rem;
+      line-height: 1.2;
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .topic-card {
+    height: 100px;
+    .topic-headline {
+      .icon {
+        &.react-icons svg {
+          font-size: 1.8rem;
+        }
+        &.custom-svg svg {
+          width: 2.2rem;
+        }
+      }
+    }
+    .topic-description span {
+      font-size: .6rem;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .topic-card {
+    height: 100px;
+    .topic-headline {
+      .icon {
+        &.react-icons svg {
+          font-size: 2rem;
+        }
+        &.custom-svg svg {
+          width: 2.5rem;
+        }
+      }
+    }
+    .topic-description span {
+      font-size: .7rem;
+    }
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .topic-card {
+    height: 100px;
+    .topic-headline {
+      height: 50px;
+    }
+    .topic-description span {
+      font-size: .8rem;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
   .topic-card {
     width: 140px;
     height: 75px;
     .topic-headline {
       height: 50px;
-      .topic-name {
-        font-size: .8rem;
-      }
       .icon {
-        &.react-icons {
-          font-size: 1rem;
+        &.react-icons svg {
+          font-size: 1.7rem;
         }
-        &.custom-svg {
-          width: 1.5rem;
+        &.custom-svg svg {
+          width: 2rem;
         }
       }
     }
-    .topic-description {
-      font-size: .5rem;
+    .topic-description span {
+      font-size: .7rem;
     }
   }
 }
