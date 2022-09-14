@@ -164,9 +164,9 @@ $circle_radius_default: 260px;
   ##Screen = 1281px to higher resolution desktops
 */
 $point_radius_default: 20px;
-$circle_radius_default: 200px;
+$circle_radius_default: 160px;
 
-@media (min-width: 1281px) and (max-width: 1679px) {
+@media (min-width: 1280px) and (max-width: 1679px) {
 
 .navigation-circle {
     height: $circle_radius_default * 2;
@@ -217,10 +217,63 @@ $circle_radius_default: 200px;
   ##Device = Tablets, Ipads (portrait), desktops
   ##Screen = B/w 768px to 1280px
 */
+$point_radius_medium: 18px;
+$circle_radius_medium: 160px;
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .navigation-circle {
+    height: $circle_radius_medium * 2;
+    width: $circle_radius_medium * 2;
+    &__list {
+      height: $circle_radius_medium * 2;
+      width: $circle_radius_medium * 2;
+    }
+  }
+
+  .navigation-circle-list-item {
+    width: calc(50% + #{$point_radius_medium});
+
+    &__point {
+      height: $point_radius_medium * 2;
+      width: $point_radius_medium * 2;
+      top: -#{$point_radius_medium};
+
+      &:before {
+        height: $point_radius_medium * 2;
+        width: $point_radius_medium * 2;
+        line-height: $point_radius_medium * 2;
+      }
+    }
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:before {
+    font-size: $point_radius_medium;
+  }
+
+  .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
+    width: $point_radius_medium * 2;
+    left: $point_radius_medium * 2 + 2;
+  }
+
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
+    box-shadow: inset 0px 0px 0px $point_radius_medium $color_primary;
+  }
+  .navigation-circle-list-item:active .navigation-circle-list-item__point:after,
+  .navigation-circle-list-item.active .navigation-circle-list-item__point:after {
+    width: $point_radius_medium * 2 + 2;
+    left: $point_radius_medium * 2;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait), desktops
+  ##Screen = B/w 768px to 1280px
+*/
 $point_radius_medium: 22px;
 $circle_radius_medium: 180px;
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .navigation-circle {
     height: $circle_radius_medium * 2;
     width: $circle_radius_medium * 2;

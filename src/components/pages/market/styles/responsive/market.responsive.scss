@@ -1,25 +1,172 @@
-.main-container {
-  #offer-lists {
-    padding: 0;
-    #market-header {
-      padding: 20px 0 10px;
-      font-size: .7rem
-    }
-    ul {
-      li {
-        img.exchange-icon {
-          height: 20px;
-          margin-right: 10px;
-        }
+@media (min-width: 320px) and (max-width: 1279px) {
+  .main-container {
+    #offer-lists {
+      padding: 0;
+      #market-header {
+        padding: 20px 0 10px;
         span {
-          font-size: .7rem;
+          font-size: .5rem
         }
-        .market-payment-methods {
-          overflow: scroll;
-          .payment-icons {
-            gap: 5px;
+      }
+      ul {
+        gap: 5px;
+        li {
+          img.exchange-icon {
+            height: 20px;
+            margin-right: 10px;
+          }
+          span {
+            font-size: .7rem;
+          }
+          .market-payment-methods {
+            overflow: scroll;
+            grid-gap: 5px;
+            justify-content: center;
+            // Children div and with that classes
+            &:has(div):has(.payment-icons):has(.other-payments) {
+              justify-content: flex-start;
+            }
+            .payment-icons {
+              gap: 5px;
+              .tooltip  img {
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1279px) {
+  .main-container {
+    #offer-lists {
+      #market-header {
+        span {
+          font-size: .9rem
+        }
+      }
+      ul {
+        li {
+          img.exchange-icon {
+            height: 24px;
+          }
+          span {
+            font-size: .8rem;
+          }
+          .market-payment-methods {
+            justify-content: center;
+            // Children div and with that classes
+            &:has(div):has(.payment-icons):has(.other-payments) {
+              justify-content: flex-start;
+            }
+            .payment-icons {
+              gap: 8px;
+              .tooltip  img {
+                height: 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .main-container {
+    #offer-lists {
+      padding: 20px 40px;
+      #market-header {
+        span {
+          font-size: 1rem
+        }
+      }
+      ul {
+        li {
+          img.exchange-icon {
+            height: 26px;
+          }
+          span {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  .main-container {
+    #offer-lists {
+      padding: 20px 40px;
+      #market-header {
+        span {
+          font-size: 1rem
+        }
+      }
+      ul {
+        li {
+          img.exchange-icon {
+            height: 26px;
+          }
+          span {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+  .main-container {
+    #offer-lists {
+      padding: 50px 150px;
+      #market-header {
+        span {
+          font-size: 1rem
+        }
+      }
+      ul {
+        gap: 15px;
+        li {
+          img.exchange-icon {
+            height: 40px;
+          }
+          span {
+            font-size: .95rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2799px) {
+  .main-container {
+    #offer-lists {
+      padding: 50px 150px;
+      #market-header {
+        margin-bottom: 30px;
+        span {
+          font-size: 1rem
+        }
+      }
+      ul {
+        gap: 20px;
+        li {
+          img.exchange-icon {
+            height: 50px;
+          }
+          span {
+            font-size: .95rem;
+          }
+          .market-payment-methods .payment-icons {
+            gap: 8px;
             .tooltip  img {
-              height: 20px;
+              height: 42px;
             }
           }
         }

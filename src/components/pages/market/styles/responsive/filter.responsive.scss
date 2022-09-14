@@ -1,18 +1,19 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 1279px) {
   #offer-filter {
     #filter-display {
       #description {
-        h1 {
+        h1, span {
           font-size: .65rem;
         }
       }
       #filter-action {
         svg {
-          font-size: .6rem;
+          font-size: 1rem;
         }
         &.active {
           svg {
-            font-size: .6rem;
+            transform: rotate(180deg);
+            font-size: 2rem;
           }
         }
       }
@@ -42,36 +43,213 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-      grid-gap: 20px;
-      padding: 20px 20px;
+      grid-gap: 15px;
+      padding: 10px 20px;
+      z-index: 1;
       .offer-direction {
         height: 20px;
         .offer-switch {
           .direction {
             font-size: .7rem;
-            padding: 5px;
+            padding: 5px 10px;
           }
         }
       }
       .offer-exchange {
         height: 20px;
         .exchange {
-          font-size: .7rem;
-          padding: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 10px;
+          label {
+            font-size: .8rem;
+          }
         }
       }
       .offer-currency, .offer-premium {
-        height: 30px;
-      }
-      .offer-currency, .offer-premium {
-        height: 20px;
         select {
-          padding: 2px 5px;
-        }
-        label {
-          padding: 0 20px;
+          padding: 2px 10px;
           font-size: .8rem;
         }
+        label {
+          font-size: .7rem;
+        }
+      }
+      .apply-filter-block {
+        width: 90%;
+        svg {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1279px) {
+  #offer-filter {
+    #filter-display {
+      #description {
+        h1, span {
+          font-size: .75rem;
+        }
+      }
+      #filter-action {
+        svg {
+          font-size: 1rem;
+        }
+        &.active {
+          svg {
+            transform: rotate(180deg);
+            font-size: 2rem;
+          }
+        }
+      }
+      #price {
+        #keyword {
+          font-size: .7rem;
+        }
+        #number {
+          font-size: 1.2rem;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #offer-filter {
+    #filter-display {
+      padding-bottom: 20px;
+      #description {
+        h1, span {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      }
+      #filter-action {
+        svg {
+          font-size: 1.5rem;
+        }
+        &.active {
+          svg {
+            font-size: 2.5rem;
+          }
+        }
+      }
+      #price {
+        #keyword {
+          font-size: .8rem;
+        }
+        #number {
+          font-size: 1.5rem;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279px) {
+  #offer-filter {
+    #filter-display {
+      #description {
+        h1, span {
+          font-size: .9rem;
+          font-weight: 400;
+        }
+      }
+      #filter-action {
+        svg {
+          font-size: 1.5rem;
+        }
+        &.active {
+          svg {
+            transform: rotate(180deg);
+            font-size: 2rem;
+          }
+        }
+      }
+      #price {
+        #keyword {
+          font-size: .8rem;
+        }
+        #number {
+          font-size: 1.2rem;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+  #offer-filter {
+    #filter-configurator #filter {
+      .offer-currency {
+        select {
+          width: 70px;
+        }
+        label {
+          font-size: .7rem;
+        }
+      }
+      .apply-filter-block svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2799px) { 
+  #offer-filter {
+    #filter-display {
+      padding-bottom: 40px;
+    }
+    #filter-configurator #filter {
+      padding: 35px 100px;
+      .offer-direction, .offer-exchange {
+        height: 40px;
+      }
+      .offer-currency {
+        select {
+          width: 90px;
+        }
+        label {
+          font-size: .7rem;
+        }
+      }
+      .apply-filter-block svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 2800px) {
+  #offer-filter {
+    #filter-display {
+      padding-bottom: 55px;
+    }
+    #filter-configurator #filter {
+      padding: 35px 100px;
+      .offer-direction {
+        height: 50px;
+      }
+      .offer-exchange .exchange{
+        padding: 10px;
+      }
+      .offer-currency {
+        select {
+          width: 90px;
+        }
+        label {
+          font-size: .7rem;
+        }
+      }
+      .apply-filter-block svg {
+        font-size: 1.5rem;
       }
     }
   }

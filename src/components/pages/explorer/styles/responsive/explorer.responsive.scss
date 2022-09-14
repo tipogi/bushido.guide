@@ -175,7 +175,6 @@
         .language-container {
           img {
             height: .8rem;
-            filter: none;
             border-radius: 5px;
           }
         }
@@ -195,9 +194,6 @@
     #list-container {
       padding: 30px 0px;
       .domain-card {
-        .img-container .domain-img {
-          filter: none;
-        }
         .text-container {
           margin-right: 15px;
           width: 65%;
@@ -221,7 +217,6 @@
         .language-container {
           img {
             height: .8rem;
-            filter: none;
             border-radius: 5px;
           }
         }
@@ -243,13 +238,10 @@
       padding: 30px 0px;
       .domain-card {
         .img-container {
-          width: 25%;
-          .domain-img {
-            filter: none;
-          }
+          width: 15%;
         }
         .text-container {
-          width: 75%;
+          width: 80%;
           .domain-name {
             font-size: .8rem;
           }

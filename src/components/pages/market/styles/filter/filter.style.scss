@@ -6,7 +6,7 @@
     align-items: center;
     color: #FFFFFE;
     background: #252525;
-    padding: 10px;
+    padding: 20px 10px;
     border-radius: 10px;
     #filter-action {
       flex: 1;
@@ -15,12 +15,13 @@
       &.active {
         svg {
           color:#f2604c;
-          //font-size: 20px;
+          transform: rotate(180deg);
           font-size: 1.5rem;
         }
       }
       svg {
         cursor: pointer;
+        font-size: 1rem;
         &:hover {
           color: #f2604c;
         }
@@ -31,9 +32,11 @@
       flex: 8;
       h1 {
         font-size: 1rem;
+        font-weight: 400;
         span.highlight {
           color: #F25F4C;
           font-weight: 400;
+          font-size: 1rem;
         }
       }
     }
@@ -59,6 +62,38 @@
       padding: 20px 100px;
       position: absolute;
       background: rgb(37 37 37 / 80%);
+      z-index: 1;
+      .offer-direction {
+        .offer-switch {
+          .direction {
+            font-size: .8rem;
+            padding: 5px 10px;
+          }
+        }
+      }
+      .offer-exchange {
+        .exchange {
+          padding: 5px 10px;
+          label {
+            font-size: .8rem;
+          }
+        }
+      }
+      .offer-currency, .offer-premium {
+        select {
+          padding: 2px 10px;
+          font-size: .9rem;
+        }
+        label {
+          font-size: .8rem;
+        }
+      }
+      .apply-filter-block {
+        width: 90%;
+        svg {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }

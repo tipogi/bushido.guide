@@ -1,6 +1,6 @@
 .main-container {
   #offer-lists {
-    padding: 50px 150px;
+    padding: 40px 40px;
     #market-header {
       display: flex;
       padding: 10px;
@@ -67,7 +67,6 @@
           .payment-icons {
             display: flex;
             justify-content: flex-start;
-            flex: 0;
             grid-gap: 15px;
             .tooltip {
               display: flex;
@@ -112,7 +111,6 @@
           .other-payments {
             display: flex;
             justify-content: flex-start;
-            flex: 0;
             grid-gap: 5px;
             color: white;
           }
