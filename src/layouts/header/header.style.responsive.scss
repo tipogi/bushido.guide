@@ -1,0 +1,76 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  #bushido-header {
+    #pages-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      background: #ffc570;
+      /*background-size: cover;
+      background-image: url("/public/img/cover/bushido_stamp.png");*/
+      flex-direction: column;
+      transform: translateX(-100%);
+      /*transition: 0.5s ease-in;*/
+      transition: transform .6s;
+      z-index: 2;
+      display: flex;
+      flex-direction: row;
+      opacity: 1;
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 90vw;
+        height: 100vh;
+        padding: 50px;
+        a {
+          color: #262a33;
+          font-weight: 600;
+        }
+        img {
+          height: auto;
+          max-width: 130px;
+          border-radius: 5px;
+          //box-shadow: 20px 20px 60px #8a6b3d, -20px -20px 60px #fee3bc;
+          box-shadow: 20px 20px 60px #1c1e23, -20px -20px 60px #7389b8;
+        }
+      }
+      &.active {
+        transform: translateX(0%);
+      }
+      #mobile-name-container {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        padding-top: 100px;
+        border-left: 1px solid #e5e5e5;
+        a {
+          display: flex;
+          flex-direction: row;
+          transform: rotate(-90deg) translateX(-20%);
+          transform-origin: center;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          color: #ffe3c4;//#272b33;
+          font-weight: 600;
+          span#dot {
+            display: flex;
+            justify-content: center;
+            height: 10px;
+            svg {
+              color: #e6942c;
+            }
+          }
+        }
+      }
+    }
+    .menu.menu--close5 {
+      display: block;
+      z-index: 3;
+    }
+  }
+}

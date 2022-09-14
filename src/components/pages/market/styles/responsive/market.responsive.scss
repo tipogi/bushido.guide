@@ -5,7 +5,7 @@
       #market-header {
         padding: 20px 0 10px;
         span {
-          font-size: .5rem
+          font-size: .8rem
         }
       }
       ul {
@@ -145,6 +145,37 @@
 }
 
 @media (min-width: 2100px) and (max-width: 2799px) {
+  .main-container {
+    #offer-lists {
+      padding: 50px 150px;
+      #market-header {
+        margin-bottom: 30px;
+        span {
+          font-size: 1rem
+        }
+      }
+      ul {
+        gap: 20px;
+        li {
+          img.exchange-icon {
+            height: 50px;
+          }
+          span {
+            font-size: .95rem;
+          }
+          .market-payment-methods .payment-icons {
+            gap: 8px;
+            .tooltip  img {
+              height: 42px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2800px) {
   .main-container {
     #offer-lists {
       padding: 50px 150px;
