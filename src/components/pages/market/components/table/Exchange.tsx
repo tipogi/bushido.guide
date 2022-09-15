@@ -17,15 +17,27 @@ export default function Exchange({ name }: IExchange) {
   const extractImg = useCallback((name: string) => {
     switch(name) {
       case BISQ:
-        return BISQ_BASE64;
+        return {
+          src: BISQ_BASE64,
+          url: 'https://bisq.network/'
+        }
       case HODLHODL:
-        return HODLHODL_BASE64;
+        return {
+          src: HODLHODL_BASE64,
+          url: 'https://hodlhodl.com/'
+        };
       default:
-        return ROBOSATS_BASE64
+        return {
+          src: ROBOSATS_BASE64,
+          url: 'https://github.com/Reckless-Satoshi/robosats/#user-content-robosats---buy-and-sell-satoshis-privately'
+        }
     }
   }, [])
 
+  const { url, src } = extractImg(name);
   return (
-    <img className="exchange-icon" src={`${extractImg(name) }`}/>
+    <a href={url} target="_blank">
+      <img className="exchange-icon" src={src}/>
+    </a>
   )
 }
