@@ -1,17 +1,14 @@
+@import "~/components/pages/styles/colors.scss";
+
 #cards-container {
   display: flex;
   justify-content: center;
 }
 #container-list {
   margin: 50px 100px;
-  /*display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;*/
   display: grid;
   grid-template-columns: repeat(6,1fr);
   gap: 30px;
-
   .topic-card {
     .icon {
       &#sidechain {
@@ -44,7 +41,7 @@
         height: 25px;
         filter: grayscale(85%);
         &#img-Blockplate {
-          background: #f2604c;
+          background: $breadcrumbs-color;
           border-radius: 5px;
         }
       }
@@ -54,12 +51,12 @@
       display: flex;
       flex-direction: column;
       .domain-name {
-        color: #e6942c;
+        color: $orange-main-color;
         font-weight: 700;
         margin-bottom: 5px;
       }
       .domain-description {
-        color:#ffe3c4;
+        color:$orange-secondary-color;
         font-weight: 100;
         font-size: 1rem;
         font-weight: 300;
@@ -70,7 +67,7 @@
       align-items: center;
       justify-content: space-evenly;
       width: 8%;
-      color: #514d49;
+      color: $not-active-icon;
     }
     .language-container {
       display: flex;
@@ -86,14 +83,14 @@
     &:hover {
       background: #2a2e37;
       border-radius: 10px;
-      border: 1px solid #4f535d;
+      border: 1px solid #2a2e37;
       .img-container img{
         filter: grayscale(0);
         height: 35px;
       }
       .view-container {
         svg, span {
-          color: #e6942c;
+          color: $orange-main-color;
         }
       }
       .language-container img {

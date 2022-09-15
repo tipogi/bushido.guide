@@ -1,3 +1,5 @@
+@import "~/components/pages/styles/colors.scss";
+
 .main-container {
   #offer-lists {
     padding: 40px 40px;
@@ -5,7 +7,7 @@
       display: flex;
       padding: 10px;
       justify-content: center;
-      color: grey;
+      color: $grey-legend-color;
       :nth-of-type(1) {
         width: 40px;
       }
@@ -34,7 +36,7 @@
           padding: 8px;
           border-radius: 4px;
           span {
-            color: #f2604c !important;
+            color: $breadcrumbs-color !important;
           }
         }
         span {
@@ -46,17 +48,17 @@
           border-radius: 30px;
         }
         span.maker-online {
-          color: #45ea45 !important;
+          color: $market-offfer-online !important;
         }
         span.maker-recently_online {
-          color: #d99313 !important;
+          color: $market-offfer-recent !important;
         }
         span.maker-offline {
-          color: #9f4646 !important;
+          color: $market-offfer-offline !important;
         }
         :nth-of-type(2), :nth-of-type(3), :nth-of-type(4), :nth-of-type(5), :nth-of-type(6) {
           flex: 1;
-          color:white;
+          color:$white-color;
         }
         .market-payment-methods {
           display: flex;
@@ -80,8 +82,8 @@
               }
               .tooltiptext {
                 visibility: hidden;
-                background-color: rgb(128 128 128 / 50%);
-                color: #fff !important;
+                background-color: $market-tooltip-color;
+                color: $white-color !important;
                 text-align: center;
                 padding: 5px 10px;
                 border-radius: 6px;
@@ -98,7 +100,7 @@
                   margin-left: -5px;
                   border-width: 5px;
                   border-style: solid;
-                  border-color: rgb(128 128 128 / 50%) transparent transparent transparent;
+                  border-color: $market-tooltip-color transparent transparent transparent;
                 }
               }
               
@@ -112,7 +114,7 @@
             display: flex;
             justify-content: flex-start;
             grid-gap: 5px;
-            color: white;
+            color: $white-color;
           }
         }
       }

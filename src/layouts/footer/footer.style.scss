@@ -1,16 +1,18 @@
+@import "~/components/pages/styles/colors.scss";
+
 #bushido-footer {
-  background-image: linear-gradient(to bottom, #272b33, #1e2127);
+  background-image: linear-gradient(to bottom, $black-main-color, $footer-gradient-finish-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
   #quote {
     font-size: .8rem;
-    color: #72757e;
+    color: $grey-legend-color;
   }
   #contact {
     svg {
-      fill: #e5942c;
+      fill: $orange-main-color;
       margin-right: 10px;
     }
   }

@@ -1,5 +1,5 @@
 .icon {
-  color: #73757e;
+  color: $grey-legend-color;
   &.react-icons svg {
     font-size: 1.5rem;
     margin-top: 8px;
@@ -8,6 +8,6 @@
     width: 2.5rem;
   }
   path {
-    stroke: #73757e;
+    stroke: $grey-legend-color;
   }
 }

@@ -1,11 +1,13 @@
+@import "~/components/pages/styles/colors.scss";
+
 #offer-filter {
   display: flex;
   flex-direction: column;
   #filter-display {
     display: flex;
     align-items: center;
-    color: #FFFFFE;
-    background: #252525;
+    color: $white-color;
+    background: $market-filter-color;
     padding: 20px 10px;
     border-radius: 10px;
     #filter-action {
@@ -14,7 +16,7 @@
       justify-content: center;
       &.active {
         svg {
-          color:#f2604c;
+          color:$breadcrumbs-color;
           transform: rotate(180deg);
           font-size: 1.5rem;
         }
@@ -23,7 +25,7 @@
         cursor: pointer;
         font-size: 1rem;
         &:hover {
-          color: #f2604c;
+          color: $breadcrumbs-color;
         }
       }
       
@@ -34,7 +36,7 @@
         font-size: 1rem;
         font-weight: 400;
         span.highlight {
-          color: #F25F4C;
+          color: $breadcrumbs-color;
           font-weight: 400;
           font-size: 1rem;
         }
@@ -48,7 +50,7 @@
       #number {
         margin-top: 10px;
         height: 35px;
-        color: #F25F4C;
+        color: $breadcrumbs-color;
         font-size: 1.7rem;
       }
     }
@@ -56,7 +58,7 @@
   #filter-configurator {
     flex: 1;
     position: relative;
-    border-top: 1px solid #f2604c;
+    border-top: 1px solid $breadcrumbs-color;
     #filter {
       width: 100%;
       padding: 20px 100px;

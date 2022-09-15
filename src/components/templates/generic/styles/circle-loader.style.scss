@@ -1,3 +1,7 @@
+@import "~/components/pages/styles/colors.scss";
+
+$loader-secondary-color: white;
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -12,29 +16,29 @@
 @keyframes rotate2-market {
   0% {
     transform: rotate(0deg);
-    border-top-color: #f2604c;
+    border-top-color: $breadcrumbs-color;
   }
   50% {
     transform: rotate(180deg);
-    border-top-color: white;
+    border-top-color: $loader-secondary-color;
   }
   100% {
     transform: rotate(360deg);
-    border-top-color: #f2604c;
+    border-top-color: $breadcrumbs-color;
   }
 }
 @keyframes rotate2-explorer {
   0% {
     transform: rotate(0deg);
-    border-top-color: #e6942c;
+    border-top-color: $orange-main-color;
   }
   50% {
     transform: rotate(180deg);
-    border-top-color: white;
+    border-top-color: $loader-secondary-color;
   }
   100% {
     transform: rotate(360deg);
-    border-top-color: #e6942c;
+    border-top-color: $orange-main-color;
   }
 }
 @mixin loaderDivMixin {
@@ -56,8 +60,8 @@
 }
 .loader2, .loader2 div {
   @include loaderDivMixin;
-  border-top-color: #f2604c;
-  border-left-color: white;
+  border-top-color: $breadcrumbs-color;
+  border-left-color: $loader-secondary-color;
   animation-timing-function: cubic-bezier(.55, .38, .21, .88);
   animation-duration: 3s;
 }
@@ -75,7 +79,7 @@ div:hover {
 }
 
 .explorer-loader .loader2, .explorer-loader .loader2 div {
-  border-top-color: #e6942c;
+  border-top-color: $orange-main-color;
 }
 .explorer-loader .loader1, .explorer-loader .loader1 div {
   animation: rotate2-explorer 4s infinite linear;

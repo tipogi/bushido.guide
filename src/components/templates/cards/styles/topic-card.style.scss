@@ -2,6 +2,8 @@
   font-family: 'longcang';
   src: url('/public/fonts/long-cang.regular.ttf');
 }*/
+@import "~/components/pages/styles/colors.scss";
+
 @font-face {
   font-family: 'silkscreen';
   src: url('/public/fonts/luckiestGuy-regular.ttf');
@@ -13,7 +15,8 @@
   width: 180px;
   height: 120px;
   border-radius: 5px;
-  box-shadow: 4px 4px 8px #000000, -1px 1px 5px #484848;
+  box-shadow: 4px 4px 8px $card-shadow-primary-color,
+  -1px 1px 5px $card-shadow-secondary-color;
   .topic-headline {
     display: flex;
     height: 80px;
@@ -22,7 +25,7 @@
     padding: 0 15px 0 10px;
     .topic-name {
       padding-top: 10px;
-      color: #272b33;
+      color: $black-main-color;
       font-weight: 600;
       display: flex;
       span {
@@ -43,14 +46,12 @@
     text-align: end;
     span {
       line-height: 10px;
-      color: #6B6B6B;
+      color: $grey-legend-color;
       font-size: 1rem;
     }
   }
   // Imports backgrounds
   @import './rules/background.style';
-  //@import './rules/shadow.style';
-  //@import './rules/pseudo-classes.style';
 }
 
 

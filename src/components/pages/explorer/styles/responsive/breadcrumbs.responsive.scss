@@ -25,6 +25,7 @@
 
 @media (min-width: 1280px) and (max-width: 1679px) {
   .breadcrumb-block {
+    //padding: 0 150px;
     #list-breadcrumbs span {
       font-size: 1rem;
     }
@@ -34,9 +35,17 @@
     }
   }
 }
+@media (min-width: 992px) and (max-width: 1279px) {
+  .breadcrumb-block {
+    //padding: 0 120px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .breadcrumb-block {
+    #list-breadcrumbs span {
+      font-size: 1rem;
+    }
     #list-breadcrumbs-legend {
       margin: 15px 40px;
       font-size: .8rem;

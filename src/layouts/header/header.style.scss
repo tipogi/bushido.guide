@@ -1,3 +1,5 @@
+@import "~/components/pages/styles/colors.scss";
+
 #bushido-header {
   position: absolute;
   display: flex;
@@ -7,7 +9,7 @@
     margin-left: 20px;
     flex-grow: 1;
     display: flex;
-    color: #ffe3c4;
+    color: $orange-secondary-color;
     a {
       all: unset;
       cursor: pointer;
@@ -19,24 +21,39 @@
         svg {
           width: 6px;
           height: 7px;
-          color: #e6942c;
+          color: $orange-main-color;
         }
-      } 
+      }
+    }
+    &:hover span {
+        color: $white-color;
     }
   }
   #menu-container {
     flex-grow: 2;
     box-shadow: none;
+    display: flex;
+    align-items: center;
     #menu-drawer__body {
-      width: 60%;
+      width: 70%;
       justify-content: space-evenly;
       display: flex;
       a {
-        color: #ffe3c4;
+        display: flex;
+        align-items: center;
+        color: $orange-secondary-color;
         text-decoration: none;
+        font-weight: 500;
+        svg {
+          margin-right: 10px;
+          color: $header-icon-color;
+        }
         &:hover {
-          color: #e6942c;
-          font-weight: 600;
+          color: $orange-main-color;
+          cursor: pointer;
+          svg {
+            color: $orange-main-color;
+          }
         }
       }
     }

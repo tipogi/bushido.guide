@@ -1,10 +1,11 @@
 @use "sass:math";
+@import "~/components/pages/styles/colors.scss";
 
 $size: 60px;
 $width: 20px;
 $height: 15px;
 $line-size: 2px;
-$line-color: #ffe3c4;
+$line-color: $orange-secondary-color;
 $line-radius: $line-size;
 $to-translate: math.div(($height - $line-size), 2);
 
@@ -86,13 +87,13 @@ $to-translate: math.div(($height - $line-size), 2);
       opacity: 1;
       transform: rotate(45deg) translate3d(0,0,0); 
       transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
-      background: #e6942c;
+      background: $orange-main-color;
     }
     &.menu--close.open .menu__line--5 { 
       opacity: 1;
       transform:  rotate(-45deg) translate3d(0,0,0); 
       transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s;
-      background: #e6942c;
+      background: $orange-main-color;
     }
   }
 }

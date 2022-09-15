@@ -1,8 +1,10 @@
+@import "~/components/pages/styles/colors.scss";
+
 .breadcrumb-block {
   #list-breadcrumbs {
     display: flex;
     align-items: center;
-    color: #F25F4C;
+    color: $breadcrumbs-color;
     span {
       font-size: 1.2rem;
     }
@@ -10,7 +12,7 @@
       margin-right: 20px;
       font-size: 1.2rem;
       &:hover {
-        color: #ffe3c4;
+        color: $orange-secondary-color;
         cursor: pointer;
       }
     }
@@ -30,7 +32,7 @@
   }
   #list-breadcrumbs-legend {
     margin: 15px 0 0 50px;
-    color: #72757e;
+    color: $grey-legend-color;
     font-size: 1rem;
   }
 }

@@ -1,21 +1,23 @@
+@import "~/components/pages/styles/colors.scss";
+
 @font-face {
   font-family: 'orbitron';
   src: url('/public/fonts/play-regular.ttf');
 }
 
 #description-view {
-  background: #272b33; 
+  background: $black-main-color; 
   padding: 80px 100px 80px;
   flex-wrap: wrap;
   align-items: center;
   .description-text {
     font-family: 'orbitron';
     font-size: 1.5rem;
-    color: #ffe3c4;
+    color: $orange-secondary-color;
     font-weight: 200;
     .highlight {
       font-family: 'orbitron';
-      color: #e5942c;
+      color: $orange-main-color;
       font-size: 1.5rem;
     }
   }
@@ -34,7 +36,7 @@
       grid-gap: 30px;
       h1 {
         font-family: 'orbitron';
-        color: #72757e;
+        color: $grey-legend-color;
         font-size: .9em;
       }
     }

@@ -1,3 +1,5 @@
+@import "~/components/pages/styles/colors.scss";
+
 #landing-view {
   background-image: url('/public/img/cover/cover-2.webp');
   background-size: cover;
@@ -19,7 +21,7 @@
         display: flex;
         align-items: flex-end;
         justify-content: center;
-        color: #e6932d;
+        color: $orange-main-color;
         text-align: center;
         //font-size: 80px;
         font-size: 2rem;
@@ -27,7 +29,7 @@
         font-weight: 600;
       }
       #secondary {
-        color: #ffe3c4;
+        color: $orange-secondary-color;
         text-align: center;
         padding-top: 30px;
         height: 5vh;
@@ -44,11 +46,13 @@
     width: 75%;
     padding-right: 20px;
     svg {
-      fill: #ffe3c4;
+      fill: $orange-secondary-color;
       font-size: .8rem;
+      cursor: pointer;
       &.selected {
-        fill: #e6932d;
+        fill: $orange-main-color;
         font-size: 1.2rem;
+        cursor:auto
       }
     }
   }
@@ -68,8 +72,8 @@
       height: 90px;
   }
   .custom-shape-divider-bottom-1649918002 .shape-fill {
-      fill: #272b33;
+      fill: $black-main-color;
   }
 }
 
-@import "./responsive//landing.responsive.scss"
+@import "./responsive/landing.responsive.scss"

@@ -6,6 +6,8 @@ import MobileMenu from '~/layouts/navigation/MobileMenu';
 import { EXPLORER_ROUTE, HOME_ROUTE, MARKET_ROUTE } from '~/constants';
 
 import './header.style.scss';
+import { GiBookCover, GiCash } from 'react-icons/gi';
+import { BiAbacus, BiLibrary } from "react-icons/bi";
 
 const Header: React.FC = () => {
 
@@ -42,8 +44,8 @@ const Header: React.FC = () => {
       <div id="menu-container" className={`${mobileClass}`}>
         <nav id="menu-drawer__body">
           <div id="bushido-stamp" onClick={() => navigateTo(HOME_ROUTE)}/>
-          <a onClick={() => navigateTo(EXPLORER_ROUTE)}>Explorer</a>
-          <a onClick={() => navigateTo(MARKET_ROUTE)}>Market</a>
+          <a onClick={() => navigateTo(EXPLORER_ROUTE)}><BiLibrary/>Explorer</a>
+          <a onClick={() => navigateTo(MARKET_ROUTE)}><BiAbacus/>Market</a>
         </nav>
         <div id="menu-drawer__additional">
           { renderRoot() }

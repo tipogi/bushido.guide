@@ -1,8 +1,7 @@
 @use "sass:math";
+@import "~/components/pages/styles/colors.scss";
 
-$color_primary: #e6942c;
 $color_secondary: #edc898;
-$color_background: #ffe3c4;
 
 $point_count: 7;
 $default_point_radius: 16px;
@@ -90,15 +89,15 @@ $start_anim_delta: 5;
 			height: $default_point_radius * 2;
 			width: $default_point_radius * 2;
 			top: 0;
-			color: $color_primary;
-			background-color: $color_background;
+			color: $orange-main-color;
+			background-color: $orange-secondary-color;
 			font-size: .7rem;
 			font-weight: 400;
 			line-height: $default_point_radius * 2;
 			text-align: center;
-			border: 2px solid $color_primary;
+			border: 2px solid $orange-main-color;
 			border-radius: 50%;
-			box-shadow: inset 0px 0px 0px 0px $color_primary;
+			box-shadow: inset 0px 0px 0px 0px $orange-main-color;
 			transform: scale(0.75);
 			transition: all 0.5s ease;
 		}
@@ -140,7 +139,7 @@ $start_anim_delta: 5;
 			width: 0px;
 			top: 18px;
 			left: 31px;
-			background-color: $color_primary;
+			background-color: $orange-main-color;
 			transition: all 0.5s ease;
 		}
 	}
@@ -213,8 +212,8 @@ $start_anim_delta: 5;
 .navigation-circle-list-item:active .navigation-circle-list-item__point:before,
 .navigation-circle-list-item.active .navigation-circle-list-item__point:before {
 	transform: scale(0.85);
-	color: $color_background;
-	box-shadow: inset 0px 0px 0px $default_point_radius $color_primary;
+	color: $orange-secondary-color;
+	box-shadow: inset 0px 0px 0px $default_point_radius $orange-main-color;
 	border-color: transparent;
 }
 .navigation-circle-list-item:active .navigation-circle-list-item__point:after,

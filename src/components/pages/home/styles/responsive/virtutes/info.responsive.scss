@@ -310,7 +310,7 @@
   .navigation-circle-list-item:hover .navigation-circle-list-item__point:after {
     width: 50px !important;
     left: -40px !important;
-    background-color: #ffe3c4;
+    background-color: $orange-secondary-color;
   }
   .navigation-circle-list-item__point:after {
     top: 18px;

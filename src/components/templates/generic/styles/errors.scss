@@ -1,3 +1,5 @@
+@import "~/components/pages/styles/colors.scss";
+
 #cards-container, #list-container, .main-container {
   .topic-error-block {
     margin-top: 150px;
@@ -6,12 +8,12 @@
     justify-content: center;
     align-items: center;
     & > svg {
-      fill: #f2604c;
+      fill: $breadcrumbs-color;
       font-size: 3em;
       margin-bottom: 50px;
     }
     h1 {
-      color: #ffe3c4;
+      color: $orange-secondary-color;
       font-size: 1.5em;
     }
     button {
@@ -21,8 +23,8 @@
       align-items: center;
       justify-content: center;
       border-radius: 5px;
-      background: #e5942c;
-      color: #f8ddc0;
+      background: $orange-main-color;
+      color: $orange-secondary-color;
       cursor: pointer;
       svg {
         font-size: 1.5em;
