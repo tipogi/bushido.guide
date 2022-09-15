@@ -1,9 +1,9 @@
 // Font Awesome
 import { FaSignature, FaSwimmingPool } from 'react-icons/fa';
 // HeroIcons
-import { HiCode, HiOutlineCubeTransparent } from "react-icons/hi";
+import { HiCode, HiOutlineCubeTransparent, HiLockClosed, HiOutlineLockClosed } from "react-icons/hi";
 //Material Icon
-import { MdMarkEmailUnread, MdAnimation, MdExpand, MdLaptopChromebook, MdLocalMovies, MdOutlineStorefront } from 'react-icons/md';
+import { MdAnimation, MdDisabledVisible, MdEqualizer, MdExpand, MdLaptopChromebook, MdLocalMovies, MdMovie, MdOutlineStorefront, MdViewInAr } from 'react-icons/md';
 // Flat Icons
 import { FiHardDrive } from 'react-icons/fi';
 // Simple Icons
@@ -13,9 +13,9 @@ import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineBarChart } 
 // IonIcons
 import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsShieldLock, BsCpu, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCpu, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back } from "react-icons/bs";
 // Game Icons
-import { GiBuyCard, GiMisdirection, GiWorld } from "react-icons/gi";
+import { GiBuyCard, GiCombinationLock, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
 import { GrCluster } from "react-icons/gr";
 // Devicons
@@ -49,7 +49,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case ARTICLES:
         return <IoDocumentTextOutline/>;
       case MULTIMEDIA:
-        return <MdLocalMovies/>;
+        return <MdMovie/>;
       case RESOURCES:
         return <IoLayersOutline/>;
       case PODCAST:
@@ -71,7 +71,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case ANIMATION:
         return <MdAnimation/>;
       case CHARTS:
-        return <AiOutlineBarChart/>;
+        return <MdEqualizer/>;
       case METRICS:
         return <IoAnalyticsSharp/>;
       case TOOLS:
@@ -87,7 +87,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case VPS:
         return <AiOutlineCloudServer/>;
       case PRIVACY:
-        return <BsShieldLock/>
+        return <MdDisabledVisible/>
       case NODE:
         return <GrCluster/>
       case SIDECHAIN:
@@ -101,7 +101,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case WALLET:
         return <GoKey/>;
       case MINE:
-        return <BsCpu/>;
+        return <MdViewInAr/>;
       case TRANSACTIONS:
         return <BsCardChecklist/>;
       case COLD_STORAGE:

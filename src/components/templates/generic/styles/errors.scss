@@ -9,27 +9,32 @@
     align-items: center;
     & > svg {
       fill: $breadcrumbs-color;
-      font-size: 3em;
+      font-size: 3rem;
       margin-bottom: 50px;
     }
     h1 {
       color: $orange-secondary-color;
-      font-size: 1.5em;
+      font-size: 1.4rem;
+      display: flex;
+      text-align: center;
     }
     button {
-      padding: 10px 20px;
-      margin-top: 20px;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 10px 20px;
+      margin-top: 20px;
       border-radius: 5px;
-      background: $orange-main-color;
-      color: $orange-secondary-color;
+      background: $error-reload-color;
+      color: $black-main-color;
       cursor: pointer;
       svg {
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin-right: 10px;
       }
     }
   }
 }
+
+@import "./responsive/errors.responsive.scss";
