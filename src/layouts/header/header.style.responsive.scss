@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1679px) {
   #bushido-header {
     #menu-container {
       #menu-drawer__body {
@@ -111,7 +111,7 @@
   }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1680px) { 
   #bushido-header {
     #name-container {
       a {
@@ -119,6 +119,16 @@
           font-size: 1.1rem;
           &#dot {
             padding-top: 15px;
+          }
+        }
+      }
+    }
+    #menu-container {
+      #menu-drawer__body {
+        a {
+          font-size: 1.1rem;
+          & svg {
+            font-size: 1.1rem;
           }
         }
       }

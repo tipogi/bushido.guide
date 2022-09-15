@@ -4,9 +4,10 @@
   position: absolute;
   display: flex;
   width: 100%;
-  margin-top: 15px;
+  padding: 40px 0;
+  border-top: 3px solid $orange-main-color;;
   #name-container {
-    margin-left: 20px;
+    margin-left: 50px;
     flex-grow: 1;
     display: flex;
     color: $orange-secondary-color;
@@ -34,8 +35,9 @@
     box-shadow: none;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     #menu-drawer__body {
-      width: 70%;
+      width: 40vw;
       justify-content: space-evenly;
       display: flex;
       a {
