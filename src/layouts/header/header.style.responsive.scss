@@ -135,3 +135,26 @@
     }
   }
 }
+@media (min-width: 1280px) and (max-width: 1679px) {
+  #bushido-header {
+    border-top: 3px solid $orange-main-color;
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2099px) {
+  #bushido-header {
+    border-top: 3px solid $orange-main-color;
+  }
+}
+
+@media (min-width: 2100px) and (max-width: 2799px) {
+  #bushido-header {
+    border-top: 5px solid $orange-main-color;
+  }
+}
+
+@media (min-width: 2800px) {
+  #bushido-header {
+    border-top: 6px solid $orange-main-color;
+  }
+}
