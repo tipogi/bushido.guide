@@ -1,0 +1,98 @@
+@use "sass:math";
+
+$size: 60px;
+$width: 20px;
+$height: 15px;
+$line-size: 2px;
+$line-color: #ffe3c4;
+$line-radius: $line-size;
+$to-translate: math.div(($height - $line-size), 2);
+
+#bushido-header {
+  .menu {
+    display: none;
+    position: relative;
+    height: $size;
+    width: $size;
+    cursor: pointer;
+    margin: -20px 5px;
+    overflow: hidden;
+    
+    &__icon {
+      position: absolute;
+      width: $width;
+      height: $height;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__line {
+      position: absolute;
+      left: 0;
+      background-color: $line-color;
+      height: $line-size;
+      width: 100%;
+      border-radius: $line-radius;
+      pointer-events: none;
+      &--1 {
+        top: 0;
+      }
+      &--2 {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      &--3 {
+        bottom: 0;
+      }
+    }
+    &.menu--close .menu__line--4, &.menu--close .menu__line--5 {
+      opacity: 0;
+      /*top: $to-translate;*/
+      top: 10px;
+      transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    }  
+    &.menu--close .menu__line--1 {
+      transition: width .2s ease-in-out .4s;
+    }
+    &.menu--close .menu__line--2 {
+      transition: width .2s ease-in-out .3s;
+    }
+    &.menu--close .menu__line--3 {
+      transition: width .2s ease-in-out .2s;
+    }
+    &.menu--close .menu__line--4 { 
+      transform: rotate(45deg) translate3d(-$width,0,0); 
+      transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
+    }
+    &.menu--close .menu__line--5 { 
+      transform:  rotate(-45deg) translate3d($width,0,0); 
+      transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    }
+    // Open
+    &.menu--close.open .menu__line--1 {
+      width: 0;
+      transition: width .2s ease-in-out;
+    }
+    &.menu--close.open .menu__line--2 {
+      width: 0;
+      transition: width .2s ease-in-out .1s;
+    }
+    &.menu--close.open .menu__line--3 {
+      width: 0;
+      transition: width .2s ease-in-out .2s;
+    }
+    &.menu--close.open .menu__line--4 { 
+      opacity: 1;
+      transform: rotate(45deg) translate3d(0,0,0); 
+      transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
+      background: #e6942c;
+    }
+    &.menu--close.open .menu__line--5 { 
+      opacity: 1;
+      transform:  rotate(-45deg) translate3d(0,0,0); 
+      transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s;
+      background: #e6942c;
+    }
+  }
+}
