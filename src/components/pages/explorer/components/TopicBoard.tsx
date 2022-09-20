@@ -44,10 +44,11 @@ export default function TopicBoard() {
 
   const renderError = () => {
     if (error) {
+      console.log(error)
       if (error === ExternalError.PATH_NOT_FOUND) {
         return <DomainList/>
       } else {
-        return <ErrorNotification/>
+        return <ErrorNotification type={error}/>
       }
     }
   }
