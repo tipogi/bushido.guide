@@ -15,6 +15,7 @@ export const filterErrorType = (error: ApolloError): ExternalError => {
   const { graphQLErrors } = error;
   console.log(graphQLErrors)
   if (graphQLErrors.length === 1 && graphQLErrors[0].extensions) {
+    //@ts-ignore
     const grExten: GraphQLExtensionError = graphQLErrors[0].extensions;
     const error = grExten.response.error;
     if (error) {
