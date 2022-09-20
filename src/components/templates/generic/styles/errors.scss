@@ -1,7 +1,7 @@
 @import "~/components/pages/styles/colors.scss";
 
 #cards-container, #list-container, .main-container {
-  .topic-error-block {
+  .topic-error-block, .no-card-defined-error {
     margin-top: 150px;
     display: flex;
     flex-direction: column;

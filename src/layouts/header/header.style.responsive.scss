@@ -2,6 +2,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   #bushido-header {
+    border-top: 2px solid $orange-main-color;
     #menu-container {
       position: fixed;
       top: 0;

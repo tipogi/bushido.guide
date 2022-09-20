@@ -2,9 +2,11 @@ import TopicCard from '~/components/templates/cards/TopicCard';
 import useExplorerNavigate from '~/hooks/router/useExplorerNavigate';
 import useExplorerQuery, { QUERY_OF } from '~/hooks/graphql/useExplorerQuery';
 import { SHOW_TOPICS } from '~/services/graphql/queries';
-import { CardType } from '~/constants';
+import { CardType, ExternalError } from '~/constants';
 import CircleLoader, { LoaderTypes } from "~/components/templates/generic/CircleLoader";
 import ErrorNotification from '../../../templates/generic/ErrorNotification';
+import { GraphQLError } from 'graphql';
+import DomainList from './DomainList';
 
 interface Card {
   name: string
@@ -13,6 +15,8 @@ interface Card {
   type: CardType
   hash: string
 }
+
+
 
 export default function TopicBoard() {
 
@@ -37,13 +41,25 @@ export default function TopicBoard() {
       })
     )
   }
+
+  const renderError = () => {
+    if (error) {
+      if (error === ExternalError.PATH_NOT_FOUND) {
+        return <DomainList/>
+      } else {
+        return <ErrorNotification/>
+      }
+    }
+  }
+
   return (
     <div id="cards-container">
         { !loading && data && 
           <div id='container-list'>{ renderTopicBoard() }</div> 
         }
-      { error && <ErrorNotification/>}
+      { renderError() }
       { loading && <CircleLoader type={LoaderTypes.EXPLORER}/>}
     </div>
   )
 }
+

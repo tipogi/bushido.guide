@@ -2,6 +2,7 @@ import { DocumentNode, useLazyQuery } from '@apollo/client';
 import { useCallback, useEffect } from 'react';
 
 import useExplorerNavigate from '../router/useExplorerNavigate';
+import { filterErrorType } from './helpers/error.helper';
 
 export enum QUERY_OF {
   TOPIC = 'showTopics',
@@ -19,10 +20,10 @@ export default function useExplorerQuery(query: DocumentNode, key: QUERY_OF) {
   useEffect(() => {
     loadSelectedPathLeafs(pathArray)
   }, [pathArray])
-
+  
   return {
     loading: (leafList.data === undefined || leafList.loading) && leafList.error === undefined,
-    error: leafList.error,
+    error: leafList.error && filterErrorType(leafList.error),
     data: leafList.data?.[key],
     leafList
   }

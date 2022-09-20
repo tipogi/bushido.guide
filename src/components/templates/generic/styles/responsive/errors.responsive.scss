@@ -1,15 +1,115 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 991px) {
   #cards-container, #list-container, .main-container {
-    .topic-error-block {
+    .topic-error-block, .no-card-defined-error {
       margin-top: 100px;
-      button {
-        padding: 5px 10px;
+      & > svg {
+        font-size: 5rem;
+        margin-bottom: 100px;
+      }
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+      div {
+        margin-top: 20px;
+        button {
+          padding: 8px 10px;
+          font-size: 1.2rem;
+          border-radius: 3px;
+          cursor: pointer;
+          width: 50vw;
+          font-weight: 700;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1679px) {
+  #cards-container, #list-container, .main-container {
+    .topic-error-block, .no-card-defined-error {
+      margin-top: 50px;
+      h1 {
+        font-size: .9rem;
+        font-weight: 400;
+      }
+      div {
         margin-top: 50px;
+        button {
+          padding: 8px 10px;
+          font-size: .8rem;
+          border-radius: 3px;
+          cursor: pointer;
+          width: 25vw;
+          font-weight: 700;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1679px) {
+  #cards-container, #list-container, .main-container {
+    .topic-error-block, .no-card-defined-error {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 2799px) {
+  #cards-container, #list-container, .main-container {
+    .topic-error-block, .no-card-defined-error {
+      margin-top: 150px;
+      h1 {
         font-size: 1rem;
-        border-radius: 3px;
-        cursor: pointer;
-        svg {
-          margin-right: 10px;
+        font-weight: 400;
+        margin-top: 100px;
+      }
+      div {
+        margin-top: 10px;
+        button {
+          padding: 8px 10px;
+          font-size: .8rem;
+          border-radius: 3px;
+          cursor: pointer;
+          width: 15vw;
+          font-weight: 700;
+          svg {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2800px) {
+  #cards-container, #list-container, .main-container {
+    .topic-error-block, .no-card-defined-error {
+      margin-top: 300px;
+      h1 {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 100px;
+      }
+      div {
+        margin-top: 100px;
+        button {
+          padding: 8px 10px;
+          font-size: .8rem;
+          border-radius: 3px;
+          cursor: pointer;
+          width: 15vw;
+          font-weight: 700;
+          svg {
+            margin-right: 10px;
+          }
         }
       }
     }
