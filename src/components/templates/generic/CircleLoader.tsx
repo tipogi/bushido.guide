@@ -1,3 +1,4 @@
+import { forEach, times } from 'lodash';
 import './styles/circle-loader.style.scss';
 
 export enum LoaderTypes {
@@ -11,53 +12,31 @@ interface ILoaderProps {
 
 export default function Loader({ type }: ILoaderProps) {
 
+  /**
+   * @param lines: The line number of the loader
+   */
+  const createLoader = (lines: number) => {
+    let loader: JSX.Element | undefined;
+    forEach(times(lines), () => {
+      loader = <div> { loader }</div>
+    })
+    return loader;
+  }
+
+  /**
+   * @param loader: The loader type: 1 | 2
+   */
   const renderLoader = (loader: number) => {
-    if (loader === 1) {
-      return (
-        <div className='loader loader1'>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div>
-                      <div>
-                        <div>
-                          <div>
-                            <div></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    } else {
-      return (
-        <div className='loader loader2'>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    }
+    return (
+      <div className={`loader loader${loader}`}>
+        { createLoader(loader === 1 ? 11 : 6)}
+      </div>
+    )
   }
 
   return (
-    <div className={`${type}-loader`} style={{ marginTop: '100px', color: 'white'}}>
-      { renderLoader(Math.floor(Math.random() * 2)) }
+    <div className={`${type}-loader`}>
+      { renderLoader(Math.floor(Math.random() * 2) + 1) }
     </div>
   )
 }

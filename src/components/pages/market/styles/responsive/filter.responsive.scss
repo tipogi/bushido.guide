@@ -293,8 +293,13 @@
           }
         }
       }
-      #price #number{
-        font-size: 1.2rem;
+      #price {
+        #number{
+          font-size: 1.2rem;
+        }
+        #keyword {
+          font-size: .8rem;
+        }
       }
     }
     #filter-configurator #filter {

@@ -1,5 +1,13 @@
 @import "~/components/pages/styles/colors.scss";
 
+.market-loader, .explorer-loader {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
 $loader-secondary-color: white;
 
 @keyframes rotate {
@@ -84,3 +92,5 @@ div:hover {
 .explorer-loader .loader1, .explorer-loader .loader1 div {
   animation: rotate2-explorer 4s infinite linear;
 }
+
+@import "./responsive/circle-loader.responsive.scss";
