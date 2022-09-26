@@ -1,0 +1,23 @@
+@media (min-width: 320px) and (max-width: 480px) {
+  .not-found-container {
+    .circle-container-one {
+      &:before {
+        height: 40vmax;
+        width: 40vmax;
+      }
+      .circle-container-two {
+        &:before {
+
+        height: 45vmax;
+        width: 45vmax;
+        }
+        h1 {
+          padding: 0 20px;
+        }
+      }
+      .bubble:nth-child(1):before {
+        display: none;
+      }
+    }
+  }
+}

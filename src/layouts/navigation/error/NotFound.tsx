@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./not-found.style.scss"
 
 export default function NotFound() {
@@ -11,8 +12,10 @@ export default function NotFound() {
           <div className="bubble"></div>
           <div className="bubble"></div>
           <div className="main">
-            <h1>CHANGE BUBBLE BACKGROUND COLOR</h1>
-            <p>It looks like you're lost...<br/>That's a trouble?</p>
+            <h1>The requested pages does not exist</h1>
+            <Link to="">
+              <button>bushido</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,4 @@
 @import "~/components/pages/styles/colors.scss";
-$c-1: #203075;
-$c-2: lighten($c-1, 3%);
 
 .circle-container-one, .circle-container-two {
   height: 100vh;
@@ -13,7 +11,7 @@ $c-2: lighten($c-1, 3%);
     transform: translate(-50%, -50%);
   }
   &:before {
-    background: linear-gradient($black-main-color,$market-filter-color);
+    background: linear-gradient(#272b33, #2b3039);
   }
 }
 
@@ -67,30 +65,33 @@ $c-2: lighten($c-1, 3%);
       }
     
       h1 {
-        font-size: 95px;
+        font-size: 2rem;
         margin: 0;
+        color: $orange-secondary-color;
       }
-    
-      button {
-        background: linear-gradient(#e6932d,#e6942c);
-        padding: 0 12px;
-        border: none;
-        border-radius: 20px;
-        box-shadow: 0 30px 15px rgba(#000, .15);  outline: none;
-        color: #FFF;
-        font: 400 16px/2.5 Nunito,'Varela Round', Sans-serif;
-        text-transform: uppercase;
-        cursor: pointer;
+      a {
+        button {
+          margin-top: 40px;
+          background: linear-gradient(#e6932d,#e6942c);
+          padding: 0 12px;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 0 30px 15px rgba(#000, .15);  outline: none;
+          color: #FFF;
+          font: 400 16px/2.5 Nunito,'Varela Round', Sans-serif;
+          cursor: pointer;
+        }
       }
+      
     
       .bubble {
-        background: linear-gradient(#a06d77,$orange-header-color);
+        background: linear-gradient(#e5932c, #70737a);
         border-radius: 50%;
         box-shadow: 0 30px 15px rgba(#000, .15);
         position: absolute;
         &:before, &:after {
           content: '';
-          background: linear-gradient(#a06d77,$orange-header-color);
+          background: linear-gradient(#e5932c, #70737a);
           border-radius: 50%;
           box-shadow: 0 30px 15px rgba(#000, .15);
           position: absolute;
@@ -100,63 +101,47 @@ $c-2: lighten($c-1, 3%);
           left: 15vw;
           height: 22vmin;
           width: 22vmin;
+          font-size: 1rem;
           &:before {
             width: 13vmin;
             height: 13vmin;
-            bottom: -25vh;
-            right: -10vmin;
+            bottom: -43vh;
+            right: -20vmin;
           }
         }
         &:nth-child(2) {
-          top: 20vh;
-          left: 38vw;
+          top: 65vh;
+          left: 5vw;
           height: 10vmin;
           width: 10vmin;
-          &:before {
-            width: 5vmin;
-            height: 5vmin;
-            bottom: -10vh;
-            left: -8vmin;
-          }
         }
         &:nth-child(3) {
           top: 12vh;
-          right: 30vw;
+          right: 40vw;
           height: 13vmin;
           width: 13vmin;
-          &:before {
-            width: 3vmin;
-            height: 3vmin;
-            bottom: -15vh;
-            left: -18vmin;
-            z-index: 6;
-          }
         }
         &:nth-child(4) {
           top: 25vh;
           right: 18vw;
           height: 18vmin;
           width: 18vmin;
-          &:before {
-            width: 7vmin;
-            height: 7vmin;
-            bottom: -10vmin;
-            left: -15vmin;
-          }
         }
         &:nth-child(5) {
           top: 60vh;
-          right: 18vw;
+          right: 5vw;
           height: 28vmin;
           width: 28vmin;
           &:before {
             width: 10vmin;
             height: 10vmin;
-            bottom: 5vmin;
-            left: -25vmin;
+            bottom: -2vmin;
+            left: -35vmin;
           }
         }
       }
     }
   }
 }
+
+@import "./responsive/not-found-responsive.scss";
