@@ -1,13 +1,27 @@
 @import "~/components/pages/styles/colors.scss";
 
 #landing-view {
-  background-image: url('/public/img/cover/cover-2.webp');
   background-size: cover;
   //background-image: -webkit-linear-gradient(-30deg, #272b33 50%, #1a1f23 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &.cover-1 {
+    background-image: url('/public/img/cover/cover-1.webp');
+  }
+  &.cover-2 {
+    background-image: url('/public/img/cover/cover-2.webp');
+  }
+  &.cover-3 {
+    background-image: url('/public/img/cover/cover-3.webp');
+  }
+  &.cover-4 {
+    background-image: url('/public/img/cover/cover-4.webp');
+  }
+  &.cover-5 {
+    background-image: url('/public/img/cover/cover-5.webp');
+  }
   #quotes-block {
     height: 70vh;
     width: 100%;

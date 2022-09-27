@@ -16,3 +16,12 @@ export const quotes = [
     secondary: 'The Church attempted to suppress the printing press, most of the new volumes were published in those areas of Europe where the writ of established authority was the weakest'
   }
 ]
+
+export const loaderQuotes = [
+  'Do not give people so much power over you that their silence leaves you questioning your worth',
+  'Allow yourself to be proud of yourself and all the progress you have made. Especially the progress no one else has seen',
+  'You are so focused on everything you are not. You are forgetting everything that you are',
+  'The timing of your life will make sense one day',
+  'Do not let the mixed signals fool you. Indecision is a decision',
+  'If you do not believe me or do not get it, I do not have time to try to convince you, sorry'
+]

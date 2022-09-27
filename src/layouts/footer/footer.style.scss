@@ -12,8 +12,15 @@
   }
   #contact {
     svg {
-      fill: $orange-main-color;
+      fill: $grey-legend-color;
       margin-right: 10px;
+      font-size: 1.5rem;
+      &:hover {
+        fill: $orange-main-color;
+        cursor: pointer;
+      }
     }
   }
 }
+
+@import "./footer.responsive.scss";

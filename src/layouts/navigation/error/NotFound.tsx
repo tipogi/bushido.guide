@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 import "./not-found.style.scss"
 
+// URL: https://codepen.io/kylelavery88/pen/pyQNoP
+
 export default function NotFound() {
   return (
     <div className="not-found-container">

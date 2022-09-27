@@ -1,0 +1,19 @@
+@media (min-width: 320px) and (max-width: 991px) {
+  #bushido-footer #contact {
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    svg {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: 1680px) {
+  #bushido-footer #contact {
+    svg {
+      margin-right: 30px;
+    }
+  }
+}

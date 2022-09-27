@@ -24,8 +24,10 @@ const Landing: React.FC = () => {
     )
   }
 
+  const number = Math.floor(Math.random() * 5) + 1
+
   return (
-    <div id="landing-view" className="block">
+    <div id="landing-view" className={`block cover-${number}`}>
         <Quotes dotNumber={dotNumber} />
         <div className='pagination-block'>
             { renderDots() }

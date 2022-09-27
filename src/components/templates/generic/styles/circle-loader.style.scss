@@ -1,11 +1,13 @@
 @import "~/components/pages/styles/colors.scss";
 
-.market-loader, .explorer-loader {
+.market-loader-container {
+
   display: flex;
   color: white;
   justify-content: center;
   align-items: center;
   height: 70vh;
+  flex-direction: column;
 }
 
 $loader-secondary-color: white;

@@ -1,4 +1,6 @@
 import { forEach, times } from 'lodash';
+import { loaderQuotes } from '~/constants/bushido';
+
 import './styles/circle-loader.style.scss';
 
 export enum LoaderTypes {
@@ -10,7 +12,7 @@ interface ILoaderProps {
   type: LoaderTypes
 }
 
-export default function Loader({ type }: ILoaderProps) {
+export default function CircleLoader({ type }: ILoaderProps) {
 
   /**
    * @param lines: The line number of the loader
@@ -34,9 +36,22 @@ export default function Loader({ type }: ILoaderProps) {
     )
   }
 
+  const renderQuotes = () => {
+    const quoteNumber = Math.floor(Math.random() * 6) + 1;
+    return (
+      <div className="loader-quote">
+        <h5>{ loaderQuotes[quoteNumber] }</h5>
+      </div>
+    )
+  }
+
   return (
-    <div className={`${type}-loader`}>
-      { renderLoader(Math.floor(Math.random() * 2) + 1) }
+    <div className="market-loader-container">
+      <div className={`${type}-loader`}>
+        { renderLoader(Math.floor(Math.random() * 2) + 1) }
+      </div>
+      { type === LoaderTypes.MARKET && renderQuotes() }
     </div>
+    
   )
 }
