@@ -117,6 +117,19 @@
             color: $white-color;
           }
         }
+
+        &.lnp2pbot {
+          cursor: pointer;
+          &:hover {
+            border-color: $ln-p2p-border-color;
+            span {
+              color: $ln-p2p-main-color !important;
+            }
+          }
+          .exchange-icon {
+            border-radius: 0;
+          }
+        }
       }
     }
   }

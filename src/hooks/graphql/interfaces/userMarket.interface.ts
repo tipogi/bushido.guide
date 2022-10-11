@@ -24,7 +24,8 @@ export interface IOffer {
   max_btc: string,
   min_amount: string,
   max_amount: string,
-  method: IPaymentMethod
+  method: IPaymentMethod,
+  extra: string
 }
 
 interface IMarketOffers {

@@ -37,6 +37,7 @@ export const SHOW_MARKET_OFFERS = gql `
         max_btc
         min_amount
         max_amount
+        extra
         method {
           icons
           others
