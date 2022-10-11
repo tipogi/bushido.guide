@@ -6,9 +6,60 @@
 }
 
 #module-view {
-    background: $black-main-color; 
-    padding: 80px 100px 80px;
+  .divider {
+    position: absolute;
+    .shape-fill {
+      fill: $black-main-color;
+    }
+  }
+  .module-content {
+    background: $mobile-menu-background-color;
+    padding: 350px 100px 80px;
     display: flex;
     justify-content: center;
     align-content: center;
+    gap: 90px;
+    .module-block {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .icon-block {
+        margin-bottom: 250px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 150px;
+        background: transparent;
+        border: $not-active-icon solid 8px;
+        cursor: pointer;
+        svg {
+          font-size: 2.5rem;
+          color: $not-active-icon;
+        }
+        &:hover {
+          border-color: $orange-main-color;
+          background: $not-active-icon;
+          svg {
+            color: $orange-main-color;
+            font-size: 3rem;
+          }
+        }
+      }
+      .description-block, span {
+        //font-family: 'orbitron';
+        font-size: 1rem;
+        text-align: center;
+        color: $grey-legend-color;
+        span {
+          font-weight: bold;
+          color: $orange-main-color;
+        }
+      }
+    }
+  }
 }
+
+@import './responsive/modules.responsive.scss'
