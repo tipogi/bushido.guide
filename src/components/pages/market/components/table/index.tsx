@@ -16,6 +16,8 @@ export default function OffersTable({ exchangeOffers }: IOffersTableProps) {
   const { exchanges } = useContext(FilterContext);
   
   const filteredOffers = useMemo(() => {
+    console.log(exchangeOffers);
+    console.log(exchanges)
     return exchangeOffers.filter((offer: IOffer) => {
       return find(exchanges, (filteredExchange) => offer.exchange.toLowerCase() === filteredExchange)
     })

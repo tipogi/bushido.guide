@@ -1,0 +1,14 @@
+@import "~/components/pages/styles/colors.scss";
+
+@font-face {
+  font-family: 'orbitron';
+  src: url('/public/fonts/play-regular.ttf');
+}
+
+#module-view {
+    background: $black-main-color; 
+    padding: 80px 100px 80px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}

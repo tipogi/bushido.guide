@@ -3,7 +3,7 @@ import { find } from "lodash";
 import { useContext } from "react";
 import FilterContext from "../../../context/FilterContext";
 
-const EXCHANGES = ['HodlHodl', 'Bisq', 'Robosats'];
+const EXCHANGES = ['HodlHodl', 'Bisq', 'Robosats', 'LnP2PBot'];
 
 export default function Exchanges() {
 
@@ -15,15 +15,17 @@ export default function Exchanges() {
         const exchangeLowerCase = exchange.toLowerCase();
         const exchangeClassName = classNames('exchange', { selected: find(exchanges, (exchange) => exchange === exchangeLowerCase)})
         return (
-          <div key={`exch-${exchangeLowerCase}`} className={ exchangeClassName }>
+          <div 
+            key={`exch-${exchangeLowerCase}`} className={ exchangeClassName }
+          >
             <input 
               type="checkbox" 
               id={exchangeLowerCase} 
-              className="exchange-input" 
-              onClick={() => toggleExchange(exchangeLowerCase)}
+              className="exchange-input"
             />
             <label 
               htmlFor={exchangeLowerCase}
+              onClick={() => toggleExchange(exchangeLowerCase)}
             >{ exchange }</label>
           </div>
         )

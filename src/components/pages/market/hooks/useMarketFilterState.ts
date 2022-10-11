@@ -8,10 +8,11 @@ const DEFAULT_FILTER: IReducerState = {
   direction: true,
   exchanges: {
     'hodlhodl': true,
-    'bisq': false,
-    'robosats': true
+    'bisq': true,
+    'robosats': true,
+    'lnp2pbot': true
   },
-  currency: 'usd',
+  currency: 'eur',
   premium: 10
 }
 

@@ -6,8 +6,7 @@ import Premium from './Premium';
 import Currency from './Currency';
 import { BsFileArrowUp } from 'react-icons/bs';
 
-import '../../../styles/filter/operation.style.scss'
-import { FaInfoCircle } from 'react-icons/fa';
+import '../../../styles/filter/operation.style.scss';
 
 interface FConfiguratorProps {
   reload(): void;
