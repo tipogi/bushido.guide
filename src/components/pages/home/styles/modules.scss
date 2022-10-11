@@ -33,7 +33,7 @@
         justify-content: center;
         border-radius: 150px;
         background: transparent;
-        border: $not-active-icon solid 8px;
+        border: $not-active-icon solid 4px;
         cursor: pointer;
         svg {
           font-size: 2.5rem;
@@ -48,7 +48,7 @@
           }
         }
       }
-      .description-block, span {
+      .description-block, .description-block span {
         //font-family: 'orbitron';
         font-size: 1rem;
         text-align: center;
@@ -62,4 +62,6 @@
   }
 }
 
-@import './responsive/modules.responsive.scss'
+
+
+@import './responsive/modules.responsive.scss';
