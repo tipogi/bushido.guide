@@ -43,13 +43,21 @@ export const VPS = 'vps';
 export const LINUX = 'linux';
 export const MEMPOOL = 'mempool';
 export const CARD = 'card';
-export const SOFTWARE = 'software'
+export const SOFTWARE = 'software';
+export const MEETUPS = 'meetups';
+export const ENERGY = 'energy';
+export const CHANNELS = 'channels';
+export const ECONOMY = 'economy';
+export const MIND = 'mind';
+export const IT = 'it';
 
 // LANGUAGES
 export const ENG = 'eng';
 export const ESP = 'esp';
 export const DEU = 'deu';
 export const BR = 'br';
+export const DE = 'de';
+export const FR = 'fr';
 
 
 export const getIconType = (name: string): string | undefined => {

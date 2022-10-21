@@ -1,23 +1,23 @@
 // Font Awesome
 import { FaSignature, FaSwimmingPool } from 'react-icons/fa';
 // HeroIcons
-import { HiCode, HiOutlineCubeTransparent, HiLockClosed, HiOutlineLockClosed } from "react-icons/hi";
+import { HiCode, HiOutlineCubeTransparent } from "react-icons/hi";
 //Material Icon
-import { MdAnimation, MdDisabledVisible, MdEqualizer, MdExpand, MdLaptopChromebook, MdLocalMovies, MdMovie, MdOutlineStorefront, MdViewInAr } from 'react-icons/md';
+import { MdAnimation, MdDisabledVisible, MdEqualizer, MdExpand, MdLaptopChromebook, MdOutlineStorefront, MdPower, MdViewInAr } from 'react-icons/md';
 // Flat Icons
 import { FiHardDrive } from 'react-icons/fi';
 // Simple Icons
 import { SiAudiomack } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineBarChart } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase } from "react-icons/ai";
 // IonIcons
 import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCpu, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList } from "react-icons/bs";
 // Game Icons
-import { GiBuyCard, GiCombinationLock, GiMisdirection, GiWorld } from "react-icons/gi";
+import { GiBrain, GiBuyCard, GiFireBottle, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
-import { GrCluster } from "react-icons/gr";
+import { GrChannel, GrCluster } from "react-icons/gr";
 // Devicons
 import { DiLinux } from "react-icons/di";
 // VS Code
@@ -26,9 +26,10 @@ import { VscPackage } from "react-icons/vsc";
 
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES, LINUX,
-  STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, BITCOIN, SOFTWARE
+  STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND
  } from "~/constants";
 import { GoKey, GoTools } from 'react-icons/go';
+import { BiCoin } from 'react-icons/bi';
 
 
 interface CustomIconProps {
@@ -49,7 +50,7 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case ARTICLES:
         return <IoDocumentTextOutline/>;
       case MULTIMEDIA:
-        return <MdMovie/>;
+        return <BsViewList/>;
       case RESOURCES:
         return <IoLayersOutline/>;
       case PODCAST:
@@ -94,6 +95,8 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <MdExpand/>;
       case LINUX:
         return <DiLinux/>;
+      case MEETUPS:
+        return <GiFireBottle/>
       case MEMPOOL:
         return <FaSwimmingPool/>;
       case CARD:
@@ -111,7 +114,17 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
       case BITCOIN:
         return <BsCurrencyBitcoin/>
       case SOFTWARE:
-        return <MdLaptopChromebook/>
+        return <MdLaptopChromebook/>;
+      case ENERGY:
+        return <MdPower/>;
+      case CHANNELS:
+        return <GrChannel/>
+      case ECONOMY:
+        return <BiCoin/>
+      case MIND:
+        return <GiBrain/>;
+      case IT:
+        return <AiOutlineDatabase/>
       default:
         return <HiCode/>;
     }

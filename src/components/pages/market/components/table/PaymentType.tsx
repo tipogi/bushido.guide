@@ -98,8 +98,16 @@ export default function PaymentType({ method, extra }: PaymentTypeProps) {
 
   const renderPaymentLabels = (icon: string[]) => {
     return icon.map((value, index) => {
-      return <span key={index}>{ value }</span>
-    })
+        return <span key={index}>{ value }</span>
+      })
+  }
+
+  const renderOtherPayments = (paymentsList: string[]) => {
+    if (paymentsList.length !== 0) {
+      const joinedPayments = paymentsList.join(' ');
+      return joinedPayments !== '(EU) bank transfer' && joinedPayments !== 'Friends & Family';
+    }
+    return false;
   }
 
   const renderLNP2PBotId = () => {
@@ -115,7 +123,7 @@ export default function PaymentType({ method, extra }: PaymentTypeProps) {
       { (method.icons.length !== 0 || extra.length !== 0 ) && <div className="payment-icons">{renderIcons(method.icons)}</div> }
       { extra.length !== 0
         ? <></>
-        : method.others.length !== 0 && <div className="other-payments">{ renderPaymentLabels(method.others) }</div> 
+        : renderOtherPayments(method.others) && <div className="other-payments">{ renderPaymentLabels(method.others) }</div> 
       }
     </div>
   )
