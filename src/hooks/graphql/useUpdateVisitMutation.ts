@@ -4,15 +4,15 @@ import { UPDATE_VISIT } from "~/services/graphql/mutations"
 import { IDomainData } from "./interfaces"
 
 interface useUpdateVisitMutationProps {
-  visits: number
+  views: number
 }
 
-export default function useUpdateVisitMutation({ visits }: useUpdateVisitMutationProps) {
-  const [domainVisits, setVisits] = useState(visits)
+export default function useUpdateVisitMutation({ views }: useUpdateVisitMutationProps) {
+  const [domainVisits, setVisits] = useState(views)
   const [ updateVisitsMutation, others ] = useMutation(UPDATE_VISIT)
 
   function updateVisits(data: IDomainData) {
-    setVisits(prevVisit => prevVisit + 1)
+    setVisits(prevView => prevView + 1)
     updateVisitsMutation({ variables: { data }})
   }
 

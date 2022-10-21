@@ -13,7 +13,7 @@ interface Domain {
   icon: string
   lang: string
   hash: string
-  visits: number
+  views: number
 }
 
 export default function DomainList() {
@@ -22,13 +22,13 @@ export default function DomainList() {
 
   const renderDomainList = () => {
     return (
-      data.map(({ icon, name, description, lang, url, hash, visits }: Domain) => {
+      data.map(({ icon, name, description, lang, url, hash, views }: Domain) => {
         return (
           <DomainCard
             icon={icon}
             name={name}
             description={description}
-            visits={ visits }
+            views={ views }
             lang={lang}
             url={url}
             key={hash}

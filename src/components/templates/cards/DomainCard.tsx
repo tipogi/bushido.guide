@@ -11,13 +11,13 @@ interface DomainCardProps {
   lang: string
   url: string
   hash: string;
-  visits: number
+  views: number
 }
 
-const DomainCard: React.FC<DomainCardProps> = ({ icon, name, description, lang, url, hash, visits }) => {
+const DomainCard: React.FC<DomainCardProps> = ({ icon, name, description, lang, url, hash, views }) => {
 
   const { pathArray } = useExplorerNavigate();
-  const { domainVisits, updateVisits } = useUpdateVisitMutation({ visits });
+  const { domainVisits, updateVisits } = useUpdateVisitMutation({ views });
 
   function openDomainTab(url: string) {
     const domainData = { path: pathArray, name, hash }
