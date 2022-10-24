@@ -6,8 +6,13 @@ import OffersTable from "./components/table";
 import ErrorNotification from "~/components/templates/generic/ErrorNotification";
 
 import './styles/market/market.style.scss'
+import { useEffect } from "react";
 
 export default function Market() {
+
+  useEffect(() => {
+    document.title = 'bushido.guide • market'
+  })
 
   const { loading, error, data, price, setCall } = useMarketQuery();
   

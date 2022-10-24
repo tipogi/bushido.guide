@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import { CardType } from '~/constants';
@@ -18,6 +19,10 @@ interface IState {
 
 const Explorer: React.FC = () => {
   const { state, key } = useLocation() as ILocation;
+
+  useEffect(() => {
+    document.title = 'bushido.guide • explorer'
+  })
 
   return (
     <div className='main-container block-wo-height'>

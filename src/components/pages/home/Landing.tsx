@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { times } from 'lodash';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GoPrimitiveDot } from 'react-icons/go';
 import Divider from './components/Divider';
 import Quotes from './components/Quotes';
@@ -8,6 +8,10 @@ import Quotes from './components/Quotes';
 import './styles/landing.scss';
 
 const Landing: React.FC = () => {
+
+  useEffect(() => {
+    document.title = 'bushido.guide • home'
+  })
 
   const [dotNumber, selectQuote ] = useState(0)
 
