@@ -20,6 +20,72 @@
         cursor: pointer;
       }
     }
+    #mail-icon svg:hover {
+      fill: $mail-color;
+    }
+    #github-icon svg:hover {
+      fill: $mobile-menu-separator-color;
+    }
+    span {
+      &#loading-icon svg {
+        animation:spin360 2s linear infinite;
+      }
+      &#rocket-icon svg {
+        fill: $health-ok-color;
+        position: relative;
+        animation:spin_rocket 8s linear;
+        bottom: 0px;
+        transform: rotate(-45deg);
+      }
+      &#not-signal-icon svg{
+        fill: $breadcrumbs-color;
+      }
+    }
+  }
+}
+
+@keyframes spin360 {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@keyframes spin_rocket {
+  20% {
+    transform: rotate(-45deg);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  55% {
+    transform: rotate(-70deg);
+    fill: $market-offfer-online;
+  }
+  65% {
+    transform: rotate(-30deg);
+    bottom: 0vh;
+  }
+  70% {
+    transform: rotate(-55deg);
+    bottom: 0vh;
+  }
+  75% {
+    transform: rotate(-45deg);
+    bottom: 0vh;
+  }
+  80% {
+    transform: rotate(-35deg);
+    bottom: 0vh;
+  }
+  95% {
+    transform: rotate(-45deg);
+    bottom: 0vh;
+    fill: $orange-main-color;
+  }
+  100% {
+    bottom: 110vh;
+    transform: rotate(-45deg);
+    fill: $breadcrumbs-color;
   }
 }
 

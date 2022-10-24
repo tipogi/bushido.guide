@@ -1,0 +1,5 @@
+export enum HEALTH_STATUS {
+  NEUTRAL = 'NEUTRAL',
+  HEALTHY = 'HEALTHY',
+  DOWN = 'DOWN'
+}
