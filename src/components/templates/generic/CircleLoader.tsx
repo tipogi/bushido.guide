@@ -14,6 +14,8 @@ interface ILoaderProps {
 
 export default function CircleLoader({ type }: ILoaderProps) {
 
+  console.log(type)
+
   /**
    * @param lines: The line number of the loader
    */
@@ -36,11 +38,18 @@ export default function CircleLoader({ type }: ILoaderProps) {
     )
   }
 
+  const renderTorQuote = () => {
+    return (
+      <h5 style={{color: '#58316b'}}>This request might take more than an usual request because it proxies through the TOR network</h5>
+    )
+  }
+
   const renderQuotes = () => {
     const quoteNumber = Math.floor(Math.random() * 6);
     return (
       <div className="loader-quote">
         <h5>{ loaderQuotes[quoteNumber] }</h5>
+        { type === LoaderTypes.MARKET && renderTorQuote()}
       </div>
     )
   }
