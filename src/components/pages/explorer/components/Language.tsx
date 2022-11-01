@@ -13,19 +13,19 @@ const getLanguageUrl = (lang: string) => {
   let src;
   switch (lang) {
     case ENG:
-      src = '/public/img/lang/eng.png';
+      src = '/img/lang/eng.png';
       break;
     case ESP:
-      src = '/public/img/lang/esp.png';
+      src = '/img/lang/esp.png';
       break;
     case DEU:
-      src = '/public/img/lang/deu.png';
+      src = '/img/lang/deu.png';
       break;
     case BR:
-      src = '/public/img/lang/br.png';
+      src = '/img/lang/br.png';
       break;
     case FR:
-      src = '/public/img/lang/fr.png';
+      src = '/img/lang/fr.png';
       break;
     default:
       src = '';
