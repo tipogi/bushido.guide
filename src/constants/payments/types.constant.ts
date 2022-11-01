@@ -26,6 +26,7 @@ export const F2F = 'F2F'
 export const CASH_BY_EMAIL = 'CASH_BY_MAIL'
 export const E_TRANS = 'e-trans'
 export const AU_PAYID = 'AUSTRALIA_PAYID'
+export const UPHOLD = 'UPHOLD';
 
 // Payment direction
 export enum OFFER_DIRECTION {
