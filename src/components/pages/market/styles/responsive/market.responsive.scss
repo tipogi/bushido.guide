@@ -1,5 +1,16 @@
 @media (min-width: 320px) and (max-width: 1279px) {
   .main-container {
+    .market-loader-container {
+      .loader-quote {
+        h5 {
+          font-size: 1rem;
+          &:nth-child(2) {
+            margin-top: 10px;
+            font-size: .8rem;
+          }
+        }
+      } 
+    }
     #offer-lists {
       padding: 0;
       #market-header {
@@ -119,9 +130,33 @@
     }
   }
 }
+@media (min-width: 1280px) and (max-width: 1679px) {
+  .market-loader-container {
+    .loader-quote {
+      h5 {
+        font-size: 1rem;
+        &:nth-child(2) {
+          margin-top: 10px;
+          font-size: .8rem;
+        }
+      }
+    } 
+  }
+}
 
 @media (min-width: 1680px) and (max-width: 2099px) {
   .main-container {
+    .market-loader-container {
+      .loader-quote {
+        h5 {
+          font-size: .9rem;
+          &:nth-child(2) {
+            margin-top: 10px;
+            font-size: .7rem;
+          }
+        }
+      } 
+    }
     #offer-lists {
       padding: 50px 150px;
       #market-header {
@@ -147,6 +182,17 @@
 
 @media (min-width: 2100px) and (max-width: 2799px) {
   .main-container {
+    .market-loader-container {
+      .loader-quote {
+        h5 {
+          font-size: .8rem;
+          &:nth-child(2) {
+            margin-top: 10px;
+            font-size: .7rem;
+          }
+        }
+      } 
+    }
     #offer-lists {
       padding: 50px 150px;
       #market-header {
@@ -178,6 +224,17 @@
 
 @media (min-width: 2800px) {
   .main-container {
+    .market-loader-container {
+      .loader-quote {
+        h5 {
+          font-size: .8rem;
+          &:nth-child(2) {
+            margin-top: 10px;
+            font-size: .6rem;
+          }
+        }
+      } 
+    }
     #offer-lists {
       padding: 50px 150px;
       #market-header {

@@ -23,5 +23,8 @@ export const loaderQuotes = [
   'You are so focused on everything you are not. You are forgetting everything that you are',
   'The timing of your life will make sense one day',
   'Do not let the mixed signals fool you. Indecision is a decision',
-  'If you do not believe me or do not get it, I do not have time to try to convince you, sorry'
+  'If you do not believe me or do not get it, I do not have time to try to convince you, sorry',
+  'The most dangerous creation of any society is the man who has nothing left to lose',
+  "Start by doing what's necessary; then do what's possible; and suddenly you are doing the impossible",
+  "I can't change the direction of the wind, but I can adjust my sails to always reach my destination"
 ]

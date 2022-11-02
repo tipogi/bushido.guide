@@ -45,7 +45,7 @@ export default function CircleLoader({ type }: ILoaderProps) {
   }
 
   const renderQuotes = () => {
-    const quoteNumber = Math.floor(Math.random() * 6);
+    const quoteNumber = Math.floor(Math.random() * 9);
     return (
       <div className="loader-quote">
         <h5>{ loaderQuotes[quoteNumber] }</h5>
