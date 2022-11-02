@@ -24,7 +24,9 @@ export default function Market() {
     <FilterContextProvider>
       <div className="main-container">
         <Filter price={price} reload={updateTable} />
-        { <CircleLoader type={LoaderTypes.MARKET}/> }
+        { loading && <CircleLoader type={LoaderTypes.MARKET}/> }
+        { error && <ErrorNotification type={error}/>}
+        { data && <OffersTable exchangeOffers={data.showMarketOffers.offers} /> }
       </div>
     </FilterContextProvider>
   )
