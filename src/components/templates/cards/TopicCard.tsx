@@ -46,12 +46,12 @@ const TopicCard: React.FC<FolderCardProps> = ({ index, name, description, icon, 
       <CustomSVG name={icon} /> :
       <CustomIcon name={icon}/>
   }
-  console.log('TODO: Name has to be without format');
-  const formatName = `${name[0].toUpperCase()}${name.substring(1)}`;
+  // TODO: Delete HardCoded
+  const displayName = name !== 'Privacy' ? name : 'Privacy & Security';
   return (
     <motion.div 
       className={`topic-card ${cardType.toLowerCase()}-number-${imageNumber} shadow`} 
-      onClick={() => navigateEvent(formatName)}
+      onClick={() => navigateEvent(name)}
       initial='hidden'
       animate='visible'
       exit='hidden'
@@ -61,9 +61,11 @@ const TopicCard: React.FC<FolderCardProps> = ({ index, name, description, icon, 
     >
       <div className='topic-headline'>
         { renderIcon() }
-        <div className='topic-name'><span>{formatName}</span></div>
+        <div className='topic-name'><span>{displayName}</span></div>
       </div>
-      <div className='topic-description'><span>{`${description.substring(0, 50)}...`}</span></div>
+      <div className='topic-description'>
+        <span>{`${description.substring(0, 50)}...`}</span>
+      </div>
     </motion.div>
   )
 }

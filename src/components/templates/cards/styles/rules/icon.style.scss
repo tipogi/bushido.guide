@@ -10,4 +10,7 @@
   path {
     stroke: $grey-legend-color;
   }
+  &#privacy + .topic-name {
+    width: 60%;
+  }
 }

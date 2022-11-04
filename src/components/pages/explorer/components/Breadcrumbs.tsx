@@ -19,6 +19,7 @@ export default function Breadcrumbs() {
       <RiTerminalBoxFill { ...rootProps }/>
     ];
     forEach(pathArray, (topic, index) => {
+      const customCrumbName = topic === 'Privacy' ? 'Privacy & Security' : topic;
       if (pathArray.length - 1 > index) {
         console.log('TODO: The selection of the cardType is not generic, HARD CODED. In our case, the max deep of the topic is three, thats why with hard code works')
         const card: CardType = index == 0 ? CardType.ROOT : CardType.BRANCH;
@@ -26,7 +27,7 @@ export default function Breadcrumbs() {
           <span 
             key={`crumb_${index}`} 
             onClick={() => navigateToCrumbTopic(slice(pathArray, 0, index + 1), card)}
-          >{`${topic} > `}
+          >{`${customCrumbName} > `}
           </span>
         );
       } else {
@@ -34,7 +35,7 @@ export default function Breadcrumbs() {
         crumbs.push(
           <span 
             {...props }
-          >{`${topic}`}
+          >{`${customCrumbName}`}
           </span>)
       }
     })
