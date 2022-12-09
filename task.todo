@@ -3,3 +3,4 @@ TODOs (✔/☐)
 ☐ Refractor the code
 ☐ Add LN card
 ☐ Add in domains list like icon. It will save in the `localStorage` of the browser to after create a personal list
+☐ Add the tag (lower color tone, grey) after bookmark name
