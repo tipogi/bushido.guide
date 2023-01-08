@@ -50,6 +50,16 @@ export const CHANNELS = 'channels';
 export const ECONOMY = 'economy';
 export const MIND = 'mind';
 export const IT = 'it';
+export const BOOM = 'boom';
+export const ANDROID = 'android';
+export const MAC = 'mac';
+export const WEB = 'web';
+export const PRACTISE = 'practise';
+export const COURSES = 'courses';
+// Nostr ostrich
+export const NOSTR = 'nostr';
+export const APP = 'apps';
+export const REGISTRY = 'registry';
 
 // LANGUAGES
 export const ENG = 'eng';
@@ -101,6 +111,7 @@ export const getIconType = (name: string): string | undefined => {
     case NODE:
     case SIDECHAIN:
     case SOFTWARE:
+    case NOSTR:
     default:
       return REACT_ICON;
   }

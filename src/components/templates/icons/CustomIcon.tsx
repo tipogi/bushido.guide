@@ -9,24 +9,27 @@ import { FiHardDrive } from 'react-icons/fi';
 // Simple Icons
 import { SiAudiomack } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase, AiFillAndroid, AiFillApple } from "react-icons/ai";
 // IonIcons
-import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline } from "react-icons/io5";
+import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline, IoLogoWebComponent, IoSchool } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList, BsAppIndicator, BsFillPlayCircleFill } from "react-icons/bs";
 // Game Icons
-import { GiBrain, GiBuyCard, GiFireBottle, GiMisdirection, GiWorld } from "react-icons/gi";
+import { GiBrain, GiBuyCard, GiEggEye, GiFireBomb, GiFireBottle, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
 import { GrChannel, GrCluster } from "react-icons/gr";
 // Devicons
-import { DiLinux } from "react-icons/di";
+import { DiGhostSmall, DiLinux } from "react-icons/di";
 // VS Code
 import { VscPackage } from "react-icons/vsc";
 
 
 import { 
   ANALYSIS, ARTICLES, DEV, GITHUB, GUIDE, MULTIMEDIA, NEWS, P2P, PODCAST, RESOURCES, SERVICES, LINUX,
-  STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS, VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND
+  STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS,
+  VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, 
+  BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND, NOSTR, APP, REGISTRY, BOOM, 
+  ANDROID, MAC, WEB, PRACTISE, COURSES
  } from "~/constants";
 import { GoKey, GoTools } from 'react-icons/go';
 import { BiCoin } from 'react-icons/bi';
@@ -125,6 +128,24 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <GiBrain/>;
       case IT:
         return <AiOutlineDatabase/>
+      case NOSTR:
+        return <GiEggEye/>;
+      case APP:
+        return <BsAppIndicator/>;
+      case REGISTRY:
+        return <DiGhostSmall/>;
+      case BOOM:
+        return <GiFireBomb/>;
+      case ANDROID:
+        return <AiFillAndroid/>;
+      case MAC:
+        return <AiFillApple/>;
+      case WEB:
+        return <IoLogoWebComponent/>;
+      case PRACTISE:
+        return <BsFillPlayCircleFill/>;
+      case COURSES:
+        return <IoSchool/>;
       default:
         return <HiCode/>;
     }
