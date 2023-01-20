@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { OrderTableFrom, TableHeader } from "../components/table/MarketHeader";
 import { IReducerState } from "./useFilterReducer";
 
 export const MARKET_FILTER_LOCAL_STORAGE_KEY = 'bs.market';
@@ -13,7 +14,11 @@ const DEFAULT_FILTER: IReducerState = {
     'lnp2pbot': true
   },
   currency: 'eur',
-  premium: 10
+  premium: 10,
+  sort: {
+    colum: TableHeader.Premium,
+    from: OrderTableFrom.Min
+  }
 }
 
 export default function useMarketFilterState() {

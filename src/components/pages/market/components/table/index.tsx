@@ -5,7 +5,7 @@ import FilterContext from "../../context/FilterContext"
 import useFilterCurrency from "../../hooks/useFilterCurrency"
 import MarketHeader from "./MarketHeader"
 import NoOffersNotification from "./NoOffersNotification"
-import OfferRow from "./OfferRow"
+import OfferRow, { RowType } from "./OfferRow"
 
 interface IOffersTableProps {
   exchangeOffers: IOffer[]
@@ -13,7 +13,7 @@ interface IOffersTableProps {
 
 export default function OffersTable({ exchangeOffers }: IOffersTableProps) {
 
-  const { exchanges } = useContext(FilterContext);
+  const { exchanges, sort } = useContext(FilterContext);
   
   const filteredOffers = useMemo(() => {
     return exchangeOffers.filter((offer: IOffer) => {
@@ -26,13 +26,14 @@ export default function OffersTable({ exchangeOffers }: IOffersTableProps) {
   const renderOfferTable = () => {
     return (
       <>
-        <MarketHeader/>
+        <MarketHeader sort={sort}/>
         <ul>
           { filteredOffers.map((offer: IOffer, index) => 
             <OfferRow 
               offer={offer} 
               symbol={symbol}
               key={`offer_${index}`}
+              rowType={index % 2 ? RowType.Dark : RowType.Light}
             />) 
           }
         </ul>

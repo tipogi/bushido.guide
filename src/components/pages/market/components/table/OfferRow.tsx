@@ -3,14 +3,20 @@ import Exchange from "./Exchange";
 import Maker from "./Maker";
 import PaymentType from "./PaymentType";
 
+export enum RowType {
+  Dark = "dark",
+  Light = "light"
+}
+
 interface IOfferRow {
   offer: IOffer,
-  symbol: string
+  symbol: string,
+  rowType: RowType,
 }
 
 const TELEGRAM_URL = 'https://t.me/p2plightning'
 
-export default function OfferRow({ offer, symbol }: IOfferRow) {
+export default function OfferRow({ offer, symbol, rowType }: IOfferRow) {
   const { exchange, maker_status, dif, min_amount, max_amount, method, extra } = offer;
 
   const openTelegramOffer = () => {
@@ -20,7 +26,7 @@ export default function OfferRow({ offer, symbol }: IOfferRow) {
   }
 
   return (
-    <li className={`${exchange.toLowerCase()}`} onClick={ () => openTelegramOffer() }>
+    <li className={`${exchange.toLowerCase()} ${rowType}`} onClick={ () => openTelegramOffer() }>
       <Exchange name={exchange}/>
       <Maker status={maker_status}/>
       <span>{dif}</span>

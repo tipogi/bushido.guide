@@ -19,7 +19,15 @@
         text-align: center;
       }
       span {
+        display: flex;
         text-align: center;
+        justify-content: center;
+        &.action {
+          cursor: pointer;
+        }
+        &.selected {
+          color: $breadcrumbs-color;
+        }
       }
     }
     ul {
@@ -38,6 +46,10 @@
           span {
             color: $breadcrumbs-color !important;
           }
+        }
+        &.light {
+          background: #2b313e;
+          border-radius: 5px;
         }
         span {
           flex: 1;
@@ -66,6 +78,10 @@
           justify-content: center;
           align-items: center;
           grid-gap: 20px;
+          scrollbar-width: none;
+          &::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+          }
           .payment-icons {
             display: flex;
             justify-content: flex-start;
