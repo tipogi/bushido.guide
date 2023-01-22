@@ -21,11 +21,16 @@ const DEFAULT_FILTER: IReducerState = {
   }
 }
 
+function hasAllTheKeys (bushidoStore: string) {
+  const default_keys = Object.keys(DEFAULT_FILTER);
+  return JSON.stringify(default_keys)==JSON.stringify(Object.keys(JSON.parse(bushidoStore)));
+}
+
 export default function useMarketFilterState() {
 
   const marketState = useCallback<() => IReducerState>(() => {
     const bushidoStore = localStorage.getItem(MARKET_FILTER_LOCAL_STORAGE_KEY);
-    if (bushidoStore) {
+    if (bushidoStore && hasAllTheKeys(bushidoStore)) {
       return JSON.parse(bushidoStore);
     } else {
       const marketFilterInitState = DEFAULT_FILTER;
