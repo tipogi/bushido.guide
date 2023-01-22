@@ -31,6 +31,7 @@ export const SHOW_MARKET_OFFERS = gql `
     showMarketOffers(data: $data) {
       offers {
         exchange
+        price
         dif
         maker_status
         min_btc

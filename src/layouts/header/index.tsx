@@ -5,9 +5,11 @@ import MobileMenu from '~/layouts/navigation/MobileMenu';
 
 import { ABOUT_ROUTE, EXPLORER_ROUTE, MARKET_ROUTE } from '~/constants';
 
-import './header.style.scss';
 import { BiAbacus, BiLibrary } from "react-icons/bi";
 import { SiGitbook } from 'react-icons/si';
+import V4V from './v4v';
+
+import './header.style.scss';
 
 const Header: React.FC = () => {
 
@@ -37,23 +39,27 @@ const Header: React.FC = () => {
   const mobileClass = mobileMenu? 'active' : '';
 
   return (
-    <div id="bushido-header">
-      <div id="name-container">
-        { renderRoot() }
-      </div>
-      <div id="menu-container" className={`${mobileClass}`}>
-        <nav id="menu-drawer__body">
-          <div id="bushido-stamp" onClick={() => navigateTo(EXPLORER_ROUTE)}/>
-          <a onClick={() => navigateTo(EXPLORER_ROUTE)}><BiLibrary/>Explorer</a>
-          <a onClick={() => navigateTo(MARKET_ROUTE)}><BiAbacus/>Market</a>
-          <a onClick={() => navigateTo(ABOUT_ROUTE)}><SiGitbook/>About</a>
-        </nav>
-        <div id="menu-drawer__additional">
+    <div id="header-block">
+      <V4V/>
+      <div id="bushido-header">
+        <div id="name-container">
           { renderRoot() }
         </div>
+        <div id="menu-container" className={`${mobileClass}`}>
+          <nav id="menu-drawer__body">
+            <div id="bushido-stamp" onClick={() => navigateTo(EXPLORER_ROUTE)}/>
+            <a onClick={() => navigateTo(EXPLORER_ROUTE)}><BiLibrary/>Explorer</a>
+            <a onClick={() => navigateTo(MARKET_ROUTE)}><BiAbacus/>Market</a>
+            <a onClick={() => navigateTo(ABOUT_ROUTE)}><SiGitbook/>About</a>
+          </nav>
+          <div id="menu-drawer__additional">
+            { renderRoot() }
+          </div>
+        </div>
+        <MobileMenu mobileMenuState={mobileMenu} toogleMenu={toogleMenu}/>
       </div>
-      <MobileMenu mobileMenuState={mobileMenu} toogleMenu={toogleMenu}/>
     </div>
+    
   )
 }
 

@@ -2,6 +2,7 @@ import { find } from "lodash"
 import { useContext, useMemo } from "react"
 import { IOffer } from "~/hooks/graphql/interfaces"
 import FilterContext from "../../context/FilterContext"
+import { sortMarketList } from "../../helper/sort.helper"
 import useFilterCurrency from "../../hooks/useFilterCurrency"
 import MarketHeader from "./MarketHeader"
 import NoOffersNotification from "./NoOffersNotification"
@@ -16,10 +17,12 @@ export default function OffersTable({ exchangeOffers }: IOffersTableProps) {
   const { exchanges, sort } = useContext(FilterContext);
   
   const filteredOffers = useMemo(() => {
-    return exchangeOffers.filter((offer: IOffer) => {
+    console.log(sort)
+    const filteredRows = exchangeOffers.filter((offer: IOffer) => {
       return find(exchanges, (filteredExchange) => offer.exchange.toLowerCase() === filteredExchange)
     })
-  }, [exchanges.length, exchangeOffers.length]);
+    return sortMarketList(filteredRows, sort.colum, sort.from);
+  }, [exchanges.length, exchangeOffers.length, sort.colum, sort.from]);
 
   const symbol = useFilterCurrency();
 

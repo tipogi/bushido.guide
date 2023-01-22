@@ -1,19 +1,19 @@
 // Font Awesome
-import { FaSignature, FaSwimmingPool } from 'react-icons/fa';
+import { FaDocker, FaRobot, FaSignature, FaSwimmingPool } from 'react-icons/fa';
 // HeroIcons
 import { HiCode, HiOutlineCubeTransparent } from "react-icons/hi";
 //Material Icon
-import { MdAnimation, MdDisabledVisible, MdEqualizer, MdExpand, MdLaptopChromebook, MdOutlineStorefront, MdPower, MdViewInAr } from 'react-icons/md';
+import { MdAnimation, MdDisabledVisible, MdEqualizer, MdExpand, MdLaptopChromebook, MdOutlineStorefront, MdPower, MdSecurity, MdViewInAr } from 'react-icons/md';
 // Flat Icons
 import { FiHardDrive } from 'react-icons/fi';
 // Simple Icons
-import { SiAudiomack } from "react-icons/si";
+import { SiAudiomack, SiHashnode } from "react-icons/si";
 // Ant Design
-import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase, AiFillAndroid, AiFillApple } from "react-icons/ai";
+import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase, AiFillAndroid, AiFillApple, AiFillBuild } from "react-icons/ai";
 // IonIcons
-import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline, IoLogoWebComponent, IoSchool } from "react-icons/io5";
+import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline, IoLogoWebComponent, IoSchool, IoExtensionPuzzleOutline } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList, BsAppIndicator, BsFillPlayCircleFill } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList, BsAppIndicator, BsFillPlayCircleFill, BsHddNetwork } from "react-icons/bs";
 // Game Icons
 import { GiBrain, GiBuyCard, GiEggEye, GiFireBomb, GiFireBottle, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
@@ -29,7 +29,7 @@ import {
   STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS,
   VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, 
   BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND, NOSTR, APP, REGISTRY, BOOM, 
-  ANDROID, MAC, WEB, PRACTISE, COURSES
+  ANDROID, MAC, WEB, PRACTISE, COURSES, AI, EXT, ARCH, NET, SECURITY, FULLSTACK, DEVOPS
  } from "~/constants";
 import { GoKey, GoTools } from 'react-icons/go';
 import { BiCoin } from 'react-icons/bi';
@@ -146,6 +146,20 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <BsFillPlayCircleFill/>;
       case COURSES:
         return <IoSchool/>;
+      case AI:
+        return <FaRobot/>;
+      case EXT:
+        return <IoExtensionPuzzleOutline/>;
+      case ARCH:
+        return <AiFillBuild/>
+      case NET:
+        return <BsHddNetwork/>
+      case FULLSTACK:
+        return <SiHashnode/>
+      case SECURITY:
+        return <MdSecurity/>
+      case DEVOPS:
+        return <FaDocker/>
       default:
         return <HiCode/>;
     }

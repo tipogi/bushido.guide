@@ -1,11 +1,41 @@
 @import "~/components/pages/styles/colors.scss";
 
+.v4v {
+  height: 30px;
+  background: $v4v-message;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  &.hidden {
+    height: 1px;
+    background: #f2ba5e;
+  }
+  #value-message {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+      path {
+        color: orange;
+      }
+    }
+  }
+  #close-v4v {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    svg path {
+      color: white;
+    }
+  }
+}
+
 #bushido-header {
   position: absolute;
   display: flex;
   width: 100%;
   padding: 40px 0 10px;
-  border-top: 1px solid $orange-main-color;;
   #name-container {
     margin-left: 50px;
     flex-grow: 1;

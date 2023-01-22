@@ -28,6 +28,7 @@ export enum OrderTableFrom {
 const HEADER = [
   TableHeader.P2P, 
   TableHeader.State, 
+  TableHeader.Price, 
   TableHeader.Premium, 
   TableHeader.Minimun, 
   TableHeader.Maximun, 
@@ -43,6 +44,7 @@ export default function MarketHeader({ sort }: IMarketHeader) {
       case TableHeader.Premium:
       case TableHeader.Minimun:
       case TableHeader.Maximun:
+      case TableHeader.Price:
         let icon = <RiMenu4Line/>
         if (value === sort.colum) {
           if (sort.from === OrderTableFrom.Max) {

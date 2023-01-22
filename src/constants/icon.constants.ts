@@ -60,6 +60,14 @@ export const COURSES = 'courses';
 export const NOSTR = 'nostr';
 export const APP = 'apps';
 export const REGISTRY = 'registry';
+export const AI = 'ai';
+export const EXT = 'extension';
+export const ARCH = 'architecture';
+export const NET = 'network';
+export const FULLSTACK = 'fullstack';
+export const SECURITY = 'security';
+export const DEVOPS = 'devops';
+
 
 // LANGUAGES
 export const ENG = 'eng';

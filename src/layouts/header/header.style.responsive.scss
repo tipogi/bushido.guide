@@ -1,8 +1,15 @@
 @import "~/components/pages/styles/colors.scss";
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .v4v {
+    &.hidden {
+      height: 2px;
+    }
+    span{
+      font-size: 0.8rem;
+    }
+  }
   #bushido-header {
-    border-top: 2px solid $orange-main-color;
     #menu-container {
       position: fixed;
       top: 0;
@@ -97,7 +104,10 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1279px) {
+@media (min-width: 768px) and (max-width: 1279px) {
+  .v4v span{
+    font-size: 0.8rem;
+  }
   #bushido-header {
     #menu-container {
       #menu-drawer__body {
@@ -110,8 +120,10 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1679px) {
+  .v4v span{
+    font-size: 0.8rem;
+  }
   #bushido-header {
-    border-top: 3px solid $orange-main-color;
     #name-container {
       a {
         span {
@@ -160,20 +172,26 @@
   }
 }
 
-@media (min-width: 1680px) and (max-width: 2099px) {
-  #bushido-header {
-    border-top: 3px solid $orange-main-color;
+@media (min-width: 1280px) and (max-width: 2099px) {
+  .v4v {
+    &.hidden {
+      height: 3px;
+    }
   }
 }
 
 @media (min-width: 2100px) and (max-width: 2799px) {
-  #bushido-header {
-    border-top: 5px solid $orange-main-color;
+  .v4v {
+    &.hidden {
+      height: 5px;
+    }
   }
 }
 
 @media (min-width: 2800px) {
-  #bushido-header {
-    border-top: 6px solid $orange-main-color;
+  .v4v {
+    &.hidden {
+      height: 6px;
+    }
   }
 }
