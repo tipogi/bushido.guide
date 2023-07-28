@@ -56,6 +56,10 @@ export const MAC = 'mac';
 export const WEB = 'web';
 export const PRACTISE = 'practise';
 export const COURSES = 'courses';
+export const LIBRARY = 'libraries';
+export const PALETTE = 'palette';
+export const DISTRO = 'distro';
+export const JS = 'js';
 // Nostr ostrich
 export const NOSTR = 'nostr';
 export const APP = 'apps';
