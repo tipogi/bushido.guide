@@ -5,11 +5,18 @@
   background: $v4v-message;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; 
   &.hidden {
     height: 1px;
     background: #f2ba5e;
+  }
+  #alby-v4v {
+    margin-left: 20px;
+    display: flex;
+    img {
+      width: 1.2rem;
+    }
   }
   #value-message {
     display: flex;
@@ -22,8 +29,8 @@
     }
   }
   #close-v4v {
-    position: absolute;
-    right: 10px;
+    //position: absolute;
+    margin-right: 10px;
     cursor: pointer;
     svg path {
       color: white;

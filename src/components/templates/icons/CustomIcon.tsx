@@ -11,9 +11,9 @@ import { SiAudiomack, SiHashnode } from "react-icons/si";
 // Ant Design
 import { AiOutlineSwap, AiOutlineCloudServer, AiTwotoneUsb, AiOutlineDatabase, AiFillAndroid, AiFillApple, AiFillBuild } from "react-icons/ai";
 // IonIcons
-import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline, IoLogoWebComponent, IoSchool, IoExtensionPuzzleOutline, IoLibrary, IoLogoJavascript } from "react-icons/io5";
+import { IoAnalyticsSharp, IoLayersOutline, IoMailUnreadOutline, IoDocumentTextOutline, IoLogoWebComponent, IoSchool, IoExtensionPuzzleOutline, IoLibrary, IoLogoJavascript, IoSpeedometer } from "react-icons/io5";
 // Bootstrap
-import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList, BsAppIndicator, BsFillPlayCircleFill, BsHddNetwork } from "react-icons/bs";
+import { BsPersonBoundingBox, BsCloudCheck, BsMailbox, BsCardChecklist, BsCurrencyBitcoin, BsSim, BsGithub, BsCodeSlash, BsCreditCard2Back, BsViewList, BsAppIndicator, BsFillPlayCircleFill, BsHddNetwork, BsBrightnessAltHighFill } from "react-icons/bs";
 // Game Icons
 import { GiBrain, GiBuyCard, GiEggEye, GiFireBomb, GiFireBottle, GiMisdirection, GiWorld } from "react-icons/gi";
 // Grommet-Icons
@@ -29,10 +29,10 @@ import {
   STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS,
   VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, 
   BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND, NOSTR, APP, REGISTRY, BOOM, 
-  ANDROID, MAC, WEB, PRACTISE, COURSES, AI, EXT, ARCH, NET, SECURITY, FULLSTACK, DEVOPS, LIBRARY, JS, PALETTE, DISTRO
+  ANDROID, MAC, WEB, PRACTISE, COURSES, AI, EXT, ARCH, NET, SECURITY, FULLSTACK, DEVOPS, LIBRARY, JS, PALETTE, DISTRO, PERFORMANCE, BOARD, STEPS
  } from "~/constants";
 import { GoKey, GoTools } from 'react-icons/go';
-import { BiCoin } from 'react-icons/bi';
+import { BiChalkboard, BiCoin } from 'react-icons/bi';
 
 
 interface CustomIconProps {
@@ -120,6 +120,10 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <MdLaptopChromebook/>;
       case PALETTE:
         return <FaPalette/>;
+      case PERFORMANCE:
+        return <IoSpeedometer/>;
+      case BOARD:
+        return <BiChalkboard/>;
       case DISTRO:
         return <MdSystemUpdateAlt/>;
       case ENERGY:
@@ -168,6 +172,8 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <MdSecurity/>
       case DEVOPS:
         return <FaDocker/>
+      case STEPS:
+        return <BsBrightnessAltHighFill/>
       default:
         return <HiCode/>;
     }

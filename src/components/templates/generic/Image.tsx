@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { MdOutlineImageNotSupported } from "react-icons/md";
+import { MdBrokenImage, MdOutlineImageNotSupported } from "react-icons/md";
 import { FcRemoveImage } from "react-icons/fc";
+import { BsFileEarmarkImage, BsFillFileImageFill } from "react-icons/bs";
 
 interface ImageProps {
   iconUrl: string;
@@ -8,8 +9,9 @@ interface ImageProps {
 }
 
 const imgStyle = {
-  fontSize: '2em',
-  filter: 'grayscale(1)'
+  fontSize: '1.25rem',
+  //filter: 'grayscale(1)'
+  color: 'rgb(75, 76, 77)'
 }
 
 const Image: React.FC<ImageProps> = ({ iconUrl, name }) => {
@@ -18,8 +20,8 @@ const Image: React.FC<ImageProps> = ({ iconUrl, name }) => {
 
   if (imgNotFound){
     return (
-      <div className="img-container" style={imgStyle}>
-        <FcRemoveImage />
+      <div className="img-container">
+        <MdBrokenImage style={imgStyle}/>
       </div>
     )
   }

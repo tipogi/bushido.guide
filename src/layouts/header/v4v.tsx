@@ -29,6 +29,7 @@ export default function V4V() {
     function renderNotification() {
         return (
             <>
+                <div id="alby-v4v"><img src="/img/favicon/alby.svg"/></div>
                 <div id="value-message">
                     <RiExchangeFundsFill/><span>If you think your time was worth using it here, show your support</span>
                 </div>

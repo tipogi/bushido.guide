@@ -58,6 +58,8 @@ export const PRACTISE = 'practise';
 export const COURSES = 'courses';
 export const LIBRARY = 'libraries';
 export const PALETTE = 'palette';
+export const PERFORMANCE = 'performance';
+export const BOARD = 'BOARD';
 export const DISTRO = 'distro';
 export const JS = 'js';
 // Nostr ostrich
@@ -71,6 +73,9 @@ export const NET = 'network';
 export const FULLSTACK = 'fullstack';
 export const SECURITY = 'security';
 export const DEVOPS = 'devops';
+export const SOCIAL = 'social';
+export const NOTES = 'notes';
+export const STEPS = 'steps';
 
 
 // LANGUAGES
