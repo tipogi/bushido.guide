@@ -62,6 +62,7 @@ export const PERFORMANCE = 'performance';
 export const BOARD = 'BOARD';
 export const DISTRO = 'distro';
 export const JS = 'js';
+export const EDUCATION = 'education'
 // Nostr ostrich
 export const NOSTR = 'nostr';
 export const APP = 'apps';

@@ -1,5 +1,5 @@
 // Font Awesome
-import { FaDocker, FaPalette, FaRobot, FaSignature, FaSwimmingPool } from 'react-icons/fa';
+import { FaDocker, FaHardHat, FaPalette, FaRobot, FaSignature, FaSwimmingPool } from 'react-icons/fa';
 // HeroIcons
 import { HiCode, HiOutlineCubeTransparent } from "react-icons/hi";
 //Material Icon
@@ -29,7 +29,7 @@ import {
   STORE, NEWSLETTER, SWAP, EMAIL, ANIMATION, CHARTS, METRICS, TOOLS, PEOPLE, CRYPTOGRAPHY, OS, SMS,
   VPS, PRIVACY, NODE, SIDECHAIN, MEMPOOL, CARD, WALLET, MINE, TRANSACTIONS, HARDWARE, COLD_STORAGE, 
   BITCOIN, SOFTWARE, MEETUPS, ENERGY, CHANNELS, ECONOMY, IT, MIND, NOSTR, APP, REGISTRY, BOOM, 
-  ANDROID, MAC, WEB, PRACTISE, COURSES, AI, EXT, ARCH, NET, SECURITY, FULLSTACK, DEVOPS, LIBRARY, JS, PALETTE, DISTRO, PERFORMANCE, BOARD, STEPS
+  ANDROID, MAC, WEB, PRACTISE, COURSES, AI, EXT, ARCH, NET, SECURITY, FULLSTACK, DEVOPS, LIBRARY, JS, PALETTE, DISTRO, PERFORMANCE, BOARD, STEPS, EDUCATION
  } from "~/constants";
 import { GoKey, GoTools } from 'react-icons/go';
 import { BiChalkboard, BiCoin } from 'react-icons/bi';
@@ -174,6 +174,8 @@ const CustomIcon: React.FC<CustomIconProps> = ({ name }: CustomIconProps) => {
         return <FaDocker/>
       case STEPS:
         return <BsBrightnessAltHighFill/>
+      case EDUCATION:
+        return <FaHardHat/>
       default:
         return <HiCode/>;
     }
