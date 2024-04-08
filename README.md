@@ -2,7 +2,7 @@
 
 ![bushido.guide](./docs/assets/main.png)
 
-In the era of information, there is abundant information spread out in the cyberspace and we spend some of our precious time, filtering that one. bushido.guide was created with a clear aim: Separate the valuable content from noise.
+In the era of information, there is abundant information spread out in the cyberspace and we spend some of our precious time, filtering that one. [bushido.guide](https://bushido.guide) was created with a clear aim: Separate the valuable content from noise.
 
 As a result of that, there is an `explorer` which splits different rabbit holes that are to empower the individual skills and liberty but there is a specific one to learn and touch __THE__ pseudonymous digital cash
 
